@@ -1,0 +1,80 @@
+@use 'helpers' as *;
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 11.40% 61.20% 24.45%;
+    grid-template-areas: 
+        "img logo meteo"
+    ;
+    align-items: center;
+    height: 100%;
+    column-gap: rem(15);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    // &.is-hide {
+    //     display: none !important;
+    // }
+
+    @include mobile {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-template-areas: 
+            "img logo"
+            "meteo meteo"
+        ;
+
+        height: rem(120);
+    }
+
+    &__image {
+        grid-area: img;
+        justify-self: end;
+        align-self: end;
+
+        @include mobile {
+            justify-self: start;
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        column-gap: rem(130);
+
+        @include tablet {
+            column-gap: rem(40); 
+        }
+
+        @include mobile {
+            justify-content: flex-end;
+            column-gap: 0;
+        }
+
+        &-text {
+            @include mobile {
+                display: none;
+            }
+        }
+
+        svg {
+            @include hover {
+                path {
+                    fill: var(--color-accent);
+                }
+            }
+        }
+    }
+
+    &__meteo {
+        grid-area: meteo;
+        display: flex;
+        justify-content: space-between;
+
+        &-temp {
+            display: flex;
+            align-items: center;
+            column-gap: rem(10);            
+        }
+    }
+}
