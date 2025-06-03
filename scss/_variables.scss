@@ -1,0 +1,42 @@
+@use 'helpers' as *;
+
+:root {
+    --color-white: #FFFFFF;
+    --color-gray-85: #4B5157;
+    --color-gray-100: #262D33;
+    --color-gray-50: #939699;
+    --color-gray-30: #BCBFC2;
+    --color-gray-15: #D9DADB;
+    --color-blue-60: #4592FF;
+    --color-gray-blue-25: #D1E2EB;
+    --color-gray-blue-50: #B4D1E0;
+    --color-gray-blue-75: #6E99AE;
+    --color-red-75: #FF4F52;
+    --color-blue-green-75: #3BBDC4;
+    --color-green-75: #3DC47E;
+    --color-gray-blue-100: #55839E;
+    --color-purple-75: #AC8EE3;
+    --color-gray-05: #F5F5F5;
+    --color-orange-75: #FFA34D;
+    --color-gray-95: #30363D;
+    --color-blue-25: #C5E4FC;
+    --color-purple-25: #E7D9FF;
+    --color-gray-95: #30363d;
+    --color-circle: #D1E2EB;
+    --color-shadow: #40303D;
+    --color-bg: #EDEFF0;
+    --color-accent: #fcc490;
+
+    --border: #{rem(1)} solid var(--color-gray-15);
+    --border-radius: rem(10);
+
+    --font-family-base: 'Lato', sans-serif;
+    --font-family-alternate: 'Lato Heave', sans-serif;
+    --font-family-title: 'Roboto Slab', sans-serif;
+    --font-family-numbers: 'Lato Heavy Italic', sans-serif;
+
+    --container-width: #{rem(1140)};
+    --container-padding-x: #{rem(16)};
+
+    --transition-duration: 0.2s;
+}
