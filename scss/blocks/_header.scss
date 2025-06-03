@@ -1,0 +1,19 @@
+@use 'helpers' as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    background-color: var(--color-bg);
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: rem(50) rem(100);
+
+    @keyframes scrolling-header {
+        to {
+            box-shadow: 0 0 1rem 0 var(--color-gray-100);
+        }
+    }
+    
+}

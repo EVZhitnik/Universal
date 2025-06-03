@@ -1,0 +1,84 @@
+@use 'helpers' as *;
+
+.form-search {
+    display: flex;
+    align-items: center;
+
+    &__body {
+        position: relative;
+        display: flex;
+        width: rem(40);
+        transition: width 0.3s ease-in-out;
+
+        @include hover {
+            width: rem(200);
+
+            .form-search__input {
+                opacity: 1;
+            }
+
+            .form-search__button {
+                transform: translateY(-50%) rotate(360deg);
+            }
+        }
+    }
+   
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: rem(5);
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(25);
+        height: rem(25);
+        padding: 0;
+        border: none;
+        border: var(--border);
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+        z-index: 50;
+
+        @include mobile {
+            left: auto;
+            right: rem(5);
+        }
+
+        svg {
+            @include square(rem(13));
+            path {
+                fill: var(--color-gray-100);
+            }
+        }
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-block: rem(7);
+        padding-left: rem(40);
+        padding-right: rem(10);
+        border: none;
+        border-radius: rem(20);
+        outline: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        background-color: var(--color-gray-85);
+        color: var(--color-white);
+
+        @include mobile {
+            padding-left: rem(10);
+            padding-right: rem(40);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: currentColor;
+        }
+    }
+}
