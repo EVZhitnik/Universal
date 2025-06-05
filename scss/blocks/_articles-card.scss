@@ -1,0 +1,67 @@
+@use 'helpers' as *;
+
+.articles-card {
+    position: relative;
+    z-index: 20;
+
+    &:not(:last-child) {
+        margin-bottom: rem(30);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: var(--color-gray-95);
+        border-radius: var(--border-radius);
+
+        @include laptop {
+            grid-template-columns: repeat(2, 1fr); 
+        }
+
+        @include mobile-s {
+            grid-template-columns: repeat(1, 1fr); 
+        }
+    }
+
+    &__item {
+        margin-top: rem(25);
+        margin-bottom: rem(30);
+        padding-inline: rem(25);
+
+        &:not(:last-child) {
+            border-right: var(--border-articles);
+        }
+
+        @include laptop {
+            &:not(:last-child) {
+                border-right: none;
+            }
+
+            &:nth-child(2n - 1) {
+                border-right: var(--border-articles);
+            }
+        }
+
+        @include mobile-s {
+            &:nth-child(2n - 1) {
+                border-right: none;
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: rem(15);
+    }
+
+    &__text {
+        color: var(--color-white);
+    }
+
+    &__image {
+        align-self: start;
+    }
+
+}

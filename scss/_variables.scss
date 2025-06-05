@@ -23,12 +23,16 @@
     --color-purple-25: #E7D9FF;
     --color-gray-95: #30363d;
     --color-circle: #D1E2EB;
-    --color-shadow: #40303D;
+    --color-shadow: rgba(64, 48, 61, 0.35);
     --color-bg: #EDEFF0;
     --color-accent: #fcc490;
 
     --border: #{rem(1)} solid var(--color-gray-15);
-    --border-radius: rem(10);
+    --border-articles: #{rem(1)} solid var(--color-gray-85);
+    --border-button-play-video: #{rem(3)} solid rgba(255, 255, 255, 0.4);
+
+    --border-radius: #{rem(10)};
+    --border-radius-button: #{rem(20)};
 
     --font-family-base: 'Lato', sans-serif;
     --font-family-alternate: 'Lato Heave', sans-serif;

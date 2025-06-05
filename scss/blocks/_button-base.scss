@@ -1,0 +1,35 @@
+@use 'helpers' as *;
+
+.button-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: rem(8);
+    padding: rem(10) rem(25);
+    font-family: var(--font-family-alternate);
+    font-weight: 900;
+    color: var(--color-white);
+    background-color: var(--color-blue-60);
+    border-radius: var(--border-radius-button);
+    text-wrap: nowrap;
+
+    @include mobile-s {
+        padding: rem(5) rem(15);
+    }
+
+    @include hover {
+        background-color: var(--color-accent);
+        color: var(--color-gray-100);
+
+        svg {
+            path {
+                fill: var(--color-gray-100);
+            }
+        }
+    }
+
+    svg {
+        position: relative;
+        top: rem(1)
+    }
+}

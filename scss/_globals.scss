@@ -2,7 +2,7 @@
 
 html {
     &.is-lock {
-        overflow: hidden
+        overflow: hidden;
     }
 }
 
@@ -25,7 +25,7 @@ h4, .h4 {
 }
 
 h1, .h1 {
-    @include fluid-text(40, 25);
+    @include fluid-text(40, 22);
 
     line-height: 1.25;
     color: var(--color-white);
