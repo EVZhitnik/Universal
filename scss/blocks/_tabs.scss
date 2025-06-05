@@ -1,0 +1,122 @@
+@use 'helpers' as *;
+
+.tabs {
+    position: relative;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: 76.93% 23.07%;
+
+    @include laptop {
+        grid-template-columns: 66.93% 33.07%;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
+    &__content {
+        &:not(.is-active) {
+            display: none;
+        }
+    }
+
+    &__buttons { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
+        background-color: var(--color-white);
+        border-radius: 0 rem(10) rem(10) 0;
+
+        @include mobile {
+            border-radius: 0 0 rem(10) rem(10);
+        }
+
+        &-heading {
+            display: inline-block;
+            font-family: var(--font-family-alternate);
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--color-gray-100);
+            padding: rem(20) rem(25);
+        }
+        
+        &-button {
+            position: relative;
+            display: grid;
+            text-align: left;
+            width: 100%;
+            row-gap: rem(8);
+            padding: rem(20) rem(25);
+            border: none;        
+            border-top: var(--border);
+            background-color: transparent;
+
+            @include hover {
+                background-color: var(--color-gray-blue-50);
+            }
+
+            &.is-active {
+                pointer-events: none;
+
+                &::before {
+                    content: '';
+
+                    @include abs-y;
+
+                    left: rem(-11);
+                    width: rem(12);
+                    height: rem(20);
+                    background-color: var(--color-white);
+                    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+                    transition-duration: var(--transition-duration);
+                }
+            }
+
+            &:nth-child(2) {
+                .tabs__buttons-title {
+                    color: var(--color-blue-green-75);
+                }
+            }
+
+            &:nth-child(3) {
+                .tabs__buttons-title {
+                    color: var(--color-gray-blue-75);
+                }
+            }
+
+            &:nth-child(4) {
+                .tabs__buttons-title {
+                    color: var(--color-purple-75);
+                }
+            }
+
+            &:nth-child(5) {
+                .tabs__buttons-title {
+                    color: var(--color-orange-75);
+                }
+            }
+
+            &:nth-child(6) {
+                .tabs__buttons-title {
+                    color: var(--color-green-75);
+                }
+            }
+        }
+
+        &-description {
+            svg {
+                position: relative;
+                top: rem(5);
+                left: rem(5);
+                cursor: pointer;
+
+                @include hover {
+                    path {
+                        fill: var(--color-accent);
+                    }
+                }
+            }
+        }
+    }
+}

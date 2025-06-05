@@ -1,0 +1,11 @@
+@use 'helpers' as *;
+
+.subtitle-base {
+    display: inline-block;
+    font-family: var(--font-family-alternate);
+    font-weight: 900;
+    font-size: rem(12);
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}

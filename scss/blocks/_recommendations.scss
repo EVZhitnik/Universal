@@ -1,0 +1,49 @@
+@use 'helpers' as *;
+
+.recommendations {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        bottom: 35%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-gray-100);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: rem(30);
+    }
+
+    &__categories {
+        position: relative;
+        z-index: 20;
+
+        &:not(:last-child) {
+            margin-bottom: rem(30);
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(10) rem(45);
+            padding-block: rem(18);
+        }
+
+        &-link {
+            position: relative;
+            font-family: var(--font-family-alternate);
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--color-white);
+
+            @include hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+}
