@@ -18,9 +18,15 @@
 @use 'blocks/subtitle-base.scss';
 @use 'blocks/button-base.scss';
 
+@use 'blocks/popular.scss';
+@use 'blocks/cars.scss';
+@use 'blocks/blog-actions.scss';
+@use 'blocks/art.scss';
+@use 'blocks/cats.scss';
+@use 'blocks/article.scss';
 
-// .header,
-// main > *:not(:last-child),
-// .footer {
-//     display: none !important;
-// }
+.header,
+main > *:not(:last-child),
+.footer {
+    display: none !important;
+}

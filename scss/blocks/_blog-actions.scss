@@ -1,0 +1,56 @@
+@use 'helpers' as *;
+
+.blog-actions {
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: rem(10);
+    }
+
+    &__item {
+        display: flex;
+    }
+
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        column-gap: rem(5.5);
+        border: none;
+        padding: 0;
+        background-color: transparent;
+
+        &--color-base {
+            color: var(--color-gray-30);
+        }
+        
+        &--color-gray {
+           color: var(--color-gray-blog);
+        }
+    }
+
+    &__icon-wrapper {
+        display: flex;
+
+        svg {
+            path {
+                fill: currentColor;
+            }
+        }
+
+        @include hover {
+            svg {
+                path {
+                    fill: var(--color-accent);
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-size: rem(12);
+        line-height: 1.25;
+        color: var(--color-gray-50);
+        cursor: auto;
+    }
+}

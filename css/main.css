@@ -247,7 +247,8 @@ svg * {
   --color-circle: #D1E2EB;
   --color-shadow: rgba(64, 48, 61, 0.35);
   --color-bg: #EDEFF0;
-  --color-accent: #fcc490;
+  --color-gray-blog: #86888F;
+  --color-accent: #FCC490;
   --border: 0.0625rem solid var(--color-gray-15);
   --border-articles: 0.0625rem solid var(--color-gray-85);
   --border-button-play-video: 0.1875rem solid rgba(255, 255, 255, 0.4);
@@ -1178,6 +1179,206 @@ a[class] {
 .button-base svg {
   position: relative;
   top: 0.0625rem;
+}
+
+.popular__inner {
+  display: grid;
+  grid-template-columns: 76.93% 23.07%;
+  gap: 1.875rem;
+}
+.popular__body {
+  display: grid;
+  grid-column: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-template-areas: "cars cars art" "cats coffee manufacture" "cats stress treat";
+  gap: 1.875rem;
+}
+.popular__cars, .popular__art, .popular__cats, .popular__coffee, .popular__manufacture, .popular__stress, .popular__treat {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+}
+.popular__cars {
+  grid-area: cars;
+}
+.popular__art {
+  grid-area: art;
+}
+.popular__cats {
+  grid-area: cats;
+}
+.popular__coffee {
+  grid-area: coffee;
+}
+.popular__manufacture {
+  grid-area: manufacture;
+}
+.popular__stress {
+  grid-area: stress;
+}
+.popular__treat {
+  grid-area: treat;
+}
+
+.cars__body {
+  display: flex;
+  align-items: center;
+  padding-top: 0.9375rem;
+  border-bottom: var(--border);
+}
+.cars__text {
+  display: grid;
+  row-gap: 1.25rem;
+  padding-left: 2.1875rem;
+}
+.cars__subtitle {
+  color: var(--color-gray-blue-75);
+}
+.cars__comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 0.625rem;
+}
+.cars__comment-image {
+  display: inline-flex;
+  padding-right: 0.625rem;
+}
+.cars__comment-name {
+  font-family: var(--font-family-alternate);
+  font-weight: 900;
+  color: var(--color-gray-100);
+  padding-right: 0.3125rem;
+}
+.cars__comment-text {
+  padding-right: 0.9375rem;
+}
+
+.blog-actions__list {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+}
+.blog-actions__item {
+  display: flex;
+}
+.blog-actions__button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.34375rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.blog-actions__button--color-base {
+  color: var(--color-gray-30);
+}
+.blog-actions__button--color-gray {
+  color: var(--color-gray-blog);
+}
+.blog-actions__icon-wrapper {
+  display: flex;
+}
+.blog-actions__icon-wrapper svg path {
+  fill: currentColor;
+}
+@media (any-hover: hover) {
+  .blog-actions__icon-wrapper:hover svg path {
+    fill: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .blog-actions__icon-wrapper:active svg path {
+    fill: var(--color-accent);
+  }
+}
+.blog-actions__text {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--color-gray-50);
+  cursor: auto;
+}
+
+.art {
+  background: url("/img/popular/art/art-bg.jpg") center/cover no-repeat;
+}
+.art__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.125rem 1.5625rem 1.5625rem;
+}
+.art__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.125rem;
+  height: 1.5625rem;
+  text-transform: none;
+  color: var(--color-white);
+  background-color: var(--color-green-75);
+  border-radius: 0.1875rem;
+}
+.art__subtitle {
+  color: var(--color-purple-25);
+}
+.art__subtitle:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.art__title {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+.art__title:not(:last-child) {
+  margin-bottom: 1.125rem;
+}
+.art__person {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+}
+.art__person-content {
+  display: grid;
+  row-gap: 0.125rem;
+}
+.art__person-name {
+  color: var(--color-white);
+  opacity: 0.85;
+}
+
+.cats__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.cats__title {
+  padding: 0.9375rem 1.5625rem 1.875rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5625rem 1.5625rem 1.875rem;
+}
+.article__title:not(:last-child) {
+  margin-bottom: 0.3125rem;
+}
+.article__description {
+  flex-grow: 1;
+}
+.article__description:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.article__text {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--color-gray-50);
+}
+
+.header,
+main > *:not(:last-child),
+.footer {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

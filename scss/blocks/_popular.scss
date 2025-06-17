@@ -1,0 +1,59 @@
+@use 'helpers' as *;
+
+.popular {
+    &__inner {
+        display: grid;
+        grid-template-columns: 76.93% 23.07%;
+        gap: rem(30);
+    }
+
+    &__body {
+        display: grid;
+        grid-column: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-template-areas: 
+            "cars cars art"
+            "cats coffee manufacture"
+            "cats stress treat"
+        ;
+        gap: rem(30);
+    }
+
+    &__cars,
+    &__art,
+    &__cats,
+    &__coffee,
+    &__manufacture,
+    &__stress,
+    &__treat {
+        background-color: var(--color-white);
+        border-radius: var(--border-radius);
+    }
+
+    &__cars {
+        grid-area: cars;
+    }
+
+    &__art {
+        grid-area: art;
+    }
+
+    &__cats {
+        grid-area: cats;
+    }
+
+    &__coffee {
+        grid-area: coffee;
+    }
+
+    &__manufacture {
+        grid-area: manufacture;
+    }
+    
+    &__stress {
+        grid-area: stress;
+    }
+
+    &__treat {
+        grid-area: treat;
+    }
+}

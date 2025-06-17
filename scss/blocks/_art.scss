@@ -1,0 +1,58 @@
+@use 'helpers' as *;
+
+.art {
+    background: url('/img/popular/art/art-bg.jpg') center/cover no-repeat;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: rem(18) rem(25) rem(25);
+    }
+
+    &__tag {
+        @include flex-center;
+
+        width: rem(66);
+        height: rem(25);
+        text-transform: none;
+        color: var(--color-white);
+        background-color: var(--color-green-75);
+        border-radius: rem(3);
+    }
+
+    &__subtitle {
+        color: var(--color-purple-25);
+
+        &:not(:last-child) {
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__title {
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--color-white);
+
+        &:not(:last-child) {
+            margin-bottom: rem(18);
+        }
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        column-gap: rem(10);
+
+        &-content {
+            display: grid;
+            row-gap: rem(2);
+        }
+
+        &-name {
+            color: var(--color-white);
+            opacity: 0.85;
+        }
+    }
+}

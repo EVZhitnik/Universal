@@ -1,0 +1,42 @@
+@use 'helpers' as *;
+
+.cars {
+    &__body {
+        display: flex;
+        align-items: center;
+        padding-top: rem(15);
+        border-bottom: var(--border);
+    }
+
+    &__text {
+        display: grid;
+        row-gap: rem(20);
+        padding-left: rem(35);
+    }
+
+    &__subtitle {
+        color: var(--color-gray-blue-75);
+    }
+
+    &__comment {
+        @include flex-center;
+
+        padding: rem(12) rem(10);
+
+        &-image {
+            display: inline-flex;
+            padding-right: rem(10);
+        }
+
+        &-name {
+            font-family: var(--font-family-alternate);
+            font-weight: 900;
+            color: var(--color-gray-100);
+            padding-right: rem(5);
+        }
+
+        &-text {
+            padding-right: rem(15);
+        }
+    }
+}
