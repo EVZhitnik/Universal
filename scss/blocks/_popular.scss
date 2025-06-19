@@ -1,0 +1,92 @@
+@use 'helpers' as *;
+
+.popular {
+    &__inner {
+        display: grid;
+        grid-column: repeat(3, 1fr) / repeat(4, 1fr);
+        grid-template-areas: 
+            "cars cars art columns"
+            "cats coffee manufacture columns"
+            "cats stress treat columns"
+        ;
+        gap: rem(30);
+
+        @include tablet {
+            grid-column: repeat(4, 1fr) / repeat(3, 1fr);
+            grid-template-areas: 
+                "cars cars art"
+                "columns cats coffee"
+                "columns cats manufacture"
+                "columns stress treat"
+            ;
+        }
+
+        @include mobile {
+            grid-column: repeat(4, 1fr) / repeat(2, 1fr);
+            grid-template-areas: 
+                "cars cars"
+                "art columns"
+                "cats columns"
+                "coffee manufacture"
+                "stress treat"
+            ;
+        }
+
+        @include mobile-s {
+            grid-column: 1fr;
+            grid-template-areas: 
+                "cars"
+                "art"
+                "columns"
+                "cats"
+                "coffee"
+                "manufacture"
+                "stress"
+                "treat"
+            ;
+        }
+    }
+
+    &__cars,
+    &__art,
+    &__cats,
+    &__coffee,
+    &__manufacture,
+    &__stress,
+    &__treat {
+        background-color: var(--color-white);
+        border-radius: var(--border-radius);
+    }
+
+    &__cars {
+        grid-area: cars;
+    }
+
+    &__art {
+        grid-area: art;
+    }
+
+    &__cats {
+        grid-area: cats;
+    }
+
+    &__coffee {
+        grid-area: coffee;
+    }
+
+    &__manufacture {
+        grid-area: manufacture;
+    }
+    
+    &__stress {
+        grid-area: stress;
+    }
+
+    &__treat {
+        grid-area: treat;
+    }
+
+    &__columns {
+        grid-area: columns;
+    }
+}

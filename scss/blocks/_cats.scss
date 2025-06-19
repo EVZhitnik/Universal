@@ -1,0 +1,13 @@
+@use 'helpers' as *;
+
+.cats {
+    &__image {
+        @include square(100%);
+
+        border-radius: rem(10) rem(10) 0 0;
+    }
+
+    &__title-link {
+        padding: rem(15) rem(25) rem(30);
+    }
+}

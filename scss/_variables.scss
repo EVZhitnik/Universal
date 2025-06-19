@@ -25,9 +25,12 @@
     --color-circle: #D1E2EB;
     --color-shadow: rgba(64, 48, 61, 0.35);
     --color-bg: #EDEFF0;
-    --color-accent: #fcc490;
+    --color-gray-blog: #86888F;
+    --color-accent: #FCC490;
+
 
     --border: #{rem(1)} solid var(--color-gray-15);
+    --border-columns: #{rem(1)} solid var(--color-gray-blue-50);
     --border-articles: #{rem(1)} solid var(--color-gray-85);
     --border-button-play-video: #{rem(3)} solid rgba(255, 255, 255, 0.4);
 
