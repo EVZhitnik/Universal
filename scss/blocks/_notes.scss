@@ -1,0 +1,45 @@
+@use 'helpers' as *;
+
+.notes {
+    &__plants {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        row-gap: rem(25);
+        padding-top: rem(50);
+        padding-bottom: rem(55);
+        background: url('/img/notes/notes-bg.jpg') center/cover no-repeat;
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-shadow);
+            border-radius: 0.625rem 0 0 0.625rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(60)
+        }
+
+        &-title {
+            position: relative;
+            z-index: 20;
+            text-align: center;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 74.38% 23.07%;
+        gap: rem(30);
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+    }
+}

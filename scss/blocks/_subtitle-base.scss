@@ -8,4 +8,20 @@
     line-height: 1.25;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    &--blue {
+        color: var(--color-blue-60);
+    }
+
+    &--blue-green {
+        color: var(--color-blue-green-75);
+    }
+
+    &--red {
+        color: var(--color-red-75);
+    }
+
+    &--purple {
+        color: var(--color-purple-75);
+    }
 }
