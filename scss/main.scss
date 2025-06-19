@@ -27,6 +27,10 @@
 @use 'blocks/article.scss';
 @use 'blocks/columns.scss';
 
+@use 'blocks/notes.scss';
+@use 'blocks/notes-block.scss';
+@use 'blocks/notes-aside.scss';
+
 // .header,
 // main > *:not(:last-child),
 // .footer {

@@ -1,6 +1,10 @@
 @use 'helpers' as *;
 
 .popular {
+    &:not(:last-child) {
+        margin-bottom: rem(60);
+    }
+
     &__inner {
         display: grid;
         grid-column: repeat(3, 1fr) / repeat(4, 1fr);

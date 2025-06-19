@@ -1,0 +1,60 @@
+@use 'helpers' as *;
+
+.notes-block {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: rem(25);
+        padding: rem(25);
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: rem(25);
+        }
+    }
+
+    &__bookmark {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        svg {
+            cursor: pointer;
+            
+            path {
+                fill: var(--color-gray-30);
+
+                &:active {
+                    fill: var(--color-red-75);
+                }
+
+                &:focus {
+                    fill: var(--color-red-75);
+                }
+            }
+        }
+    }
+
+    &__subtitle {
+        &:not(:last-child) {
+            margin-bottom: rem(15);
+        }
+    }
+
+    &__title {
+        color: var(--color-gray-100);
+
+        &:not(:last-child) {
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__description {
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+}

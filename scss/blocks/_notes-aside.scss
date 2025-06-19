@@ -1,0 +1,117 @@
+@use 'helpers' as *;
+
+.notes-aside {
+    height: fit-content;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+
+    &__heading {
+        display: inline-block;
+        width: 100%;
+        font-family: var(--font-family-alternate);
+        font-weight: 900;
+        font-size: rem(14);
+        line-height: 1.43;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-gray-100);
+        padding: rem(20) rem(25);
+        border-bottom: var(--border);
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: rem(10);
+        margin-inline: rem(25);
+        padding-block: rem(17); 
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7) {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                translate: 0 -50%;
+                width: rem(41);
+                height: rem(50);
+            }
+        }
+
+        &:nth-child(1) {
+            &::after {
+                background: url('/icon/numbers/1.svg') center/contain no-repeat;
+            }
+        }
+
+        &:nth-child(2) {
+            &::after {
+                background: url('/icon/numbers/2.svg') center/contain no-repeat;
+            }
+        }
+
+        &:nth-child(3) {
+            &::after {
+                background: url('/icon/numbers/3.svg') center/contain no-repeat;
+            }
+        }
+
+        &:nth-child(4) {
+            &::after {
+                background: url('/icon/numbers/4.svg') center/contain no-repeat;
+            }
+        }
+
+        &:nth-child(5) {
+            &::after {
+                background: url('/icon/numbers/5.svg') center/contain no-repeat;
+            }
+        }
+
+        &:nth-child(6) {
+            &::after {
+                background: url('/icon/numbers/6.svg') center/contain no-repeat;
+            }
+        }
+
+        &:nth-child(7) {
+            &::after {
+                background: url('/icon/numbers/7.svg') center/contain no-repeat;
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: var(--border);
+        }
+    }
+
+    &__text {
+        display: grid;
+        row-gap: rem(5);
+    }
+
+    &__time {
+        font-size: rem(12);
+        line-height: 1.25;
+        color: var(--color-gray-50);
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        font-family: var(--font-family-alternate);
+        font-weight: 900;
+        text-align: center;
+        color: var(--color-gray-100);
+        padding-top: rem(11);
+        padding-bottom: rem(14);
+        border-top: var(--border);
+    }
+}
