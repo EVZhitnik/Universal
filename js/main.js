@@ -7,4 +7,3 @@ initializeHeader();
 new TabsCollection();
 initVideoPlayers();
 // initScrollHide();
-
