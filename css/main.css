@@ -1376,12 +1376,12 @@ a[class] {
 .art__subtitle:not(:last-child) {
   margin-bottom: 0.625rem;
 }
-.art__title {
+.art__title-link {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-white);
 }
-.art__title:not(:last-child) {
+.art__title-link:not(:last-child) {
   margin-bottom: 1.125rem;
 }
 .art__person {
@@ -1403,7 +1403,7 @@ a[class] {
   height: 100%;
   border-radius: 0.625rem 0.625rem 0 0;
 }
-.cats__title {
+.cats__title-link {
   padding: 0.9375rem 1.5625rem 1.875rem;
 }
 
@@ -1412,7 +1412,7 @@ a[class] {
   flex-direction: column;
   padding: 1.5625rem 1.5625rem 1.875rem;
 }
-.article__title:not(:last-child) {
+.article__title-link:not(:last-child) {
   margin-bottom: 0.3125rem;
 }
 .article__description {
@@ -1461,11 +1461,11 @@ a[class] {
   left: 0;
   background: url("/icon/quote.svg") center/contain no-repeat;
 }
-.columns__title {
+.columns__title-link {
   position: relative;
   z-index: 20;
 }
-.columns__title:not(:last-child) {
+.columns__title-link:not(:last-child) {
   margin-bottom: 0.9375rem;
 }
 .columns__link {
