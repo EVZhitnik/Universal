@@ -3,8 +3,12 @@
 .popular {
     &__inner {
         display: grid;
-        grid-template-columns: 76.93% 23.07%;
+        grid-template-columns: 74.30% 23.07%;
         gap: rem(30);
+
+        @include tablet {
+            grid-template-columns: 1fr; 
+        }
     }
 
     &__body {
@@ -16,6 +20,29 @@
             "cats stress treat"
         ;
         gap: rem(30);
+
+        @include mobile {
+            grid-column: repeat(4, 1fr) / repeat(2, 1fr);
+            grid-template-areas: 
+                "cars cars"
+                "art cats"
+                "coffee manufacture"
+                "stress treat"
+            ;
+        }
+
+        @include mobile-s {
+            grid-column: 1fr;
+            grid-template-areas: 
+                "cars"
+                "art"
+                "cats"
+                "coffee"
+                "manufacture"
+                "stress"
+                "treat"
+            ;
+        }
     }
 
     &__cars,

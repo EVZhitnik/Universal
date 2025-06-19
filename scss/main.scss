@@ -25,9 +25,10 @@
 @use 'blocks/art.scss';
 @use 'blocks/cats.scss';
 @use 'blocks/article.scss';
+@use 'blocks/popular-columns.scss';
 
-.header,
-main > *:not(:last-child),
-.footer {
-    display: none !important;
-}
+// .header,
+// main > *:not(:last-child),
+// .footer {
+//     display: none !important;
+// }
