@@ -1190,30 +1190,26 @@ a[class] {
 
 .popular__inner {
   display: grid;
-  grid-template-columns: 74.3% 23.07%;
+  grid-column: repeat(3, 1fr)/repeat(4, 1fr);
+  grid-template-areas: "cars cars art columns" "cats coffee manufacture columns" "cats stress treat columns";
   gap: 1.875rem;
 }
 @media (width <= 63.99875rem) {
   .popular__inner {
-    grid-template-columns: 1fr;
+    grid-column: repeat(4, 1fr)/repeat(3, 1fr);
+    grid-template-areas: "cars cars art" "columns cats coffee" "columns cats manufacture" "columns stress treat";
   }
 }
-.popular__body {
-  display: grid;
-  grid-column: repeat(3, 1fr)/repeat(3, 1fr);
-  grid-template-areas: "cars cars art" "cats coffee manufacture" "cats stress treat";
-  gap: 1.875rem;
-}
 @media (width <= 47.99875rem) {
-  .popular__body {
+  .popular__inner {
     grid-column: repeat(4, 1fr)/repeat(2, 1fr);
-    grid-template-areas: "cars cars" "art cats" "coffee manufacture" "stress treat";
+    grid-template-areas: "cars cars" "art columns" "cats columns" "coffee manufacture" "stress treat";
   }
 }
 @media (width <= 30.06125rem) {
-  .popular__body {
+  .popular__inner {
     grid-column: 1fr;
-    grid-template-areas: "cars" "art" "cats" "coffee" "manufacture" "stress" "treat";
+    grid-template-areas: "cars" "art" "columns" "cats" "coffee" "manufacture" "stress" "treat";
   }
 }
 .popular__cars, .popular__art, .popular__cats, .popular__coffee, .popular__manufacture, .popular__stress, .popular__treat {
@@ -1240,6 +1236,9 @@ a[class] {
 }
 .popular__treat {
   grid-area: treat;
+}
+.popular__columns {
+  grid-area: columns;
 }
 
 .cars__body {
@@ -1428,7 +1427,7 @@ a[class] {
   color: var(--color-gray-50);
 }
 
-.popular-columns {
+.columns {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1437,33 +1436,39 @@ a[class] {
   color: var(--color-white);
   border-radius: var(--border-radius);
 }
-.popular-columns__heading {
+.columns__heading {
   color: currentColor;
   padding: 1.25rem 1.5625rem;
   border-bottom: var(--border-columns);
 }
-.popular-columns__list {
-  width: 100%;
-}
-.popular-columns__item {
+.columns__item {
+  position: relative;
   margin-inline: 1.5625rem;
   padding-top: 2.8125rem;
   padding-bottom: 2.5rem;
   padding-left: 0.625rem;
 }
-@media (width <= 63.99875rem) {
-  .popular-columns__item {
-    padding-top: 1.25rem;
-    padding-bottom: 0.9375rem;
-  }
-}
-.popular-columns__item:not(:last-child) {
+.columns__item:not(:last-child) {
   border-bottom: var(--border-columns);
 }
-.popular-columns__title:not(:last-child) {
+.columns__item::before {
+  width: 2.5rem;
+  height: 2.5rem;
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 2.1875rem;
+  left: 0;
+  background: url("/icon/quote.svg") center/contain no-repeat;
+}
+.columns__title {
+  position: relative;
+  z-index: 20;
+}
+.columns__title:not(:last-child) {
   margin-bottom: 0.9375rem;
 }
-.popular-columns__link {
+.columns__link {
   display: inline-block;
   font-family: var(--font-family-alternate);
   text-align: center;

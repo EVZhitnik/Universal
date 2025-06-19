@@ -1,6 +1,6 @@
 @use 'helpers' as *;
 
-.popular-columns {
+.columns {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,27 +15,32 @@
         border-bottom: var(--border-columns);
     }
 
-    &__list {
-        width: 100%;
-    }
-
     &__item {
+        position: relative;
         margin-inline: rem(25);
         padding-top: rem(45);
         padding-bottom: rem(40);
         padding-left: rem(10);
 
-        @include tablet {
-            padding-top: rem(20);
-            padding-bottom: rem(15);
-        }
-
         &:not(:last-child) {
             border-bottom: var(--border-columns);
+        }
+
+        &::before {
+            @include square(rem(40));
+
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: rem(35);
+            left: 0;
+            background: url('/icon/quote.svg') center/contain no-repeat;
         }
     }
 
     &__title {
+        position: relative;
+        z-index: 20;
         &:not(:last-child) {
             margin-bottom: rem(15);
         }

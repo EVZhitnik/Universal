@@ -3,29 +3,30 @@
 .popular {
     &__inner {
         display: grid;
-        grid-template-columns: 74.30% 23.07%;
+        grid-column: repeat(3, 1fr) / repeat(4, 1fr);
+        grid-template-areas: 
+            "cars cars art columns"
+            "cats coffee manufacture columns"
+            "cats stress treat columns"
+        ;
         gap: rem(30);
 
         @include tablet {
-            grid-template-columns: 1fr; 
+            grid-column: repeat(4, 1fr) / repeat(3, 1fr);
+            grid-template-areas: 
+                "cars cars art"
+                "columns cats coffee"
+                "columns cats manufacture"
+                "columns stress treat"
+            ;
         }
-    }
-
-    &__body {
-        display: grid;
-        grid-column: repeat(3, 1fr) / repeat(3, 1fr);
-        grid-template-areas: 
-            "cars cars art"
-            "cats coffee manufacture"
-            "cats stress treat"
-        ;
-        gap: rem(30);
 
         @include mobile {
             grid-column: repeat(4, 1fr) / repeat(2, 1fr);
             grid-template-areas: 
                 "cars cars"
-                "art cats"
+                "art columns"
+                "cats columns"
                 "coffee manufacture"
                 "stress treat"
             ;
@@ -36,6 +37,7 @@
             grid-template-areas: 
                 "cars"
                 "art"
+                "columns"
                 "cats"
                 "coffee"
                 "manufacture"
@@ -82,5 +84,9 @@
 
     &__treat {
         grid-area: treat;
+    }
+
+    &__columns {
+        grid-area: columns;
     }
 }
