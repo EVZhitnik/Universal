@@ -1,0 +1,9 @@
+@use 'helpers' as *;
+
+.soc1als {
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: rem(15);
+    }
+}

@@ -1,0 +1,16 @@
+@use 'helpers' as *;
+
+.field {
+    &__input {
+        color: var(--color-gray-100);
+        padding: rem(10) rem(15);
+        width: rem(313);
+        height: rem(40);
+        border: var(--border);
+        border-radius: var(--border-radius-form);
+
+        @include mobile-s {
+            width: rem(280);
+        }
+    }
+}
