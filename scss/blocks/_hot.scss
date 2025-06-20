@@ -1,0 +1,59 @@
+@use 'helpers' as *;
+
+.hot {
+    background-color: var(--color-gray-100);
+    padding-block: rem(60);
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'slider careers careers'
+            'slider coffee manufacture'
+        ;
+        gap: rem(30);
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+                'slider careers'
+                'coffee manufacture'
+            ;
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                'slider'
+                'careers'
+                'coffee'
+                'manufacture'
+            ;
+        }
+    }
+
+    &__careers,
+    &__coffee,
+    &__manufacture {
+        border-radius: var(--border-radius);
+    }
+
+    &__slider {
+        grid-area: slider;
+    }
+
+    &__careers {
+        grid-area: careers;
+        background-color: var(--color-gray-blue-50);
+    }
+
+    &__coffee {
+        grid-area: coffee;
+        background-color: var(--color-white);
+    }
+
+    &__manufacture {
+        grid-area: manufacture;
+        background-color: var(--color-white);
+    }
+}

@@ -1,0 +1,94 @@
+@use 'helpers' as *;
+
+.swiper {
+    width: min(48.68vw, rem(555));
+    height: 100%;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+
+    @include mobile {
+        width: 90vw;
+        height: rem(400);
+    }
+
+    &-slide {
+        position: relative;
+        background: url('/img/hot/hot-bg.jpg') 100%/cover no-repeat;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-shadow);
+            object-fit: cover;
+        } 
+
+        &__subtitle {
+            @include flex-center(true);
+
+            position: relative;
+            z-index: 20;
+            width: rem(45);
+            height: rem(25);
+            margin-top: rem(18);
+            margin-left: rem(18);
+            font-weight: 900;
+            text-transform: none;
+            color: var(--color-white);
+            background-color: var(--color-red-75);
+            border-radius: rem(3);
+
+            &:not(:last-child) {
+                margin-bottom: rem(7);
+            }
+        }
+
+        &__content {
+            position: relative;
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: rem(455);
+            margin: 0 auto;
+            padding-inline: rem(16);
+        }
+
+        &__title {
+            &:not(:last-child) {
+                margin-bottom: rem(45);
+            }
+        }
+    }
+
+    &-custom {
+        &__pagination {
+            @include flex-center;
+
+            position: relative;
+            bottom: rem(46) !important;
+            z-index: 20;
+            gap: rem(17);
+        }
+        
+        &__bullet {
+            @include square(rem(8));
+
+            background-color: var(--color-gray-50);
+            border-radius: 50%;
+            transition-duration: var(--transition-duration);
+            cursor: pointer;
+
+            &-active {
+                @include square(rem(20));
+
+                background-color: none;
+                background: url('/icon/pag-active.svg') center/contain no-repeat;
+            }
+        }
+    }
+}
