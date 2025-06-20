@@ -1,6 +1,10 @@
 @use 'helpers' as *;
 
 .notes {
+    &:not(:last-child) {
+        margin-bottom: rem(60);
+    }
+    
     &__plants {
         position: relative;
         display: grid;

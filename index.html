@@ -7,6 +7,8 @@
     <title>Universal</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="/js/main.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header" data-js-header>
@@ -1066,92 +1068,113 @@
             </div>
         </section>
         <section class="hot" aria-labelledby="title-hot">
-            <h2 class="hot__title visually__hidden" id="title-hot">Hot</h2>
+            <h2 class="hot__title visually-hidden" id="title-hot">Hot</h2>
             <div class="hot__inner container">
                 <div class="hot__slider">
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <span class="swiper-slide__subtitle">Hot</span>
-                                <div class="swiper-slide__person person">
-                                    <img class="person__icon" src="/img/person/4.png" alt="" width="45" height="45" loading="lazy">
-                                    <div class="person__text">
-                                        <span class="person__name person__name--opacity">By Sarah Jenkins</span>
-                                        <span class="person__department person__department--opacity">Photographer</span>
+                                <span class="swiper-slide__subtitle subtitle-base">Hot</span>
+                                <div class="swiper-slide__content">
+                                    <div class="swiper-slide__person person person--hot">
+                                        <img class="person__icon" src="/img/person/4.png" alt="" width="45" height="45" loading="lazy">
+                                        <div class="person__text">
+                                            <span class="person__name person__name--opacity">By Sarah Jenkins</span>
+                                            <span class="person__department person__department--opacity">Photographer</span>
+                                        </div>
                                     </div>
+                                    <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
+                                    <a class="swiper-slide__link button-base" href="/">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6V4C3 3.44772 3.44772 3 4 3H18C18.5523 3 19 3.44772 19 4V14C19 14.5523 18.5523 15 18 15H16V17C16 17.5523 15.5523 18 15 18H1C0.447715 18 0 17.5523 0 17V7C0 6.44772 0.447715 6 1 6H3ZM15 15H4C3.44772 15 3 14.5523 3 14V7H1V17H15V15ZM4 4V14H18V4H4ZM18 14H4V13L7 10L10 12L14 8L18 13V14ZM9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5C11 8.32843 10.3284 9 9.5 9Z" fill="white"/>
+                                        </svg>
+                                        Watch photos
+                                        <span>26</span>
+                                    </a>
                                 </div>
-                                <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
-                                <a class="swiper-slide__link button-photo" href="/">
-                                    Watch photos
-                                    <span>26</span>
-                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <span class="swiper-slide__subtitle">Hot</span>
-                                <div class="swiper-slide__person person">
-                                    <img class="person__icon" src="/img/recommendations/tabs/tabs-person-4.png" alt="" width="45" height="45" loading="lazy">
-                                    <div class="person__text">
-                                        <span class="person__name person__name--opacity">By Sarah Jenkins</span>
-                                        <span class="person__department person__department--opacity">Photographer</span>
+                                <span class="swiper-slide__subtitle subtitle-base">Hot</span>
+                                <div class="swiper-slide__content">
+                                    <div class="swiper-slide__person person person--hot">
+                                        <img class="person__icon" src="/img/person/4.png" alt="" width="45" height="45" loading="lazy">
+                                        <div class="person__text">
+                                            <span class="person__name person__name--opacity">By Sarah Jenkins</span>
+                                            <span class="person__department person__department--opacity">Photographer</span>
+                                        </div>
                                     </div>
+                                    <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
+                                    <a class="swiper-slide__link button-base" href="/">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6V4C3 3.44772 3.44772 3 4 3H18C18.5523 3 19 3.44772 19 4V14C19 14.5523 18.5523 15 18 15H16V17C16 17.5523 15.5523 18 15 18H1C0.447715 18 0 17.5523 0 17V7C0 6.44772 0.447715 6 1 6H3ZM15 15H4C3.44772 15 3 14.5523 3 14V7H1V17H15V15ZM4 4V14H18V4H4ZM18 14H4V13L7 10L10 12L14 8L18 13V14ZM9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5C11 8.32843 10.3284 9 9.5 9Z" fill="white"/>
+                                        </svg>
+                                        Watch photos
+                                        <span>26</span>
+                                    </a>
                                 </div>
-                                <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
-                                <a class="swiper-slide__link button-photo" href="/">
-                                    Watch photos
-                                    <span>26</span>
-                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <span class="swiper-slide__subtitle">Hot</span>
-                                <div class="swiper-slide__person person">
-                                    <img class="person__icon" src="/img/recommendations/tabs/tabs-person-4.png" alt="" width="45" height="45" loading="lazy">
-                                    <div class="person__text">
-                                        <span class="person__name person__name--opacity">By Sarah Jenkins</span>
-                                        <span class="person__department person__department--opacity">Photographer</span>
+                                <span class="swiper-slide__subtitle subtitle-base">Hot</span>
+                                <div class="swiper-slide__content">
+                                    <div class="swiper-slide__person person person--hot">
+                                        <img class="person__icon" src="/img/person/4.png" alt="" width="45" height="45" loading="lazy">
+                                        <div class="person__text">
+                                            <span class="person__name person__name--opacity">By Sarah Jenkins</span>
+                                            <span class="person__department person__department--opacity">Photographer</span>
+                                        </div>
                                     </div>
+                                    <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
+                                    <a class="swiper-slide__link button-base" href="/">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6V4C3 3.44772 3.44772 3 4 3H18C18.5523 3 19 3.44772 19 4V14C19 14.5523 18.5523 15 18 15H16V17C16 17.5523 15.5523 18 15 18H1C0.447715 18 0 17.5523 0 17V7C0 6.44772 0.447715 6 1 6H3ZM15 15H4C3.44772 15 3 14.5523 3 14V7H1V17H15V15ZM4 4V14H18V4H4ZM18 14H4V13L7 10L10 12L14 8L18 13V14ZM9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5C11 8.32843 10.3284 9 9.5 9Z" fill="white"/>
+                                        </svg>
+                                        Watch photos
+                                        <span>26</span>
+                                    </a>
                                 </div>
-                                <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
-                                <a class="swiper-slide__link button-photo" href="/">
-                                    Watch photos
-                                    <span>26</span>
-                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <span class="swiper-slide__subtitle">Hot</span>
-                                <div class="swiper-slide__person person">
-                                    <img class="person__icon" src="/img/recommendations/tabs/tabs-person-4.png" alt="" width="45" height="45" loading="lazy">
-                                    <div class="person__text">
-                                        <span class="person__name person__name--opacity">By Sarah Jenkins</span>
-                                        <span class="person__department person__department--opacity">Photographer</span>
+                                <span class="swiper-slide__subtitle subtitle-base">Hot</span>
+                                <div class="swiper-slide__content">
+                                    <div class="swiper-slide__person person person--hot">
+                                        <img class="person__icon" src="/img/person/4.png" alt="" width="45" height="45" loading="lazy">
+                                        <div class="person__text">
+                                            <span class="person__name person__name--opacity">By Sarah Jenkins</span>
+                                            <span class="person__department person__department--opacity">Photographer</span>
+                                        </div>
                                     </div>
+                                    <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
+                                    <a class="swiper-slide__link button-base" href="/">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6V4C3 3.44772 3.44772 3 4 3H18C18.5523 3 19 3.44772 19 4V14C19 14.5523 18.5523 15 18 15H16V17C16 17.5523 15.5523 18 15 18H1C0.447715 18 0 17.5523 0 17V7C0 6.44772 0.447715 6 1 6H3ZM15 15H4C3.44772 15 3 14.5523 3 14V7H1V17H15V15ZM4 4V14H18V4H4ZM18 14H4V13L7 10L10 12L14 8L18 13V14ZM9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5C11 8.32843 10.3284 9 9.5 9Z" fill="white"/>
+                                        </svg>
+                                        Watch photos
+                                        <span>26</span>
+                                    </a>
                                 </div>
-                                <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
-                                <a class="swiper-slide__link button-photo" href="/">
-                                    Watch photos
-                                    <span>26</span>
-                                </a>
                             </div>
                             <div class="swiper-slide">
-                                <span class="swiper-slide__subtitle">Hot</span>
-                                <div class="swiper-slide__person person">
-                                    <img class="person__icon" src="/img/recommendations/tabs/tabs-person-4.png" alt="" width="45" height="45" loading="lazy">
-                                    <div class="person__text">
-                                        <span class="person__name person__name--opacity">By Sarah Jenkins</span>
-                                        <span class="person__department person__department--opacity">Photographer</span>
+                                <span class="swiper-slide__subtitle subtitle-base">Hot</span>
+                                <div class="swiper-slide__content">
+                                    <div class="swiper-slide__person person person--hot">
+                                        <img class="person__icon" src="/img/person/4.png" alt="" width="45" height="45" loading="lazy">
+                                        <div class="person__text">
+                                            <span class="person__name person__name--opacity">By Sarah Jenkins</span>
+                                            <span class="person__department person__department--opacity">Photographer</span>
+                                        </div>
                                     </div>
+                                    <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
+                                    <a class="swiper-slide__link button-base" href="/">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6V4C3 3.44772 3.44772 3 4 3H18C18.5523 3 19 3.44772 19 4V14C19 14.5523 18.5523 15 18 15H16V17C16 17.5523 15.5523 18 15 18H1C0.447715 18 0 17.5523 0 17V7C0 6.44772 0.447715 6 1 6H3ZM15 15H4C3.44772 15 3 14.5523 3 14V7H1V17H15V15ZM4 4V14H18V4H4ZM18 14H4V13L7 10L10 12L14 8L18 13V14ZM9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5C11 8.32843 10.3284 9 9.5 9Z" fill="white"/>
+                                        </svg>
+                                        Watch photos
+                                        <span>26</span>
+                                    </a>
                                 </div>
-                                <h3 class="swiper-slide__title h2">Readers' Choice winners: Your wine country favorites</h3>
-                                <a class="swiper-slide__link button-photo" href="/">
-                                    Watch photos
-                                    <span>26</span>
-                                </a>
                             </div>
                         </div>
-                        <div class="custom-pagination">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 14C7.79088 14 6.00002 12.2091 6.00002 10C6.00002 7.79086 7.79088 6 10 6C12.2092 6 14 7.79086 14 10C14 12.2091 12.2092 14 10 14ZM2.92896 17.0711L4.34317 15.6569C5.79088 17.1046 7.79088 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2V0C15.5229 0 20 4.47715 20 10C20 15.5228 15.5229 20 10 20C7.2386 20 4.7386 18.8807 2.92896 17.0711Z" fill="white"/>
-                            </svg>
+                        <div class="swiper-custom__pagination">
                         </div>
                     </div>
                 </div>
@@ -1159,16 +1182,21 @@
                     <div class="careers__body">
                         <div class="careers__content">
                             <span class="careers__subtitle subtitle-base">Careers</span>
-                            <h4 class="careers__title h5">Had a Job Interview but No Callback? Here’s What to Do</h4>
+                            <h4 class="careers__title h3">Had a Job Interview but No Callback? Here’s What to Do</h4>
                             <div class="careers__description">
                                 <p>
                                     Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize
                                 </p>
                             </div>
-                            <a class="careers__link button-base" href="/">Read more</a>
+                            <a class="careers__link button-base" href="/">
+                                Read more
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.99951V3.99951H11V6.99951L15 3.49951L11 -0.000488281V2.99951H0Z" fill="white"/>
+                                </svg>                            
+                            </a>
                         </div>
                         <div class="careers__box-image">
-                            <img class="careeers__image" src="/img/hot/careers-bg.png" alt="" width="248" height="352" loading="lazy">
+                            <img class="careers__image" src="/img/hot/careers-bg.png" alt="" width="248" height="352" loading="lazy">
                         </div>
                     </div>
                 </article>
