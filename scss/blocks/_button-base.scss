@@ -34,4 +34,9 @@
         position: relative;
         top: rem(1)
     }
+
+    &--form {
+        padding: rem(10) rem(29);
+        border: none;
+    }
 }
