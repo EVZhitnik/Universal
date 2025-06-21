@@ -11,7 +11,6 @@
         display: flex;
     }
 
-
     &__button {
         display: inline-flex;
         align-items: center;
@@ -29,19 +28,21 @@
         }
     }
 
-    &__icon-wrapper {
-        display: flex;
+    &__icon {
+        &-wrapper {
+            display: flex;
 
-        svg {
-            path {
-                fill: currentColor;
-            }
-        }
-
-        @include hover {
             svg {
                 path {
-                    fill: var(--color-accent);
+                    fill: currentColor;
+                }
+            }
+
+            @include hover {
+                svg {
+                    path {
+                        fill: var(--color-accent);
+                    }
                 }
             }
         }

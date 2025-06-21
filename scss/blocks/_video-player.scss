@@ -3,40 +3,6 @@
 .video-player {
     position: relative;
 
-    &__video-wrapper {
-        position: relative;
-        height: rem(590);
-
-        @include mobile {
-            height: 100%;
-        }
-
-        @include mobile-s {
-            height: rem(300);
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-shadow);
-            border-radius: rem(10) 0 0 rem(10);
-
-            @include mobile {
-                border-radius: rem(10) rem(10) 0 0;
-            }
-        }
-
-        &.modified::after {
-            content: '';
-            position: relative;
-            background-color: transparent;
-        }
-    }
-
     &__video {
         @include square(100%);
 
@@ -45,6 +11,40 @@
 
         @include mobile {
             border-radius: rem(10) rem(10) 0 0;
+        }
+
+        &-wrapper {
+            position: relative;
+            height: rem(590);
+
+            @include mobile {
+                height: 100%;
+            }
+
+            @include mobile-s {
+                height: rem(300);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--color-shadow);
+                border-radius: rem(10) 0 0 rem(10);
+
+                @include mobile {
+                    border-radius: rem(10) rem(10) 0 0;
+                }
+            }
+
+            &.modified::after {
+                content: '';
+                position: relative;
+                background-color: transparent;
+            }
         }
     }
 
@@ -93,57 +93,59 @@
         } 
     }
 
-    &__buttons {
+    &__active {
         display: flex;
         align-items: center;
         column-gap: rem(30);
     }
 
-    &__play-video {
-        display: flex;
-        align-items: center;
-        column-gap: rem(10);
-
-        &-button {
-            @include square(rem(50));
-
+    &__play {
+        &-video {
             display: flex;
             align-items: center;
-            justify-content: center;
-            background-color: transparent;
-            border: var(--border-button-play-video);
-            border-radius: 50%;
+            column-gap: rem(10);
 
-            @include mobile-s {
-                @include square(rem(25));
-            }
+            &-button {
+                @include square(rem(50));
 
-            @include hover {
-                border-color: var(--color-accent);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                border: var(--border-button-play-video);
+                border-radius: 50%;
 
-                svg {
-                    path {
-                        fill: var(--color-accent);
+                @include mobile-s {
+                    @include square(rem(25));
+                }
+
+                @include hover {
+                    border-color: var(--color-accent);
+
+                    svg {
+                        path {
+                            fill: var(--color-accent);
+                        }
                     }
                 }
             }
-        }
 
-        &-text {
-            display: grid;
-            row-gap: rem(2);
-        }
+            &-text {
+                display: grid;
+                row-gap: rem(2);
+            }
 
-        &-name {
-            color: var(--color-white);
-            opacity: 0.85;
-        }
+            &-name {
+                color: var(--color-white);
+                opacity: 0.85;
+            }
 
-        &-time {
-            font-size: rem(12);
-            line-height: 1.25;
-            color: var(--color-white);
-            opacity: 0.4;
+            &-time {
+                font-size: rem(12);
+                line-height: 1.25;
+                color: var(--color-white);
+                opacity: 0.4;
+            }
         }
     }
 }

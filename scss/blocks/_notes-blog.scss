@@ -1,6 +1,6 @@
 @use 'helpers' as *;
 
-.notes-block {
+.notes-blog {
     background-color: var(--color-white);
     border-radius: var(--border-radius);
 
@@ -21,20 +21,20 @@
         justify-content: space-between;
         align-items: start;
 
-        svg {
-            cursor: pointer;
-            
+        &-color {
             path {
                 fill: var(--color-gray-30);
+            }
 
-                &:active {
-                    fill: var(--color-red-75);
-                }
-
-                &:focus {
+            &-active {
+                path {
                     fill: var(--color-red-75);
                 }
             }
+        }
+
+        svg {
+            cursor: pointer;
         }
     }
 
@@ -45,10 +45,12 @@
     }
 
     &__title {
-        color: var(--color-gray-100);
+        &-link {
+            color: var(--color-gray-100);
 
-        &:not(:last-child) {
-            margin-bottom: rem(10);
+            &:not(:last-child) {
+                margin-bottom: rem(10);
+            }
         }
     }
 

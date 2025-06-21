@@ -11,13 +11,14 @@
 @use 'blocks/stories-link.scss';
 @use 'blocks/header-bottom.scss';
 
-@use 'blocks/recommendations.scss';
-@use 'blocks/articles-card.scss';
+@use 'blocks/hero.scss';
+@use 'blocks/hero-articles.scss';
 @use 'blocks/tabs.scss';
 @use 'blocks/video-player.scss';
 @use 'blocks/person.scss';
 @use 'blocks/subtitle-base.scss';
 @use 'blocks/button-base.scss';
+@use 'blocks/aside-heading.scss';
 
 @use 'blocks/popular.scss';
 @use 'blocks/cars.scss';
@@ -28,7 +29,7 @@
 @use 'blocks/columns.scss';
 
 @use 'blocks/notes.scss';
-@use 'blocks/notes-block.scss';
+@use 'blocks/notes-blog.scss';
 @use 'blocks/notes-aside.scss';
 
 @use 'blocks/hot.scss';

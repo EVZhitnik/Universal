@@ -6,16 +6,6 @@
     border-radius: var(--border-radius);
 
     &__heading {
-        display: inline-block;
-        width: 100%;
-        font-family: var(--font-family-alternate);
-        font-weight: 900;
-        font-size: rem(14);
-        line-height: 1.43;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: var(--color-gray-100);
-        padding: rem(20) rem(25);
         border-bottom: var(--border);
     }
 
@@ -92,9 +82,11 @@
         }
     }
 
-    &__text {
-        display: grid;
-        row-gap: rem(5);
+    &__title {
+        &-link {
+            display: grid;
+            row-gap: rem(5);
+        }
     }
 
     &__time {

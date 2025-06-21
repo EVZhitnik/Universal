@@ -5,9 +5,11 @@
     flex-direction: column;
     padding: rem(25) rem(25) rem(30);
 
-    &__title-link {
-        &:not(:last-child) {
-            margin-bottom: rem(5);
+    &__title {
+        &-link {
+            &:not(:last-child) {
+                margin-bottom: rem(5);
+            }
         }
     }
 
@@ -19,7 +21,7 @@
         }
     }
 
-    &__text {
+    &__date {
         font-size: rem(12);
         line-height: 1.25;
         color: var(--color-gray-50);

@@ -1,6 +1,6 @@
 @use 'helpers' as *;
 
-.articles-card {
+.hero-articles {
     position: relative;
     z-index: 20;
 
@@ -56,6 +56,10 @@
         column-gap: rem(15);
     }
 
+    &__link {
+        color: var(--color-white);
+    }
+
     &__text {
         color: var(--color-white);
     }
@@ -63,5 +67,4 @@
     &__image {
         align-self: start;
     }
-
 }

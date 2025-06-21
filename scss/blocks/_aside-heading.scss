@@ -1,0 +1,10 @@
+@use 'helpers' as *;
+
+.aside-heading {
+    font-family: var(--font-family-alternate);
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-gray-100);
+    padding: rem(20) rem(25);
+}

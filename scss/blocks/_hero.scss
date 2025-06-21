@@ -1,12 +1,11 @@
 @use 'helpers' as *;
 
-.recommendations {
+.hero {
     position: relative;
 
     &::before {
         content: '';
         position: absolute;
-        z-index: 10;
         left: 0;
         bottom: 35%;
         width: 100%;
@@ -34,7 +33,6 @@
         }
 
         &-link {
-            position: relative;
             font-family: var(--font-family-alternate);
             font-weight: 900;
             letter-spacing: 0.04em;

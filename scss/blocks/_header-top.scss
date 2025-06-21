@@ -16,6 +16,7 @@
 
     &__navigation {
         display: flex;
+        align-items: center;
         height: 100%;
 
         @include mobile {
@@ -106,6 +107,7 @@
         column-gap: rem(12);
         border: none;
         padding: 0;
+        color: var(--color-gray-85);
 
         @include hover {
             svg {
@@ -113,10 +115,6 @@
                     fill: var(--color-accent);
                 }
             }
-        }
-
-        &-text {
-            color: var(--color-gray-85);
         }
     }
 }

@@ -7,33 +7,19 @@
         "img logo meteo"
     ;
     align-items: center;
-    height: 100%;
     column-gap: rem(15);
-    opacity: 1;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-
-    // &.is-hide {
-    //     display: none !important;
-    // }
 
     @include mobile {
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-        grid-template-areas: 
-            "img logo"
-            "meteo meteo"
-        ;
-
-        height: rem(120);
+        display: none;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-areas: 
+        //     "img logo"
+        //     "meteo meteo"
+        // ;
     }
 
     &__image {
         grid-area: img;
-        justify-self: end;
-        align-self: end;
-
-        @include mobile {
-            justify-self: start;
-        }
     }
 
     &__logo {
@@ -48,7 +34,6 @@
 
         @include mobile {
             justify-content: flex-end;
-            column-gap: 0;
         }
 
         &-text {

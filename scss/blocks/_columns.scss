@@ -38,11 +38,14 @@
         }
     }
 
-    &__title-link {
-        position: relative;
-        z-index: 20;
-        &:not(:last-child) {
-            margin-bottom: rem(15);
+    &__title {
+        &-link {
+            position: relative;
+            z-index: 20;
+
+            &:not(:last-child) {
+                margin-bottom: rem(15);
+            }
         }
     }
 
