@@ -13,7 +13,7 @@
 
     &-slide {
         position: relative;
-        background: url('/img/hot/hot-bg.jpg') 100%/cover no-repeat;
+        background: url('./img/hot/hot-bg.jpg') 100%/cover no-repeat;
 
         &::before {
             content: "";
@@ -87,7 +87,7 @@
                 @include square(rem(20));
 
                 background-color: none;
-                background: url('/icon/pag-active.svg') center/contain no-repeat;
+                background: url('./icon/pag-active.svg') center/contain no-repeat;
             }
         }
     }

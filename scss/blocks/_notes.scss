@@ -12,7 +12,7 @@
         row-gap: rem(25);
         padding-top: rem(50);
         padding-bottom: rem(55);
-        background: url('/img/notes/notes-bg.jpg') center/cover no-repeat;
+        background: url('./img/notes/notes-bg.jpg') center/cover no-repeat;
 
         &::after {
             content: '';
