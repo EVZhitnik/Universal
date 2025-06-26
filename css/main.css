@@ -740,20 +740,20 @@ a[class] {
 .hero:not(:last-child) {
   margin-bottom: 1.875rem;
 }
-.hero__categories {
+.hero-categories {
   position: relative;
   z-index: 20;
 }
-.hero__categories:not(:last-child) {
+.hero-categories:not(:last-child) {
   margin-bottom: 1.875rem;
 }
-.hero__categories-list {
+.hero-categories__list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.625rem 2.8125rem;
   padding-block: 1.125rem;
 }
-.hero__categories-link {
+.hero-categories__link {
   font-family: var(--font-family-alternate);
   font-weight: 900;
   letter-spacing: 0.04em;
@@ -761,12 +761,12 @@ a[class] {
   color: var(--color-white);
 }
 @media (any-hover: hover) {
-  .hero__categories-link:hover {
+  .hero-categories__link:hover {
     color: var(--color-accent);
   }
 }
 @media (any-hover: none) {
-  .hero__categories-link:active {
+  .hero-categories__link:active {
     color: var(--color-accent);
   }
 }

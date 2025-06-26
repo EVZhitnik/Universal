@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+.hero-categories {
+    position: relative;
+    z-index: 20;
+
+    &:not(:last-child) {
+        margin-bottom: rem(30);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(10) rem(45);
+        padding-block: rem(18);
+    }
+
+    &__link {
+        font-family: var(--font-family-alternate);
+        font-weight: 900;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-white);
+
+        @include hover {
+            color: var(--color-accent);
+        }
+    }
+}
