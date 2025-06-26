@@ -1,5 +1,5 @@
 function initSwiper() {
-    const swiper = new Swiper('.swiper', {
+    const swiperHot = new Swiper('.swiper-hot', {
         direction: 'horizontal',
         speed: 300,
         loop: true,
@@ -22,7 +22,7 @@ function initSwiper() {
         },
     });
 
-    return swiper;
+    return swiperHot;
 }
 
 export default initSwiper;

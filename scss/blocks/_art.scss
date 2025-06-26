@@ -1,7 +1,7 @@
 @use 'helpers' as *;
 
 .art {
-    background: url('./img/popular/art/art-bg.jpg') center/cover no-repeat;
+    background: url('../img/popular/art/art-bg.jpg') center/cover no-repeat;
 
     &__body {
         display: flex;
