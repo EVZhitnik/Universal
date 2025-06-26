@@ -740,6 +740,7 @@ a[class] {
 .hero:not(:last-child) {
   margin-bottom: 1.875rem;
 }
+
 .hero-categories {
   position: relative;
   z-index: 20;
