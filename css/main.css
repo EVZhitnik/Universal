@@ -1,28 +1,28 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/Lato-Regular.woff2") format("woff2");
+  src: url("../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato Heave";
-  src: url("/fonts/Lato-Heavy.woff2") format("woff2");
+  src: url("../fonts/Lato-Heavy.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto Slab";
-  src: url("/fonts/RobotoSlab-Bold.woff2") format("woff2");
+  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato Heavy Italic";
-  src: url("/fonts/Lato-HeavyItalic.woff2") format("woff2");
+  src: url("../fonts/Lato-HeavyItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -1354,7 +1354,7 @@ a[class] {
 }
 
 .art {
-  background: url("/img/popular/art/art-bg.jpg") center/cover no-repeat;
+  background: url("./img/popular/art/art-bg.jpg") center/cover no-repeat;
 }
 .art__body {
   display: flex;
@@ -1496,7 +1496,7 @@ a[class] {
   row-gap: 1.5625rem;
   padding-top: 3.125rem;
   padding-bottom: 3.4375rem;
-  background: url("/img/notes/notes-bg.jpg") center/cover no-repeat;
+  background: url("./img/notes/notes-bg.jpg") center/cover no-repeat;
 }
 .notes__plants::after {
   content: "";
@@ -1696,7 +1696,7 @@ a[class] {
 }
 .swiper-slide {
   position: relative;
-  background: url("/img/hot/hot-bg.jpg") 100%/cover no-repeat;
+  background: url("./img/hot/hot-bg.jpg") 100%/cover no-repeat;
 }
 .swiper-slide::before {
   content: "";
@@ -1762,7 +1762,7 @@ a[class] {
   width: 1.25rem;
   height: 1.25rem;
   background-color: none;
-  background: url("/icon/pag-active.svg") center/contain no-repeat;
+  background: url("./icon/pag-active.svg") center/contain no-repeat;
 }
 
 .careers__body {
