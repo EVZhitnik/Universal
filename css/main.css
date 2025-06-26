@@ -1683,14 +1683,14 @@ a[class] {
   background-color: var(--color-white);
 }
 
-.swiper {
+.swiper-hot {
   width: min(48.68vw, 34.6875rem);
   height: 100%;
   border-radius: var(--border-radius);
   cursor: pointer;
 }
 @media (width <= 47.99875rem) {
-  .swiper {
+  .swiper-hot {
     width: 85vw;
     height: 25rem;
   }
@@ -1989,6 +1989,12 @@ a[class] {
   display: flex;
   align-items: center;
   column-gap: 0.9375rem;
+}
+
+.header,
+main > *:not(:last-child),
+.footer {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
