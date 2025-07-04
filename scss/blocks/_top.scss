@@ -1,0 +1,9 @@
+@use 'helpers' as *;
+
+.top {
+    &__categories {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-gray-100);
+    }
+}

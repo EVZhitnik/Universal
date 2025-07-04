@@ -42,6 +42,9 @@
 @use 'blocks/field.scss';
 @use 'blocks/soc1als.scss';
 
+@use 'blocks/top.scss';
+@use 'blocks/button-slider.scss';
+
 .header,
 main > *:not(:last-child),
 .footer {
