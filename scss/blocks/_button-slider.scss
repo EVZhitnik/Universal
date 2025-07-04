@@ -1,0 +1,24 @@
+@use 'helpers' as *;
+
+.button-slider {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+    font-family: var(--font-family-alternate);
+    font-weight: 900;
+    font-size: rem(14);
+    line-height: 1.43;
+    padding: rem(10) rem(25);
+    border: var(--border-button-slider);
+    border-radius: var(--border-radius-button);
+    text-wrap: nowrap;
+
+    @include hover {
+        border-color: var(--color-accent);
+        svg {
+            path {
+                fill: var(--color-accent);
+            }
+        }
+    }
+}
