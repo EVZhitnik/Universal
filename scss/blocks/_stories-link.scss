@@ -5,6 +5,10 @@
     align-items: flex-end;
     column-gap: rem(10);
 
+    @include mobile {
+        display: none;
+    }
+
     &__image {
         border: var(--border-image);
         border-bottom: none;

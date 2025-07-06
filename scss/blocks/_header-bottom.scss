@@ -11,11 +11,6 @@
 
     @include mobile {
         display: none;
-        // grid-template-columns: repeat(2, 1fr);
-        // grid-template-areas: 
-        //     "img logo"
-        //     "meteo meteo"
-        // ;
     }
 
     &__image {

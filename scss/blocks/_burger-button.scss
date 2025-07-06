@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: space-between;
     padding: rem(3) rem(1);
-    color: var(--color-gray-30);
     cursor: pointer;
 
     &.is-active {
@@ -34,7 +33,7 @@
     &__line {
         width: 100%;
         height: rem(2);
-        background-color: currentColor;
+        background-color: var(--color-gray-30);
         transition-duration: var(--transition-duration);
     }
 

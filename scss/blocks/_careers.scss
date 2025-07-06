@@ -51,26 +51,28 @@
         }
     }
 
-    &__box-image {
-        position: relative;
-        align-self: end;
+    &__box {
+        &-image {
+            position: relative;
+            align-self: end;
 
-        @include tablet {
-            @include square(50%);
-        }
+            @include tablet {
+                @include square(50%);
+            }
 
-        @include tablet {
-            align-self: auto;
-        }
+            @include tablet {
+                align-self: auto;
+            }
 
-        &::before {
-            @include abs-center;
+            &::before {
+                @include abs-center;
 
-            content: '';
-            width: 100%;
-            aspect-ratio: 1;
-            border-radius: 100%;
-            background-color: var(--color-circle);
+                content: '';
+                width: 100%;
+                aspect-ratio: 1;
+                border-radius: 100%;
+                background-color: var(--color-circle);
+            }
         }
     }
 

@@ -3,6 +3,7 @@
 .form-search {
     display: flex;
     align-items: center;
+    height: 100%;
 
     &__body {
         position: relative;
@@ -12,6 +13,10 @@
 
         @include hover {
             width: rem(200);
+
+            @include mobile-s {
+                width: rem(150);
+            }
 
             .form-search__input {
                 opacity: 1;
