@@ -1,0 +1,42 @@
+@use 'helpers' as *;
+
+.note {
+    background-color: var(--color-gray-05);
+
+    &__inner {
+        padding-top: rem(60);
+        padding-bottom: rem(90);
+
+        @include mobile {
+            padding-top: 0;
+            padding-bottom: rem(30);
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(30);
+
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile-s {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__content {
+        display: grid;
+        row-gap: rem(15);
+    }
+
+    &__image {
+        border-radius: var(--border-radius);
+
+        @include mobile {
+            @include square (100%);
+        }
+    }
+}
