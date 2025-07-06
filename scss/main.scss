@@ -56,6 +56,10 @@
 
 @use 'blocks/note.scss';
 
+@use 'blocks/comments.scss';
+@use 'blocks/comments-form.scss';
+@use 'blocks/comments-actions.scss';
+
 // .header,
 // main > *:not(:last-child),
 // .footer {
