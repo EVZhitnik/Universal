@@ -355,7 +355,7 @@
             <div class="articles__inner container">
                 <div class="articles__geograph articles-geograph">
                     <article class="articles-geograph__text">
-                        <p>
+                        <p class="articles-geograph__drop-cap">
                             Many geographers are trained in toponymy and cartology, this is not their main preoccupation. Geographers study the space and the temporal database distribution of phenomena, processes, and features as well as the interaction of humans and their environment. Because space and place affect a variety of topics, such as economics, health, climate, plants and animals, geography is highly interdisciplinary. The interdisciplinary nature of the geographical approach depends on an attentiveness to the relationship between physical and human phenomena and its spatial patterns.
                         </p>
                         <h3 class="articles-geograph__title h3">Integrated Geography</h3>
@@ -366,7 +366,7 @@
                             The difference between these approaches led to a third field, environmental geography, which combines physical and human geography and concerns the interactions between the environment and humans.
                         </p>
                         <p>
-                            The accompanying text mentions seven outer regions beyond the encircling ocean. The descriptions of five of them have survived. In contrast to the Imago Mundi, an earlier Babylonian world map dating back to the 9th century BC depicted Babylon as being further north from the center of the world, though it is not certain what that center was supposed to represent.
+                            The accompanying text mentions seven outer regions beyond the encircling ocean. The descriptions of five of them have survived. In contrast to the Imago Mundi, an earlier Babylonian world map dating back to the 9th century BC depicted Babylon as being further north from the center of the world, though it is not certain what that center was supposed to represent.
                         </p>
                     </article>
                     <div class="articles-geograph__author author-card">
@@ -392,7 +392,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <a class="articles-geograph__link" href="/">Follow on Universal</a>
+                        <a class="author-card__link" href="/">Follow on Universal</a>
                     </div>
                 </div>
                 <div class="swiper swiper-articles">
@@ -408,8 +408,8 @@
                                 <div class="swiper-slide-articles__person person">
                                     <img class="person__icon" src="./img/person/7.png" alt="" width="45" height="45" loading="lazy">
                                     <div class="person__text">
-                                        <p class="person__name">Andrew Washington</p>
-                                        <span class="person__department">Photographer</span>
+                                        <p class="person__name person__name--color-articles">Andrew Washington</p>
+                                        <span class="person__department person__department--color-articles">Photographer</span>
                                     </div>
                                 </div>
                             </div>
@@ -425,23 +425,26 @@
                                 <div class="swiper-slide-articles__person person">
                                     <img class="person__icon" src="./img/person/7.png" alt="" width="45" height="45" loading="lazy">
                                     <div class="person__text">
-                                        <p class="person__name">Andrew Washington</p>
-                                        <span class="person__department">Photographer</span>
+                                        <p class="person__name person__name--color-articles">Andrew Washington</p>
+                                        <span class="person__department person__department--color-articles">Photographer</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-top-button-prev">
+                    <div class="swiper-articles-navigation">
+                        <div class="swiper-articles-button-prev">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60ZM25.3052 30L32.7203 37.3779C33.0932 37.749 33.0932 38.3506 32.7203 38.7217C32.3474 39.0928 31.7429 39.0928 31.37 38.7217L23.2797 30.6719C22.9068 30.3008 22.9068 29.6992 23.2797 29.3281L31.37 21.2783C31.7429 20.9072 32.3474 20.9072 32.7203 21.2783C33.0932 21.6494 33.0932 22.251 32.7203 22.6221L25.3052 30Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-articles-button-next">
                         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60ZM25.3052 30L32.7203 37.3779C33.0932 37.749 33.0932 38.3506 32.7203 38.7217C32.3474 39.0928 31.7429 39.0928 31.37 38.7217L23.2797 30.6719C22.9068 30.3008 22.9068 29.6992 23.2797 29.3281L31.37 21.2783C31.7429 20.9072 32.3474 20.9072 32.7203 21.2783C33.0932 21.6494 33.0932 22.251 32.7203 22.6221L25.3052 30Z" fill="white"/>
-                        </svg>
+                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60ZM34.6948 30L27.2797 37.3779C26.9068 37.749 26.9068 38.3506 27.2797 38.7217C27.6526 39.0928 28.2571 39.0928 28.63 38.7217L36.7203 30.6719C37.0932 30.3008 37.0932 29.6992 36.7203 29.3281L28.63 21.2783C28.2571 20.9072 27.6526 20.9072 27.2797 21.2783C26.9068 21.6494 26.9068 22.251 27.2797 22.6221L34.6948 30Z" fill="white"/>
+                        </svg>                                             
+                        </div>
                     </div>
-                    <div class="swiper-top-button-next">
-                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60ZM34.6948 30L27.2797 37.3779C26.9068 37.749 26.9068 38.3506 27.2797 38.7217C27.6526 39.0928 28.2571 39.0928 28.63 38.7217L36.7203 30.6719C37.0932 30.3008 37.0932 29.6992 36.7203 29.3281L28.63 21.2783C28.2571 20.9072 27.6526 20.9072 27.2797 21.2783C26.9068 21.6494 26.9068 22.251 27.2797 22.6221L34.6948 30Z" fill="white"/>
-                    </svg>                                             
-                    </div>
+
                 </div>
                 <div class="articles__geograph articles-geograph">
                     <article class="articles-geograph__text">
@@ -493,96 +496,108 @@
                     </div>
                 </div>
                 <div class="articles__geograph articles-geograph">
-                    <div class="articles-geograph__quote">
-                        <blockquote class="articles-geograph__text h3">
-                            <p>
-                                Names of places... are not geography... know by heart a whole gazetteer full of them would not, in itself, constitute anyone a geographer. Geography has higher aims than this: it seeks to classify phenomena.
-                            </p>
-                        </blockquote>
-                        <div class="articles-geograph__person person person--william">
-                            <img class="person__icon" src="./img/person/8.png" alt="" width="45" height="45" loading="lazy">
-                            <div class="person__text">
-                                <p class="person__name">William Peterson</p>
-                                <span class="person__department">Travel Agent</span>
+                    <div class="articles-geograph__body">
+                        <div class="articles-geograph__quote">
+                            <blockquote class="articles-geograph__blockquote h3">
+                                <p>
+                                    Names of places... are not geography... know by heart a whole gazetteer full of them would not, in itself, constitute anyone a geographer. Geography has higher aims than this: it seeks to classify phenomena.
+                                </p>
+                            </blockquote>
+                            <div class="articles-geograph__person person person--william">
+                                <img class="person__icon" src="./img/person/8.png" alt="" width="45" height="45" loading="lazy">
+                                <div class="person__text">
+                                    <p class="person__name person__name--color-articles person__name--size">William Peterson</p>
+                                    <span class="person__department person__department--color-articles">Travel Agent</span>
+                                </div>
                             </div>
                         </div>
+                        <article class="articles-geograph__text">
+                            <p>
+                                The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is some debate about who was the first person to assert that the Earth is spherical in shape, with the credit going either to Parmenides or Pythagoras. Anaxagoras was able to demonstrate that the profile of the Earth was circular by explaining eclipses. However, he still believed that the Earth was a flat disk, as did many of his contemporaries.
+                            </p>
+                            <p>
+                                The first rigorous system of latitude and longitude lines is credited to Hipparchus. He employed a sexagesimal system that was derived from Babylonian mathematics.
+                            </p>
+                        </article>
                     </div>
-                    <article class="articles-geograph__text">
-                        <p>
-                            The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is some debate about who was the first person to assert that the Earth is spherical in shape, with the credit going either to Parmenides or Pythagoras. Anaxagoras was able to demonstrate that the profile of the Earth was circular by explaining eclipses. However, he still believed that the Earth was a flat disk, as did many of his contemporaries.
-                        </p>
-                        <p>
-                            The first rigorous system of latitude and longitude lines is credited to Hipparchus. He employed a sexagesimal system that was derived from Babylonian mathematics.
-                        </p>
-                    </article>
+                    <div class="articles-geograph__empty"></div>
                 </div>
-                <div class="articles__tags">
-                    <ul class="articles__tags-list">
-                        <li class="articles__tags-item">
-                            <a class="articles__tags-link" href="/">
+                <div class="articles__tags articles-tags">
+                    <ul class="articles-tags__list">
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
                                 Travel
                             </a>
                         </li>
-                        <li class="articles__tags-item">
-                            <a class="articles__tags-link" href="/">
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
                                 Destinations
                             </a>
                         </li>
-                        <li class="articles__tags-item">
-                            <a class="articles__tags-link" href="/">
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
                                 Nature
                             </a>
                         </li>
-                        <li class="articles__tags-item">
-                            <a class="articles__tags-link" href="/">
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
                                 World
                             </a>
                         </li>
-                        <li class="articles__tags-item">
-                            <a class="articles__tags-link" href="/">
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
                                 Alaska
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="articles__support">
-                    <h3 class="articles__support-title h3">Show Your Support</h3>
-                    <ul class="articles__support-list">
-                        <li class="articles__support-item">
-                            <a class="articles__support-link support-link" href="/">
-                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1187 1.94706C15.2268 0.949161 14.041 0.400024 12.7794 0.400024C11.5178 0.400024 10.459 0.949161 9.56667 1.94706L8.99997 2.85223L8.43333 1.94706C7.5413 0.949161 6.48219 0.400024 5.22076 0.400024C3.95938 0.400024 2.7731 0.949161 1.88115 1.94706C0.0396161 4.00735 0.0396161 7.35953 1.88115 9.41902L8.47989 15.7609C8.58778 15.8821 8.72209 15.9563 8.86242 15.9848C8.90948 15.9952 8.95681 16 9.00423 16C9.1909 16 9.37789 15.9204 9.52005 15.7609L16.1188 9.41902C17.9604 7.35953 17.9604 4.00735 16.1187 1.94706Z" fill="white"/>
-                                </svg>
-                                <span>Like it</span> 
-                                <span>42</span>
-                            </a>
-                        </li>
-                        <li class="articles__support-item">
-                            <a class="articles__support-link support-link" href="/">
-                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62343 0.0037452L7.22488 0C4.5302 0 2.78878 1.73871 2.78878 4.42982V6.47227H0.377148C0.168754 6.47227 0 6.63668 0 6.83949V9.79876C0 10.0016 0.168947 10.1658 0.377148 10.1658H2.78878V17.633C2.78878 17.8358 2.95753 18 3.16593 18H6.31242C6.52081 18 6.68956 17.8356 6.68956 17.633V10.1658H9.50932C9.71772 10.1658 9.88647 10.0016 9.88647 9.79876L9.88763 6.83949C9.88763 6.74211 9.84779 6.64886 9.77717 6.57994C9.70656 6.51103 9.61034 6.47227 9.51029 6.47227H6.68956V4.74086C6.68956 3.90868 6.89334 3.48622 8.00727 3.48622L9.62304 3.48566C9.83125 3.48566 10 3.32124 10 3.11863V0.370775C10 0.168347 9.83144 0.00411972 9.62343 0.0037452Z" fill="white"/>
-                                </svg>
-                                <span>Share</span> 
-                                <span>80</span>
-                            </a>
-                        </li>
-                        <li class="articles__support-item">
-                            <a class="articles__support-link support-link" href="/">
-                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.979 2.36284C17.9532 2.33213 17.9106 2.32171 17.8743 2.33846C17.3361 2.57945 16.77 2.7527 16.1869 2.85505C16.8059 2.38498 17.2672 1.73403 17.5037 0.987608C17.5151 0.951878 17.5033 0.912798 17.4744 0.889537C17.4453 0.866275 17.4049 0.863298 17.373 0.882465C16.6758 1.29987 15.9206 1.59409 15.1276 1.75729C14.4248 1.0211 13.4435 0.599976 12.4278 0.599976C10.3623 0.599976 8.68211 2.29603 8.68211 4.38083C8.68211 4.63299 8.70626 4.88273 8.75419 5.12521C5.89336 4.94693 3.21836 3.56053 1.3995 1.30862C1.38088 1.28554 1.35268 1.2727 1.32318 1.27568C1.29387 1.27791 1.26769 1.29466 1.25294 1.32016C0.921099 1.89481 0.745777 2.55228 0.745777 3.2211C0.745777 4.38027 1.2675 5.46408 2.15591 6.17924C1.69853 6.12378 1.25183 5.97844 0.849016 5.75271C0.821916 5.73727 0.788179 5.73745 0.761078 5.75327C0.733978 5.7689 0.716833 5.79793 0.716095 5.82957L0.715727 5.87795C0.715727 7.54274 1.8025 9.00451 3.3487 9.48984C2.94145 9.55609 2.51891 9.55162 2.10356 9.4716C2.07295 9.46583 2.04088 9.47644 2.01986 9.50026C1.99903 9.52408 1.99202 9.55739 2.00161 9.58754C2.46526 11.0484 3.75354 12.0728 5.25309 12.2005C4.00224 13.1255 2.5237 13.6129 0.961473 13.6129C0.673694 13.6129 0.383886 13.5956 0.0999786 13.5619C0.0594204 13.5573 0.0192308 13.5817 0.00521981 13.6209C-0.00879122 13.6606 0.00614159 13.7049 0.0411692 13.7274C1.73171 14.8218 3.68643 15.4 5.69425 15.4C12.2619 15.4 16.1865 10.0148 16.1865 4.80866C16.1865 4.66369 16.1837 4.51947 16.178 4.37562C16.8865 3.85251 17.4947 3.21217 17.9851 2.47096C18.007 2.43783 18.0046 2.39373 17.979 2.36284Z" fill="white"/>
-                                </svg>
-                                <span>Tweet</span> 
-                                <span>33</span>
-                            </a>
-                        </li>
-                        <li class="articles__support-item">
-                            <a class="articles__support-link support-link" href="/">
-                                <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C0.89543 4 0 3.10457 0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2C4 3.10457 3.10457 4 2 4ZM10 4C8.89543 4 8 3.10457 8 2C8 0.89543 8.89543 0 10 0C11.1046 0 12 0.89543 12 2C12 3.10457 11.1046 4 10 4ZM18 4C16.8954 4 16 3.10457 16 2C16 0.89543 16.8954 0 18 0C19.1046 0 20 0.89543 20 2C20 3.10457 19.1046 4 18 4Z" fill="#BCBFC2"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="articles__support articles-support">
+                    <div class="articles-support__inner">
+                        <h3 class="articles-support__title h3">Show Your Support</h3>
+                        <ul class="articles-support__list">
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--red" href="/">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1187 1.94706C15.2268 0.949161 14.041 0.400024 12.7794 0.400024C11.5178 0.400024 10.459 0.949161 9.56667 1.94706L8.99997 2.85223L8.43333 1.94706C7.5413 0.949161 6.48219 0.400024 5.22076 0.400024C3.95938 0.400024 2.7731 0.949161 1.88115 1.94706C0.0396161 4.00735 0.0396161 7.35953 1.88115 9.41902L8.47989 15.7609C8.58778 15.8821 8.72209 15.9563 8.86242 15.9848C8.90948 15.9952 8.95681 16 9.00423 16C9.1909 16 9.37789 15.9204 9.52005 15.7609L16.1188 9.41902C17.9604 7.35953 17.9604 4.00735 16.1187 1.94706Z" fill="white"/>
+                                    </svg>
+                                    <div class="support-link__info">
+                                        <span>Like it</span> 
+                                        <span>42</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--blue" href="/">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62343 0.0037452L7.22488 0C4.5302 0 2.78878 1.73871 2.78878 4.42982V6.47227H0.377148C0.168754 6.47227 0 6.63668 0 6.83949V9.79876C0 10.0016 0.168947 10.1658 0.377148 10.1658H2.78878V17.633C2.78878 17.8358 2.95753 18 3.16593 18H6.31242C6.52081 18 6.68956 17.8356 6.68956 17.633V10.1658H9.50932C9.71772 10.1658 9.88647 10.0016 9.88647 9.79876L9.88763 6.83949C9.88763 6.74211 9.84779 6.64886 9.77717 6.57994C9.70656 6.51103 9.61034 6.47227 9.51029 6.47227H6.68956V4.74086C6.68956 3.90868 6.89334 3.48622 8.00727 3.48622L9.62304 3.48566C9.83125 3.48566 10 3.32124 10 3.11863V0.370775C10 0.168347 9.83144 0.00411972 9.62343 0.0037452Z" fill="white"/>
+                                    </svg>
+                                    <div class="support-link__info">
+                                        <span>Share</span> 
+                                        <span>80</span>
+                                    </div>                                    
+                                </a>
+                            </li>
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--bluish" href="/">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.979 2.36284C17.9532 2.33213 17.9106 2.32171 17.8743 2.33846C17.3361 2.57945 16.77 2.7527 16.1869 2.85505C16.8059 2.38498 17.2672 1.73403 17.5037 0.987608C17.5151 0.951878 17.5033 0.912798 17.4744 0.889537C17.4453 0.866275 17.4049 0.863298 17.373 0.882465C16.6758 1.29987 15.9206 1.59409 15.1276 1.75729C14.4248 1.0211 13.4435 0.599976 12.4278 0.599976C10.3623 0.599976 8.68211 2.29603 8.68211 4.38083C8.68211 4.63299 8.70626 4.88273 8.75419 5.12521C5.89336 4.94693 3.21836 3.56053 1.3995 1.30862C1.38088 1.28554 1.35268 1.2727 1.32318 1.27568C1.29387 1.27791 1.26769 1.29466 1.25294 1.32016C0.921099 1.89481 0.745777 2.55228 0.745777 3.2211C0.745777 4.38027 1.2675 5.46408 2.15591 6.17924C1.69853 6.12378 1.25183 5.97844 0.849016 5.75271C0.821916 5.73727 0.788179 5.73745 0.761078 5.75327C0.733978 5.7689 0.716833 5.79793 0.716095 5.82957L0.715727 5.87795C0.715727 7.54274 1.8025 9.00451 3.3487 9.48984C2.94145 9.55609 2.51891 9.55162 2.10356 9.4716C2.07295 9.46583 2.04088 9.47644 2.01986 9.50026C1.99903 9.52408 1.99202 9.55739 2.00161 9.58754C2.46526 11.0484 3.75354 12.0728 5.25309 12.2005C4.00224 13.1255 2.5237 13.6129 0.961473 13.6129C0.673694 13.6129 0.383886 13.5956 0.0999786 13.5619C0.0594204 13.5573 0.0192308 13.5817 0.00521981 13.6209C-0.00879122 13.6606 0.00614159 13.7049 0.0411692 13.7274C1.73171 14.8218 3.68643 15.4 5.69425 15.4C12.2619 15.4 16.1865 10.0148 16.1865 4.80866C16.1865 4.66369 16.1837 4.51947 16.178 4.37562C16.8865 3.85251 17.4947 3.21217 17.9851 2.47096C18.007 2.43783 18.0046 2.39373 17.979 2.36284Z" fill="white"/>
+                                    </svg>
+                                    <div class="support-link__info">
+                                        <span>Tweet</span> 
+                                        <span>33</span>
+                                    </div>                                      
+                                </a>
+                            </li>
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--circle" href="/">
+                                    <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C0.89543 4 0 3.10457 0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2C4 3.10457 3.10457 4 2 4ZM10 4C8.89543 4 8 3.10457 8 2C8 0.89543 8.89543 0 10 0C11.1046 0 12 0.89543 12 2C12 3.10457 11.1046 4 10 4ZM18 4C16.8954 4 16 3.10457 16 2C16 0.89543 16.8954 0 18 0C19.1046 0 20 0.89543 20 2C20 3.10457 19.1046 4 18 4Z" fill="#BCBFC2"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </section>

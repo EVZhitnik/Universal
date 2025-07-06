@@ -19,6 +19,12 @@
         }
     }
 
+    &--william {
+        flex-direction: column;
+        align-items: start;
+        gap: rem(10);
+    }
+
     &__text {
         display: grid;
         row-gap: rem(2);
@@ -30,6 +36,17 @@
         &--opacity {
             opacity: 0.85;
         }
+
+        &--color {
+            &-articles {
+                color: var(--color-gray-85);
+            }
+        }
+
+        &--size {
+            font-size: rem(18);
+            line-height: 1.67;
+        }
     }
 
     &__department {
@@ -39,6 +56,12 @@
 
         &--opacity {
             opacity: 0.4;
+        }
+
+        &--color {
+            &-articles {
+                color: var(--color-gray-50);
+            }
         }
     }
 

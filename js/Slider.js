@@ -42,9 +42,30 @@ function initSwiper() {
         },
     });
 
+    const swiperArticles = new Swiper('.swiper-articles', {
+        direction: 'horizontal',
+        speed: 300,
+        loop: true,
+
+        autoplay: {
+        delay: 3000, 
+        disableOnInteraction: true, 
+        },
+
+        navigation: {
+            nextEl: '.swiper-articles-button-next',
+            prevEl: '.swiper-articles-button-prev',
+        },
+
+        keyboard: {
+        enabled: true,
+        },
+    });
+
     return {
         hot: swiperHot,
-        top: swiperTop
+        top: swiperTop,
+        articles: swiperArticles,
     };
 }
 
