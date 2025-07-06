@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Universal | Travel</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="/js/main.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="header" data-js-header>
+        <div class="header__inner container">
+            <div class="header__top header-top">
+                <div class="header-top__navigation">
+                    <div class="header-top__overlay" data-js-header-overlay>
+                        <nav class="header-top__menu">
+                            <ul class="header-top__menu-list">
+                                <li class="header-top__menu-item">
+                                    <a class="header-top__menu-link" href="/">
+                                        Пункт меню №1
+                                    </a>
+                                </li>
+                                <li class="header-top__menu-item">
+                                    <a class="header-top__menu-link" href="/">
+                                        Пункт меню №2
+                                    </a>
+                                </li>
+                                <li class="header-top__menu-item">
+                                    <a class="header-top__menu-link" href="/">
+                                        Пункт меню №3
+                                    </a>
+                                </li>
+                                <li class="header-top__menu-item">
+                                    <a class="header-top__menu-link" href="/">
+                                        Пункт меню №4
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-top__burger-button-box">
+                        <div class="header-top__burger-button burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-header-burger-button>
+                            <span class="burger-button__line"></span>
+                            <span class="burger-button__line"></span>
+                            <span class="burger-button__line"></span>
+                        </div>
+                        <span class="header-top__burger-button-text">Sections</span>
+                    </div>
+                    <form class="header-top__form form-search">
+                        <div class="form-search__body">
+                            <button class="form-search__button" type="submit" aria-label="Open search" title="Open search">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4354 16.3951L13.146 11.9395C14.2489 10.6301 14.8532 8.98262 14.8532 7.26749C14.8532 3.26026 11.5888 0 7.57659 0C3.56433 0 0.299988 3.26026 0.299988 7.26749C0.299988 11.2747 3.56433 14.535 7.57659 14.535C9.08284 14.535 10.5182 14.0812 11.7454 13.2199L16.0674 17.7093C16.2481 17.8967 16.4911 18 16.7514 18C16.9979 18 17.2317 17.9062 17.4092 17.7355C17.7863 17.3731 17.7983 16.7721 17.4354 16.3951ZM7.57659 1.89587C10.5423 1.89587 12.9549 4.30552 12.9549 7.26749C12.9549 10.2295 10.5423 12.6391 7.57659 12.6391C4.6109 12.6391 2.19823 10.2295 2.19823 7.26749C2.19823 4.30552 4.6109 1.89587 7.57659 1.89587Z" fill="#BCBFC2"/>
+                                </svg>
+                            </button>
+                            <div class="form-search__cell">
+                                <label class="form-search__label visually-hidden" for="search">Search</label>
+                                <input class="form-search__input" id="search" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="header-top__entry">
+                    <a class="header-top__stories-link stories-link" href="/">
+                        <img 
+                            class="stories-link__image" 
+                            src="./img/header/header-bg-mini.jpg" 
+                            alt="Five Travel Stories From 2017 to Help You Escape Into the World"
+                            width="60" height="41"
+                            loading="lazy"
+                        >
+                        <div class="stories-link__text">
+                            <p class="stories-link__subscribe">Subscribe Now</p>
+                            <p class="stories-link__price">3 month for $19</p>
+                        </div>
+                    </a>
+                    <button class="header-top__login" type="button">
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 15.6316C14.3675 17.2105 11.7008 18 8 18C4.29917 18 1.63251 17.2105 0 15.6316C0 12.3481 1.90591 9.98316 4.70588 9C5.60059 9.41686 6.59455 10 8 10C9.40545 10 10.3311 9.39256 11.2941 9C14.0575 9.99655 16 12.3748 16 15.6316ZM8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8Z" fill="#BCBFC2"/>
+                        </svg>
+                        Sign In
+                    </button>
+                </div>
+            </div>
+            <div class="header__bottom header-bottom" data-js-header-bottom>
+                <img class="header-bottom__image" src="./img/header/header-bg-bottom.jpg" alt="Statue of Liberty" width="100" height="84" loading="lazy">
+                <div class="header-bottom__logo">
+                    <p class="header-bottom__logo-text">Boston and New York Bear Brunt</p>
+                    <svg width="184" height="31" viewBox="0 0 184 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8311 2.03922V5.4902L8.77031 6.07843V20.9804C8.77031 22.8627 9.2739 24.2745 10.2811 25.2157C11.3013 26.1438 12.6944 26.6078 14.4602 26.6078C16.2522 26.6078 17.6583 26.1438 18.6786 25.2157C19.6989 24.2876 20.209 22.8758 20.209 20.9804V6.07843L17.1678 5.4902V2.03922H28.9989V5.4902L25.9382 6.07843V20.9804C25.9382 24.183 24.8787 26.6536 22.7597 28.3922C20.6537 30.1307 17.8873 31 14.4602 31C11.0463 31 8.28634 30.1307 6.18042 28.3922C4.08758 26.6536 3.04116 24.183 3.04116 20.9804V6.07843L0 5.4902V2.03922H11.8311Z" fill="#262D33"/>
+                        <path d="M30.5293 27.1569L33.2762 26.5686V13.4118L30.235 12.8235V9.37255H38.6129L38.868 12.4118C39.5743 11.3268 40.4442 10.4837 41.4775 9.88235C42.5108 9.28105 43.6684 8.98039 44.9503 8.98039C47.0955 8.98039 48.7697 9.65359 49.9731 11C51.1765 12.3464 51.7782 14.4575 51.7782 17.3333V26.5686L54.5251 27.1569V30.5882H43.5769V27.1569L46.0294 26.5686V17.3529C46.0294 15.9281 45.7417 14.9216 45.1661 14.3333C44.5906 13.732 43.7208 13.4314 42.5566 13.4314C41.798 13.4314 41.1178 13.5882 40.5161 13.902C39.9144 14.2026 39.4108 14.634 39.0053 15.1961V26.5686L41.3205 27.1569V30.5882H30.5293V27.1569Z" fill="#262D33"/>
+                        <path d="M56.1732 27.1569L58.9396 26.5686V13.4118L55.8789 12.8235V9.37255H64.6688V26.5686L67.4157 27.1569V30.5882H56.1732V27.1569ZM64.6688 4.29412H58.9396V0H64.6688V4.29412Z" fill="#262D33"/>
+                        <path d="M78.305 12.8235L76.3037 13.1961L79.1094 22.6863L79.4822 24.6863H79.5999L80.0119 22.6863L82.7784 13.2157L80.7379 12.8235V9.37255H90.3715V12.8235L88.5272 13.1176L82.2683 30.5882H76.7942L70.5157 13.1176L68.6714 12.8235V9.37255H78.305V12.8235Z" fill="#262D33"/>
+                        <path d="M102.105 31C99.0437 31 96.5977 30.0196 94.7665 28.0588C92.9352 26.098 92.0196 23.6078 92.0196 20.5882V19.8039C92.0196 16.6536 92.8829 14.0588 94.6095 12.0196C96.3492 9.98039 98.6775 8.96732 101.594 8.98039C104.459 8.98039 106.683 9.84314 108.265 11.5686C109.848 13.2941 110.639 15.6275 110.639 18.5686V21.6863H97.9646L97.9254 21.8039C98.03 23.2026 98.4944 24.3529 99.3184 25.2549C100.156 26.1569 101.287 26.6078 102.713 26.6078C103.982 26.6078 105.034 26.4837 105.872 26.2353C106.709 25.9739 107.624 25.5686 108.618 25.0196L110.168 28.549C109.292 29.2418 108.154 29.8235 106.755 30.2941C105.368 30.7647 103.818 31 102.105 31ZM101.594 13.3922C100.535 13.3922 99.6977 13.7974 99.083 14.6078C98.4682 15.4183 98.0889 16.4837 97.945 17.8039L98.0038 17.902H105.028V17.3922C105.028 16.1765 104.74 15.2092 104.165 14.4902C103.602 13.7582 102.745 13.3922 101.594 13.3922Z" fill="#262D33"/>
+                        <path d="M113.798 27.1569L116.545 26.5686V13.4118L113.504 12.8235V9.37255H121.882L122.137 12.4706C122.634 11.3726 123.275 10.5163 124.06 9.90196C124.845 9.28758 125.754 8.98039 126.787 8.98039C127.088 8.98039 127.402 9.00654 127.729 9.05882C128.069 9.09804 128.35 9.15033 128.572 9.21569L127.964 14.4314L125.61 14.3726C124.773 14.3726 124.079 14.5359 123.53 14.8627C122.981 15.1895 122.562 15.6536 122.274 16.2549V26.5686L125.021 27.1569V30.5882H113.798V27.1569Z" fill="#262D33"/>
+                        <path d="M147.604 16.6667H143.759L143.15 14.0196C142.758 13.7059 142.261 13.4444 141.659 13.2353C141.071 13.0261 140.417 12.9216 139.697 12.9216C138.69 12.9216 137.892 13.1503 137.303 13.6078C136.715 14.0523 136.421 14.6144 136.421 15.2941C136.421 15.9346 136.702 16.4706 137.264 16.902C137.827 17.3203 138.952 17.6928 140.639 18.0196C143.268 18.5425 145.217 19.3137 146.486 20.3333C147.755 21.3399 148.389 22.732 148.389 24.5098C148.389 26.4183 147.565 27.9804 145.917 29.1961C144.282 30.3987 142.124 31 139.442 31C137.807 31 136.303 30.7647 134.929 30.2941C133.569 29.8105 132.359 29.1242 131.3 28.2353L131.241 23.4706H135.243L136.028 26.2353C136.368 26.5229 136.833 26.7386 137.421 26.8824C138.01 27.0131 138.625 27.0784 139.266 27.0784C140.43 27.0784 141.313 26.8693 141.914 26.451C142.529 26.0327 142.836 25.4641 142.836 24.7451C142.836 24.1176 142.529 23.5752 141.914 23.1176C141.299 22.6601 140.168 22.2549 138.52 21.902C136.022 21.3922 134.132 20.6405 132.85 19.6471C131.581 18.6405 130.946 17.2745 130.946 15.549C130.946 13.7712 131.679 12.2418 133.144 10.9608C134.609 9.66667 136.695 9.01961 139.403 9.01961C141.051 9.01961 142.608 9.24183 144.073 9.68628C145.551 10.1307 146.708 10.6993 147.545 11.3922L147.604 16.6667Z" fill="#262D33"/>
+                        <path d="M164.478 30.5882C164.321 30.2353 164.183 29.8758 164.066 29.5098C163.948 29.1307 163.856 28.7516 163.791 28.3726C163.111 29.1569 162.28 29.7909 161.299 30.2745C160.331 30.7582 159.219 31 157.964 31C155.884 31 154.229 30.4379 153 29.3137C151.783 28.1765 151.175 26.634 151.175 24.6863C151.175 22.6993 151.973 21.1634 153.569 20.0784C155.165 18.9935 157.506 18.451 160.593 18.451H163.516V16.3725C163.516 15.3529 163.222 14.5621 162.633 14C162.045 13.4379 161.175 13.1569 160.024 13.1569C159.37 13.1569 158.788 13.2353 158.278 13.3922C157.768 13.5359 157.356 13.7124 157.042 13.9216L156.669 16.1961H152.352L152.372 11.4902C153.418 10.7843 154.615 10.1895 155.962 9.70588C157.323 9.22222 158.801 8.98039 160.397 8.98039C163.026 8.98039 165.158 9.62745 166.793 10.9216C168.441 12.2026 169.265 14.0327 169.265 16.4118V25.1765C169.265 25.5033 169.265 25.8105 169.265 26.098C169.278 26.3856 169.304 26.6601 169.344 26.9216L171.09 27.1569V30.5882H164.478ZM159.514 26.7647C160.377 26.7647 161.162 26.5817 161.868 26.2157C162.575 25.8366 163.124 25.366 163.516 24.8039V21.5686H160.593C159.376 21.5686 158.454 21.8562 157.826 22.4314C157.199 22.9935 156.885 23.6732 156.885 24.4706C156.885 25.1895 157.114 25.7516 157.571 26.1569C158.042 26.5621 158.69 26.7647 159.514 26.7647Z" fill="#262D33"/>
+                        <path d="M172.444 3.45098V0H181.234V26.5686L184 27.1569V30.5882H172.738V27.1569L175.504 26.5686V4.03922L172.444 3.45098Z" fill="#262D33"/>
+                    </svg>
+                </div>
+                <div class="header-bottom__meteo">
+                    <p class="header-bottom__meteo-date">Monday, January 1, 2018</p>
+                    <div class="header-bottom__meteo-temp">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 15.4763C9.4151 15.4763 9.74939 15.8106 9.74939 16.2257V17.2506C9.74939 17.6657 9.4151 18 9 18C8.5849 18 8.25061 17.6657 8.25061 17.2506V16.2257C8.25061 15.8106 8.5849 15.4763 9 15.4763ZM9 2.52367C8.5849 2.52367 8.25061 2.18939 8.25061 1.77429V0.749388C8.25061 0.334286 8.5849 0 9 0C9.4151 0 9.74939 0.334286 9.74939 0.749388V1.77429C9.74939 2.18939 9.4151 2.52367 9 2.52367ZM17.2506 8.25061C17.6657 8.25061 18 8.5849 18 9C18 9.4151 17.6657 9.74939 17.2506 9.74939H16.2257C15.8106 9.74939 15.4763 9.4151 15.4763 9C15.4763 8.5849 15.8106 8.25061 16.2257 8.25061H17.2506ZM1.77429 8.25061C2.18939 8.25061 2.52367 8.5849 2.52367 9C2.52367 9.4151 2.18939 9.74939 1.77429 9.74939H0.749388C0.334286 9.74939 0 9.4151 0 9C0 8.5849 0.334286 8.25061 0.749388 8.25061H1.77429ZM14.6388 4.42286C14.3449 4.71306 13.871 4.71673 13.5771 4.42286C13.2833 4.12898 13.2833 3.6551 13.5771 3.36122L14.3008 2.63755C14.5947 2.34367 15.0686 2.34367 15.3624 2.63755C15.6563 2.93143 15.6563 3.40531 15.3624 3.69918L14.6388 4.42286ZM3.36122 13.5771C3.6551 13.2869 4.12898 13.2833 4.42286 13.5771C4.71673 13.871 4.71673 14.3449 4.42286 14.6388L3.69918 15.3624C3.40531 15.6563 2.93143 15.6563 2.63755 15.3624C2.34367 15.0686 2.34367 14.5947 2.63755 14.3008L3.36122 13.5771ZM14.6388 13.5771L15.3624 14.3008C15.6563 14.5947 15.6563 15.0686 15.3624 15.3624C15.0686 15.6563 14.5947 15.6563 14.3008 15.3624L13.5771 14.6388C13.2833 14.3449 13.2833 13.871 13.5771 13.5771C13.871 13.2833 14.3449 13.2833 14.6388 13.5771ZM3.36122 4.42286L2.63755 3.69918C2.34367 3.40531 2.34367 2.93143 2.63755 2.63755C2.93143 2.34367 3.40531 2.34367 3.69918 2.63755L4.42286 3.36122C4.71673 3.6551 4.71673 4.12898 4.42286 4.42286C4.12898 4.71673 3.6551 4.71673 3.36122 4.42286ZM9 3.36122C12.1078 3.36122 14.6388 5.89224 14.6388 9C14.6388 12.1114 12.1078 14.6388 9 14.6388C5.88857 14.6388 3.36122 12.1078 3.36122 9C3.36122 5.88857 5.89224 3.36122 9 3.36122ZM9 13.1363C11.2812 13.1363 13.1363 11.2812 13.1363 9C13.1363 6.71878 11.2812 4.86367 9 4.86367C6.71878 4.86367 4.86367 6.71878 4.86367 9C4.86367 11.2812 6.71878 13.1363 9 13.1363Z" fill="#BCBFC2"/>
+                        </svg>
+                        <p class="header-bottom__meteo-temp-text">- 23 °C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="top" aria-labelledby="top-title">
+            <div class="top__inner">
+                <div class="top__categories hero-categories hero-categories--top">
+                    <ul class="hero-categories__list">
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                News
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Opinion
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Science
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Life
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="./travel.html">
+                                Travel
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Moneys
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Art & Design
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Sports
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                People
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Health
+                            </a>
+                        </li>
+                        <li class="hero-categories__item">
+                            <a class="hero-categories__link" href="/">
+                                Education
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top__body">
+                    <div class="swiper swiper-top">
+                        <div class="swiper-wrapper swiper-wrapper-top">
+                            <div class="swiper-slide swiper-slide-top">
+                                <img class="swiper-slide-top__image" src="./img/top/top-bg.jpg" alt="" width="1366" height="590" loading="lazy">
+                                <div class="swiper-slide-top__body container">
+                                    <div class="swiper-slide-top__bookmark">
+                                        <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg" data-js-bookmark>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-slide-top__content">
+                                        <span class="swiper-slide-top__subtitle subtitle-base">Destinations</span>
+                                        <h1 class="swiper-slide-top__title" id="top-title">Five Travel Stories From 2017 to Help You Escape Into the World</h1>
+                                        <div class="swiper-slide-top__description">
+                                            <p>
+                                               From the coastlines of Europe to remote Kodiak Island, Alaska, here are five of our favorite stories to help you explore the world 
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide-top__active">
+                                            <div class="blog-actions">
+                                                <ul class="blog-actions__list blog-actions__list--top">
+                                                    <li class="blog-actions__item">
+                                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Time" title="Time">
+                                                            <span class="blog-actions__icon-wrapper">
+                                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.25C3.77208 14.25 0.75 11.2279 0.75 7.5C0.75 3.77208 3.77208 0.75 7.5 0.75C11.2279 0.75 14.25 3.77208 14.25 7.5C14.25 11.2279 11.2279 14.25 7.5 14.25ZM8.25 7.5V4.5C8.25 4.08579 7.91421 3.75 7.5 3.75C7.08579 3.75 6.75 4.08579 6.75 4.5V8.25C6.75 8.66421 7.08579 9 7.5 9H9.75C10.1642 9 10.5 8.66421 10.5 8.25C10.5 7.83579 10.1642 7.5 9.75 7.5H8.25Z" fill="white"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="blog-actions__text">Aug 6, 10:23 pm</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="blog-actions__item">
+                                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Dislike" title="Dislike">
+                                                            <span class="blog-actions__icon-wrapper">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z" fill="white"/>
+                                                                </svg>
+                                                            </span>                                                      
+                                                            <span class="blog-actions__text">830</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="blog-actions__item">
+                                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Discuss" title="Discuss">
+                                                            <span class="blog-actions__icon-wrapper">
+                                                                <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="blog-actions__text">19</span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="swiper-slide-top__link button-slider" href="/">
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7816 5.13237L11.665 0.202036C11.0971 -0.25578 10.125 0.131603 10.125 0.695069V2.8785C6.93568 2.98415 4.54369 3.82935 2.75243 5.27323C0 7.49188 0 10 0 11.2C2.75243 7.84 10.125 7.84 10.125 7.84V10.5205C10.125 11.084 11.1408 11.4361 11.665 11.0135L17.7816 6.08322C17.9563 5.94235 18 5.77608 18 5.6C18 5.42392 17.9563 5.27323 17.7816 5.13237Z" fill="white"/>
+                                                </svg>
+                                                142 shares
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide-top__home">
+                                        <a class="swiper-slide-top__home-link" href="/">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 17H7V11H11V17H16V10H18L9 0L0 10H2V17Z" fill="white"/>
+                                            </svg>
+                                            Back to main
+                                        </a>
+                                        <div class="swiper-top-navigation">
+                                            <div class="swiper-top-button-prev">
+                                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3V4H4V7L0 3.5L4 0V3H15Z" fill="white"/>
+                                                </svg>
+                                                Prev
+                                            </div>
+                                            <div class="swiper-top-button-next">
+                                                Next
+                                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3V4H11V7L15 3.5L11 0V3H0Z" fill="white"/>
+                                                </svg>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-top">
+                                <img class="swiper-slide-top__image" src="./img/top/top-bg.jpg" alt="" width="1366" height="590" loading="lazy">
+                                <div class="swiper-slide-top__body container">
+                                    <div class="swiper-slide-top__bookmark">
+                                        <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg" data-js-bookmark>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-slide-top__content">
+                                        <span class="swiper-slide-top__subtitle subtitle-base">Destinations</span>
+                                        <h1 class="swiper-slide-top__title" id="top-title">Five Travel Stories From 2017 to Help You Escape Into the World</h1>
+                                        <div class="swiper-slide-top__description">
+                                            <p>
+                                               From the coastlines of Europe to remote Kodiak Island, Alaska, here are five of our favorite stories to help you explore the world 
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide-top__active">
+                                            <div class="blog-actions">
+                                                <ul class="blog-actions__list blog-actions__list--top">
+                                                    <li class="blog-actions__item">
+                                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Time" title="Time">
+                                                            <span class="blog-actions__icon-wrapper">
+                                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 14.25C3.77208 14.25 0.75 11.2279 0.75 7.5C0.75 3.77208 3.77208 0.75 7.5 0.75C11.2279 0.75 14.25 3.77208 14.25 7.5C14.25 11.2279 11.2279 14.25 7.5 14.25ZM8.25 7.5V4.5C8.25 4.08579 7.91421 3.75 7.5 3.75C7.08579 3.75 6.75 4.08579 6.75 4.5V8.25C6.75 8.66421 7.08579 9 7.5 9H9.75C10.1642 9 10.5 8.66421 10.5 8.25C10.5 7.83579 10.1642 7.5 9.75 7.5H8.25Z" fill="white"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="blog-actions__text">Aug 6, 10:23 pm</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="blog-actions__item">
+                                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Dislike" title="Dislike">
+                                                            <span class="blog-actions__icon-wrapper">
+                                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z" fill="white"/>
+                                                                </svg>
+                                                            </span>                                                      
+                                                            <span class="blog-actions__text">830</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="blog-actions__item">
+                                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Discuss" title="Discuss">
+                                                            <span class="blog-actions__icon-wrapper">
+                                                                <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="blog-actions__text">19</span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a class="swiper-slide-top__link button-slider" href="/">
+                                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7816 5.13237L11.665 0.202036C11.0971 -0.25578 10.125 0.131603 10.125 0.695069V2.8785C6.93568 2.98415 4.54369 3.82935 2.75243 5.27323C0 7.49188 0 10 0 11.2C2.75243 7.84 10.125 7.84 10.125 7.84V10.5205C10.125 11.084 11.1408 11.4361 11.665 11.0135L17.7816 6.08322C17.9563 5.94235 18 5.77608 18 5.6C18 5.42392 17.9563 5.27323 17.7816 5.13237Z" fill="white"/>
+                                                </svg>
+                                                142 shares
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide-top__home">
+                                        <a class="swiper-slide-top__home-link" href="/">
+                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 17H7V11H11V17H16V10H18L9 0L0 10H2V17Z" fill="white"/>
+                                            </svg>
+                                            Back to main
+                                        </a>
+                                        <div class="swiper-top-navigation">
+                                            <div class="swiper-top-button-prev">
+                                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3V4H4V7L0 3.5L4 0V3H15Z" fill="white"/>
+                                                </svg>
+                                                Prev
+                                            </div>
+                                            <div class="swiper-top-button-next">
+                                                Next
+                                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3V4H11V7L15 3.5L11 0V3H0Z" fill="white"/>
+                                                </svg>  
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="articles__inner container">
+                <div class="articles__geograph articles-geograph">
+                    <article class="articles-geograph__text">
+                        <p class="articles-geograph__drop-cap">
+                            Many geographers are trained in toponymy and cartology, this is not their main preoccupation. Geographers study the space and the temporal database distribution of phenomena, processes, and features as well as the interaction of humans and their environment. Because space and place affect a variety of topics, such as economics, health, climate, plants and animals, geography is highly interdisciplinary. The interdisciplinary nature of the geographical approach depends on an attentiveness to the relationship between physical and human phenomena and its spatial patterns.
+                        </p>
+                        <h3 class="articles-geograph__title h3">Integrated Geography</h3>
+                        <p>
+                            Geography as a discipline can be split broadly into two main subsidiary fields: human geography and physical geography. The former largely focuses on the built environment and how humans create, view, manage, and influence space. The latter examines the natural environment, and how organisms, climate, soil, water, and landforms produce and interact.
+                        </p>
+                        <p>
+                            The difference between these approaches led to a third field, environmental geography, which combines physical and human geography and concerns the interactions between the environment and humans.
+                        </p>
+                        <p>
+                            The accompanying text mentions seven outer regions beyond the encircling ocean. The descriptions of five of them have survived. In contrast to the Imago Mundi, an earlier Babylonian world map dating back to the 9th century BC depicted Babylon as being further north from the center of the world, though it is not certain what that center was supposed to represent.
+                        </p>
+                    </article>
+                    <div class="articles-geograph__author author-card">
+                        <div class="author-card__content">
+                            <img class="author-card__image" src="./img/person/6.png" alt="">
+                            <div class="author-card__text">
+                                <h4 class="author-card__name h4">Mira Anderson</h4>
+                                <span class="author-card__department">Traveler & Photographer</span>
+                            </div>
+                            <span class="author-card__art">82 articles</span>
+                            <div class="author-card__soc1als">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" stroke="#D9DADB"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6234 11.0037L22.2249 11C19.5302 11 17.7888 12.7387 17.7888 15.4298V17.4723H15.3771C15.1688 17.4723 15 17.6367 15 17.8395V20.7988C15 21.0016 15.1689 21.1658 15.3771 21.1658H17.7888V28.633C17.7888 28.8358 17.9575 29 18.1659 29H21.3124C21.5208 29 21.6896 28.8356 21.6896 28.633V21.1658H24.5093C24.7177 21.1658 24.8865 21.0016 24.8865 20.7988L24.8876 17.8395C24.8876 17.7421 24.8478 17.6489 24.7772 17.5799C24.7066 17.511 24.6103 17.4723 24.5103 17.4723H21.6896V15.7409C21.6896 14.9087 21.8933 14.4862 23.0073 14.4862L24.623 14.4857C24.8312 14.4857 25 14.3212 25 14.1186V11.3708C25 11.1683 24.8314 11.0041 24.6234 11.0037Z" fill="#BCBFC2"/>
+                                </svg>
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" stroke="#D9DADB"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.979 14.363C28.9532 14.3323 28.9106 14.3218 28.8743 14.3386C28.3361 14.5796 27.77 14.7528 27.1869 14.8552C27.8059 14.3851 28.2672 13.7342 28.5037 12.9877C28.5151 12.952 28.5033 12.9129 28.4744 12.8897C28.4453 12.8664 28.4049 12.8634 28.373 12.8826C27.6758 13.3 26.9206 13.5942 26.1276 13.7574C25.4248 13.0212 24.4435 12.6001 23.4278 12.6001C21.3623 12.6001 19.6821 14.2962 19.6821 16.381C19.6821 16.6331 19.7063 16.8828 19.7542 17.1253C16.8934 16.9471 14.2184 15.5607 12.3995 13.3087C12.3809 13.2857 12.3527 13.2728 12.3232 13.2758C12.2939 13.278 12.2677 13.2948 12.2529 13.3203C11.9211 13.8949 11.7458 14.5524 11.7458 15.2212C11.7458 16.3804 12.2675 17.4642 13.1559 18.1794C12.6985 18.1239 12.2518 17.9786 11.849 17.7528C11.8219 17.7374 11.7882 17.7376 11.7611 17.7534C11.734 17.769 11.7168 17.7981 11.7161 17.8297L11.7157 17.8781C11.7157 19.5429 12.8025 21.0046 14.3487 21.49C13.9415 21.5562 13.5189 21.5517 13.1036 21.4717C13.073 21.466 13.0409 21.4766 13.0199 21.5004C12.999 21.5242 12.992 21.5575 13.0016 21.5877C13.4653 23.0485 14.7535 24.0729 16.2531 24.2006C15.0022 25.1257 13.5237 25.613 11.9615 25.613C11.6737 25.613 11.3839 25.5957 11.1 25.5621C11.0594 25.5574 11.0192 25.5818 11.0052 25.621C10.9912 25.6607 11.0061 25.705 11.0412 25.7275C12.7317 26.8219 14.6864 27.4001 16.6943 27.4001C23.2619 27.4001 27.1865 22.0149 27.1865 16.8088C27.1865 16.6638 27.1837 16.5196 27.178 16.3757C27.8865 15.8526 28.4947 15.2123 28.9851 14.4711C29.007 14.438 29.0046 14.3939 28.979 14.363Z" fill="#BCBFC2"/>
+                                </svg>
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" stroke="#D9DADB"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 11.5C22.3085 11.5 22.5979 11.5098 23.5045 11.5512C24.4093 11.5924 25.0272 11.7361 25.5678 11.9463C26.1268 12.1634 26.6008 12.4541 27.0734 12.9266C27.5459 13.3992 27.8366 13.8732 28.0538 14.4322C28.2639 14.9728 28.4076 15.5907 28.4488 16.4955C28.4902 17.4021 28.5 17.6915 28.5 20C28.5 22.3085 28.4902 22.5979 28.4488 23.5045C28.4076 24.4093 28.2639 25.0272 28.0538 25.5678C27.8366 26.1268 27.5459 26.6008 27.0734 27.0734C26.6008 27.5459 26.1268 27.8366 25.5678 28.0538C25.0272 28.2639 24.4093 28.4076 23.5045 28.4488C22.5979 28.4902 22.3085 28.5 20 28.5C17.6915 28.5 17.4021 28.4902 16.4955 28.4488C15.5907 28.4076 14.9728 28.2639 14.4322 28.0538C13.8732 27.8366 13.3992 27.5459 12.9266 27.0734C12.4541 26.6008 12.1634 26.1268 11.9463 25.5678C11.7361 25.0272 11.5924 24.4093 11.5512 23.5045C11.5098 22.5979 11.5 22.3085 11.5 20C11.5 17.6915 11.5098 17.4021 11.5512 16.4955C11.5924 15.5907 11.7361 14.9728 11.9463 14.4322C12.1634 13.8732 12.4541 13.3992 12.9266 12.9266C13.3992 12.4541 13.8732 12.1634 14.4322 11.9463C14.9728 11.7361 15.5907 11.5924 16.4955 11.5512C17.4021 11.5098 17.6915 11.5 20 11.5ZM19.9973 22.8298C21.5616 22.8298 22.8298 21.5616 22.8298 19.9973C22.8298 18.433 21.5616 17.1649 19.9973 17.1649C18.433 17.1649 17.1649 18.433 17.1649 19.9973C17.1649 21.5616 18.433 22.8298 19.9973 22.8298ZM19.9973 15.6338C22.4072 15.6338 24.3608 17.5874 24.3608 19.9973C24.3608 22.4072 22.4072 24.3608 19.9973 24.3608C17.5874 24.3608 15.6338 22.4072 15.6338 19.9973C15.6338 17.5874 17.5874 15.6338 19.9973 15.6338ZM25.8556 15.3722C25.8556 15.946 25.3904 16.4111 24.8166 16.4111C24.2429 16.4111 23.7778 15.946 23.7778 15.3722C23.7778 14.7985 24.2429 14.3333 24.8166 14.3333C25.3904 14.3333 25.8556 14.7985 25.8556 15.3722Z" fill="#BCBFC2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <a class="author-card__link" href="/">Follow on Universal</a>
+                    </div>
+                </div>
+                <div class="swiper swiper-articles">
+                    <div class="swiper-wrapper swiper-wrapper-articles">
+                        <div class="swiper-slide swiper-slide-articles">
+                            <img class="swiper-slide-articles__image" src="./img/articles/articles-slider-image.jpg" alt="Mountain view" width="1140" height="555" loading="lazy">
+                            <div class="swiper-slide-articles__body">
+                                <div class="swiper-slide-articles__text">
+                                    <p>
+                                        Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+                                    </p>
+                                </div>
+                                <div class="swiper-slide-articles__person person">
+                                    <img class="person__icon" src="./img/person/7.png" alt="" width="45" height="45" loading="lazy">
+                                    <div class="person__text">
+                                        <p class="person__name person__name--color-articles">Andrew Washington</p>
+                                        <span class="person__department person__department--color-articles">Photographer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-articles">
+                            <img class="swiper-slide-articles__image" src="./img/articles/articles-slider-image.jpg" alt="Mountain view" width="1140" height="555" loading="lazy">
+                            <div class="swiper-slide-articles__body">
+                                <div class="swiper-slide-articles__text">
+                                    <p>
+                                        Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+                                    </p>
+                                </div>
+                                <div class="swiper-slide-articles__person person">
+                                    <img class="person__icon" src="./img/person/7.png" alt="" width="45" height="45" loading="lazy">
+                                    <div class="person__text">
+                                        <p class="person__name person__name--color-articles">Andrew Washington</p>
+                                        <span class="person__department person__department--color-articles">Photographer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-articles-navigation">
+                        <div class="swiper-articles-button-prev">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60ZM25.3052 30L32.7203 37.3779C33.0932 37.749 33.0932 38.3506 32.7203 38.7217C32.3474 39.0928 31.7429 39.0928 31.37 38.7217L23.2797 30.6719C22.9068 30.3008 22.9068 29.6992 23.2797 29.3281L31.37 21.2783C31.7429 20.9072 32.3474 20.9072 32.7203 21.2783C33.0932 21.6494 33.0932 22.251 32.7203 22.6221L25.3052 30Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-articles-button-next">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60ZM34.6948 30L27.2797 37.3779C26.9068 37.749 26.9068 38.3506 27.2797 38.7217C27.6526 39.0928 28.2571 39.0928 28.63 38.7217L36.7203 30.6719C37.0932 30.3008 37.0932 29.6992 36.7203 29.3281L28.63 21.2783C28.2571 20.9072 27.6526 20.9072 27.2797 21.2783C26.9068 21.6494 26.9068 22.251 27.2797 22.6221L34.6948 30Z" fill="white"/>
+                        </svg>                                             
+                        </div>
+                    </div>
+
+                </div>
+                <div class="articles__geograph articles-geograph">
+                    <article class="articles-geograph__text">
+                        <p>
+                            The oldest known world maps date back to ancient Babylon from the 9th century BC. The best known Babylonian world map, however, is the Imago Mundi of 600 BC. The map as reconstructed by Eckhard Unger shows Babylon on the Euphrates, surrounded by a circular landmass showing Assyria, Urartu and several cities, in turn surrounded by a "bitter river" (Oceanus), with seven islands arranged around it so as to form a seven-pointed star.
+                        </p>
+                        <p>
+                            The accompanying text mentions seven outer regions beyond the encircling ocean. The descriptions of five of them have survived. In contrast to the Imago Mundi, an earlier Babylonian world map dating back to the 9th century BC depicted Babylon as being further north from the center of the world, though it is not certain what that center was supposed to represent.
+                        </p>
+                        <p>
+                            The ideas of Anaximander: considered by later Greek writers to be the true founder of geography, come to us through fragments quoted by his successors. Anaximander is credited with the invention of the gnomon, the simple, yet efficient Greek instrument that allowed the early measurement of latitude. Thales is also credited with the prediction of eclipses. The foundations of geography can be traced to the ancient cultures, such as the ancient, medieval, and early modern Chinese.
+                        </p>
+                    </article>
+                    <div class="articles-geograph__material material-card">
+                        <div class="material-card__body">
+                            <h4 class="material-card__title h4">Material on Theme</h4>
+                            <img class="material-card__image" src="./img/articles/articles-material-image.jpg" alt="Giraffe on a blue background" width="263" height="180" loading="lazy">
+                            <h5 class="material-card__subtitle h5">Application of Postcolonial Theory in the Middle East</h5>
+                            <div class="material-card__description">
+                                <p>
+                                    In the essays "Overstating the Arab State", by Nazih Ayubi, and "Is Jordan Palestine?", by Raphael Israel, the authors deal with the psychologically fragmented postcolonial identity.
+                                </p>
+                            </div>
+                            <div class="material-card__actions blog-actions">
+                                <ul class="blog-actions__list">
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Views" title="Views">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4.63696C15 4.63696 12 9.75 7.5 9.75C3 9.75 0 4.63696 0 4.63696C0 4.63696 3 0 7.5 0C12 0 15 4.63696 15 4.63696ZM7.5 2.25C8.94707 2.25 10.125 3.42825 10.125 4.87582C10.125 6.32257 8.94707 7.5 7.5 7.5C6.05293 7.5 4.875 6.32585 4.875 4.87582C4.875 3.42825 6.05293 2.25 7.5 2.25ZM7.49858 6.18785C8.22277 6.18785 8.80965 5.59681 8.80965 4.8717C8.80965 4.14604 8.22222 3.555 7.49858 3.555C6.77549 3.555 6.1875 4.14439 6.1875 4.8706C6.1875 5.59681 6.77549 6.18785 7.49858 6.18785Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">1,623</span>
+                                        </button>
+                                    </li>
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Discuss" title="Discuss">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">102</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles__geograph articles-geograph">
+                    <div class="articles-geograph__body">
+                        <div class="articles-geograph__quote">
+                            <blockquote class="articles-geograph__blockquote h3">
+                                <p>
+                                    Names of places... are not geography... know by heart a whole gazetteer full of them would not, in itself, constitute anyone a geographer. Geography has higher aims than this: it seeks to classify phenomena.
+                                </p>
+                            </blockquote>
+                            <div class="articles-geograph__person person person--william">
+                                <img class="person__icon" src="./img/person/8.png" alt="" width="45" height="45" loading="lazy">
+                                <div class="person__text">
+                                    <p class="person__name person__name--color-articles person__name--size">William Peterson</p>
+                                    <span class="person__department person__department--color-articles">Travel Agent</span>
+                                </div>
+                            </div>
+                        </div>
+                        <article class="articles-geograph__text">
+                            <p>
+                                The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is some debate about who was the first person to assert that the Earth is spherical in shape, with the credit going either to Parmenides or Pythagoras. Anaxagoras was able to demonstrate that the profile of the Earth was circular by explaining eclipses. However, he still believed that the Earth was a flat disk, as did many of his contemporaries.
+                            </p>
+                            <p>
+                                The first rigorous system of latitude and longitude lines is credited to Hipparchus. He employed a sexagesimal system that was derived from Babylonian mathematics.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="articles-geograph__empty"></div>
+                </div>
+                <div class="articles__tags articles-tags">
+                    <ul class="articles-tags__list">
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
+                                Travel
+                            </a>
+                        </li>
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
+                                Destinations
+                            </a>
+                        </li>
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
+                                Nature
+                            </a>
+                        </li>
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
+                                World
+                            </a>
+                        </li>
+                        <li class="articles-tags__item">
+                            <a class="articles-tags__link" href="/">
+                                Alaska
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="articles__support articles-support">
+                    <div class="articles-support__inner">
+                        <h3 class="articles-support__title h3">Show Your Support</h3>
+                        <ul class="articles-support__list">
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--red" href="/">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1187 1.94706C15.2268 0.949161 14.041 0.400024 12.7794 0.400024C11.5178 0.400024 10.459 0.949161 9.56667 1.94706L8.99997 2.85223L8.43333 1.94706C7.5413 0.949161 6.48219 0.400024 5.22076 0.400024C3.95938 0.400024 2.7731 0.949161 1.88115 1.94706C0.0396161 4.00735 0.0396161 7.35953 1.88115 9.41902L8.47989 15.7609C8.58778 15.8821 8.72209 15.9563 8.86242 15.9848C8.90948 15.9952 8.95681 16 9.00423 16C9.1909 16 9.37789 15.9204 9.52005 15.7609L16.1188 9.41902C17.9604 7.35953 17.9604 4.00735 16.1187 1.94706Z" fill="white"/>
+                                    </svg>
+                                    <div class="support-link__info">
+                                        <span>Like it</span> 
+                                        <span>42</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--blue" href="/">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62343 0.0037452L7.22488 0C4.5302 0 2.78878 1.73871 2.78878 4.42982V6.47227H0.377148C0.168754 6.47227 0 6.63668 0 6.83949V9.79876C0 10.0016 0.168947 10.1658 0.377148 10.1658H2.78878V17.633C2.78878 17.8358 2.95753 18 3.16593 18H6.31242C6.52081 18 6.68956 17.8356 6.68956 17.633V10.1658H9.50932C9.71772 10.1658 9.88647 10.0016 9.88647 9.79876L9.88763 6.83949C9.88763 6.74211 9.84779 6.64886 9.77717 6.57994C9.70656 6.51103 9.61034 6.47227 9.51029 6.47227H6.68956V4.74086C6.68956 3.90868 6.89334 3.48622 8.00727 3.48622L9.62304 3.48566C9.83125 3.48566 10 3.32124 10 3.11863V0.370775C10 0.168347 9.83144 0.00411972 9.62343 0.0037452Z" fill="white"/>
+                                    </svg>
+                                    <div class="support-link__info">
+                                        <span>Share</span> 
+                                        <span>80</span>
+                                    </div>                                    
+                                </a>
+                            </li>
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--bluish" href="/">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.979 2.36284C17.9532 2.33213 17.9106 2.32171 17.8743 2.33846C17.3361 2.57945 16.77 2.7527 16.1869 2.85505C16.8059 2.38498 17.2672 1.73403 17.5037 0.987608C17.5151 0.951878 17.5033 0.912798 17.4744 0.889537C17.4453 0.866275 17.4049 0.863298 17.373 0.882465C16.6758 1.29987 15.9206 1.59409 15.1276 1.75729C14.4248 1.0211 13.4435 0.599976 12.4278 0.599976C10.3623 0.599976 8.68211 2.29603 8.68211 4.38083C8.68211 4.63299 8.70626 4.88273 8.75419 5.12521C5.89336 4.94693 3.21836 3.56053 1.3995 1.30862C1.38088 1.28554 1.35268 1.2727 1.32318 1.27568C1.29387 1.27791 1.26769 1.29466 1.25294 1.32016C0.921099 1.89481 0.745777 2.55228 0.745777 3.2211C0.745777 4.38027 1.2675 5.46408 2.15591 6.17924C1.69853 6.12378 1.25183 5.97844 0.849016 5.75271C0.821916 5.73727 0.788179 5.73745 0.761078 5.75327C0.733978 5.7689 0.716833 5.79793 0.716095 5.82957L0.715727 5.87795C0.715727 7.54274 1.8025 9.00451 3.3487 9.48984C2.94145 9.55609 2.51891 9.55162 2.10356 9.4716C2.07295 9.46583 2.04088 9.47644 2.01986 9.50026C1.99903 9.52408 1.99202 9.55739 2.00161 9.58754C2.46526 11.0484 3.75354 12.0728 5.25309 12.2005C4.00224 13.1255 2.5237 13.6129 0.961473 13.6129C0.673694 13.6129 0.383886 13.5956 0.0999786 13.5619C0.0594204 13.5573 0.0192308 13.5817 0.00521981 13.6209C-0.00879122 13.6606 0.00614159 13.7049 0.0411692 13.7274C1.73171 14.8218 3.68643 15.4 5.69425 15.4C12.2619 15.4 16.1865 10.0148 16.1865 4.80866C16.1865 4.66369 16.1837 4.51947 16.178 4.37562C16.8865 3.85251 17.4947 3.21217 17.9851 2.47096C18.007 2.43783 18.0046 2.39373 17.979 2.36284Z" fill="white"/>
+                                    </svg>
+                                    <div class="support-link__info">
+                                        <span>Tweet</span> 
+                                        <span>33</span>
+                                    </div>                                      
+                                </a>
+                            </li>
+                            <li class="articles-support__item">
+                                <a class="articles-support__link support-link support-link--circle" href="/">
+                                    <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C0.89543 4 0 3.10457 0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2C4 3.10457 3.10457 4 2 4ZM10 4C8.89543 4 8 3.10457 8 2C8 0.89543 8.89543 0 10 0C11.1046 0 12 0.89543 12 2C12 3.10457 11.1046 4 10 4ZM18 4C16.8954 4 16 3.10457 16 2C16 0.89543 16.8954 0 18 0C19.1046 0 20 0.89543 20 2C20 3.10457 19.1046 4 18 4Z" fill="#BCBFC2"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="note" aria-labelledby="note-title">
+            <h2 class="note__title h2 visually-hidden" id="note-title">Notes</h2>
+            <div class="note__inner container">
+                <ul class="note__list">
+                    <li class="note__item">
+                        <article class="note__content">
+                            <img class="note__image" src="./img/note/1.jpg" alt="A plate of food that people eat" width="263" height="180" loading="lazy">
+                            <h5 class="note__title h5">An Evangelist of Singaporean Food Has a New Pulpit</h5>
+                            <div class="note__actions blog-actions">
+                                <ul class="blog-actions__list">
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Views" title="Views">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4.63696C15 4.63696 12 9.75 7.5 9.75C3 9.75 0 4.63696 0 4.63696C0 4.63696 3 0 7.5 0C12 0 15 4.63696 15 4.63696ZM7.5 2.25C8.94707 2.25 10.125 3.42825 10.125 4.87582C10.125 6.32257 8.94707 7.5 7.5 7.5C6.05293 7.5 4.875 6.32585 4.875 4.87582C4.875 3.42825 6.05293 2.25 7.5 2.25ZM7.49858 6.18785C8.22277 6.18785 8.80965 5.59681 8.80965 4.8717C8.80965 4.14604 8.22222 3.555 7.49858 3.555C6.77549 3.555 6.1875 4.14439 6.1875 4.8706C6.1875 5.59681 6.77549 6.18785 7.49858 6.18785Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">1,904</span>
+                                        </button>
+                                    </li>
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Discuss" title="Discuss">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">82</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="note__item">
+                        <article class="note__content">
+                            <img class="note__image" src="./img/note/2.jpg" alt="Water flowing from a waterfall" width="263" height="180" loading="lazy">
+                            <h5 class="note__title h5">At the Mouth of the Mississippi, a Weird and Fragile Beauty</h5>
+                            <div class="note__actions blog-actions">
+                                <ul class="blog-actions__list">
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Views" title="Views">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4.63696C15 4.63696 12 9.75 7.5 9.75C3 9.75 0 4.63696 0 4.63696C0 4.63696 3 0 7.5 0C12 0 15 4.63696 15 4.63696ZM7.5 2.25C8.94707 2.25 10.125 3.42825 10.125 4.87582C10.125 6.32257 8.94707 7.5 7.5 7.5C6.05293 7.5 4.875 6.32585 4.875 4.87582C4.875 3.42825 6.05293 2.25 7.5 2.25ZM7.49858 6.18785C8.22277 6.18785 8.80965 5.59681 8.80965 4.8717C8.80965 4.14604 8.22222 3.555 7.49858 3.555C6.77549 3.555 6.1875 4.14439 6.1875 4.8706C6.1875 5.59681 6.77549 6.18785 7.49858 6.18785Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">2,873</span>
+                                        </button>
+                                    </li>
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Discuss" title="Discuss">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">982</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="note__item">
+                        <article class="note__content">
+                            <img class="note__image" src="./img/note/3.jpg" alt="A bee flying to a flower" width="263" height="180" loading="lazy">
+                            <h5 class="note__title h5">Chattanooga Is Changing. But Its Charms Remain.</h5>
+                            <div class="note__actions blog-actions">
+                                <ul class="blog-actions__list">
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Views" title="Views">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4.63696C15 4.63696 12 9.75 7.5 9.75C3 9.75 0 4.63696 0 4.63696C0 4.63696 3 0 7.5 0C12 0 15 4.63696 15 4.63696ZM7.5 2.25C8.94707 2.25 10.125 3.42825 10.125 4.87582C10.125 6.32257 8.94707 7.5 7.5 7.5C6.05293 7.5 4.875 6.32585 4.875 4.87582C4.875 3.42825 6.05293 2.25 7.5 2.25ZM7.49858 6.18785C8.22277 6.18785 8.80965 5.59681 8.80965 4.8717C8.80965 4.14604 8.22222 3.555 7.49858 3.555C6.77549 3.555 6.1875 4.14439 6.1875 4.8706C6.1875 5.59681 6.77549 6.18785 7.49858 6.18785Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">821</span>
+                                        </button>
+                                    </li>
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Discuss" title="Discuss">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">30</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="note__item">
+                        <article class="note__content">
+                            <img class="note__image" src="./img/note/4.jpg" alt="Woman in car touching mirror" width="263" height="180" loading="lazy">
+                            <h5 class="note__title h5">How to Get by in a Country if You Don’t Know the Language</h5>
+                            <div class="note__actions blog-actions">
+                                <ul class="blog-actions__list">
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Views" title="Views">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4.63696C15 4.63696 12 9.75 7.5 9.75C3 9.75 0 4.63696 0 4.63696C0 4.63696 3 0 7.5 0C12 0 15 4.63696 15 4.63696ZM7.5 2.25C8.94707 2.25 10.125 3.42825 10.125 4.87582C10.125 6.32257 8.94707 7.5 7.5 7.5C6.05293 7.5 4.875 6.32585 4.875 4.87582C4.875 3.42825 6.05293 2.25 7.5 2.25ZM7.49858 6.18785C8.22277 6.18785 8.80965 5.59681 8.80965 4.8717C8.80965 4.14604 8.22222 3.555 7.49858 3.555C6.77549 3.555 6.1875 4.14439 6.1875 4.8706C6.1875 5.59681 6.77549 6.18785 7.49858 6.18785Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">5,300</span>
+                                        </button>
+                                    </li>
+                                    <li class="blog-actions__item">
+                                        <button class="blog-actions__button blog-actions__button--color-base" type="button" aria-label="Discuss" title="Discuss">
+                                            <span class="blog-actions__icon-wrapper">
+                                                <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                </svg>
+                                            </span>
+                                            <span class="blog-actions__text">495</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="comments" aria-labelledby="comments-title">
+            <div class="comments__inner container">
+                <div class="comments__wrapper">
+                    <div class="comments__header">
+                        <div class="comments__title-wrapper">
+                            <h2 class="comments__title h2" id="comments-title">Comments</h2>
+                            <span>19</span>
+                        </div>
+                        <button class="comments__button" type="button">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2V18H3.8L14.8 6.90004L11 3.10004L0 14.2ZM17.7 4.00004C18.1 3.60004 18.1 3.00004 17.7 2.60004L15.4 0.3C15 -0.1 14.4 -0.1 14 0.3L12.2 2.1L16 5.9L17.7 4.00004Z" fill="#BCBFC2"/>
+                            </svg>
+                            <span>Add comment</span>
+                        </button>
+                    </div>
+                    <div class="comments__body">
+                        <ul class="comments__list">
+                            <li class="comments__item">
+                                <img class="comments__image" src="./img/person/comments/1.png" alt="" width="75" height="75" loading="lazy">
+                                <div class="comments__content">
+                                    <div class="comments__info">
+                                        <h5 class="comments__name h5">Ryan Hall</h5>
+                                        <span class="comments__time">July 17, 6:38 pm</span>
+                                    </div>
+                                    <div class="comments__description">
+                                        <p>
+                                            In the event, "in places like Iraq and Jordan, leaders of the new sovereign states were brought in from the outside, tailored to suit colonial interests and commitments
+                                        </p>
+                                    </div>
+                                    <div class="comments__actions comments-actions">
+                                        <ul class="comments-actions__list">
+                                            <li class="comments-actions__item">
+                                                <button class="comments-actions__button" type="button" aria-label="Discuss" title="Discuss">
+                                                    <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                    </svg>
+                                                    <span>Reply</span>
+                                                </button>
+                                            </li>
+                                            <li class="comments-actions__item" type="button">
+                                                <div class="comments-actions__reactions" data-js-reactions>
+                                                    <button class="comments-actions__btn-like" type="button" aria-label="Like" title="Like" data-js-comments-btn-like>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12.75C1.08579 12.75 0.75 12.4142 0.75 12V5.25001C0.75 4.83579 1.08579 4.50001 1.5 4.50001H2.25C2.66421 4.50001 3 4.83579 3 5.25001V12C3 12.4142 2.66421 12.75 2.25 12.75H1.5ZM13.0227 4.20939C13.6977 4.20939 14.25 4.80066 14.25 5.52331C14.2403 6.52762 14.2162 7.08155 14.1778 7.18508C14.1394 7.28861 13.5089 8.8808 12.2864 11.9616C12.1023 12.4215 10.5902 12.75 10.0993 12.75H5.79C5.115 12.75 4.125 12.1587 4.125 11.4361V4.50001L8.19543 0.287946L8.19774 0.285557C8.55929 -0.0859288 9.15354 -0.0939831 9.52502 0.267568C9.64773 0.464659 9.77045 0.727447 9.77045 0.990235C9.77045 1.05593 9.77045 1.12163 9.77045 1.18733L9.15682 4.20939H13.0227Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                    <span class="comments-actions__number-reactions" data-js-comments-number>+10</span>
+                                                    <button class="comments-actions__btn-dislike" type="button" aria-label="Dislike" title="Dislike" data-js-comments-btn-dislike>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 0.249994C13.9142 0.249994 14.25 0.58578 14.25 0.999994V7.74999C14.25 8.16421 13.9142 8.49999 13.5 8.49999H12.75C12.3358 8.49999 12 8.16421 12 7.74999V0.999994C12 0.58578 12.3358 0.249994 12.75 0.249994H13.5ZM1.97727 8.79061C1.30227 8.79061 0.75 8.19934 0.75 7.47669C0.759695 6.47238 0.783758 5.91845 0.822192 5.81492C0.860626 5.71139 1.49111 4.1192 2.71364 1.03836C2.89773 0.57848 4.40981 0.249994 4.90072 0.249994H9.21C9.885 0.249994 10.875 0.841267 10.875 1.56394V8.49999L6.80457 12.7121L6.80226 12.7144C6.44071 13.0859 5.84646 13.094 5.47498 12.7324C5.35227 12.5353 5.22955 12.2726 5.22955 12.0098C5.22955 11.9441 5.22955 11.8784 5.22955 11.8127L5.84318 8.79061H1.97727Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>                                                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comments__item is-active">
+                                <img class="comments__image" src="./img/person/comments/2.png" alt="" width="75" height="75" loading="lazy">
+                                <div class="comments__content">
+                                    <div class="comments__info">
+                                        <h5 class="comments__name h5">Lora Morrow</h5>
+                                        <span class="comments__time">July 17, 6:41 pm</span>
+                                    </div>
+                                    <div class="comments__description">
+                                        <p>
+                                            Likewise, most states in the Persian Gulf were handed over to those who could protect and safeguard imperial interests in the post-withdrawal phase
+                                        </p>
+                                    </div>
+                                    <div class="comments__actions comments-actions">
+                                        <ul class="comments-actions__list">
+                                            <li class="comments-actions__item">
+                                                <button class="comments-actions__button" type="button" aria-label="Discuss" title="Discuss">
+                                                    <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                    </svg>
+                                                    <span>Reply</span>
+                                                </button>
+                                            </li>
+                                            <li class="comments-actions__item">
+                                                <div class="comments-actions__reactions" data-js-reactions>
+                                                    <button class="comments-actions__btn-like" type="button" aria-label="Like" title="Like" data-js-comments-btn-like>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12.75C1.08579 12.75 0.75 12.4142 0.75 12V5.25001C0.75 4.83579 1.08579 4.50001 1.5 4.50001H2.25C2.66421 4.50001 3 4.83579 3 5.25001V12C3 12.4142 2.66421 12.75 2.25 12.75H1.5ZM13.0227 4.20939C13.6977 4.20939 14.25 4.80066 14.25 5.52331C14.2403 6.52762 14.2162 7.08155 14.1778 7.18508C14.1394 7.28861 13.5089 8.8808 12.2864 11.9616C12.1023 12.4215 10.5902 12.75 10.0993 12.75H5.79C5.115 12.75 4.125 12.1587 4.125 11.4361V4.50001L8.19543 0.287946L8.19774 0.285557C8.55929 -0.0859288 9.15354 -0.0939831 9.52502 0.267568C9.64773 0.464659 9.77045 0.727447 9.77045 0.990235C9.77045 1.05593 9.77045 1.12163 9.77045 1.18733L9.15682 4.20939H13.0227Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                    <span class="comments-actions__number-reactions" data-js-comments-number>0</span>
+                                                    <button class="comments-actions__btn-dislike" type="button" aria-label="Dislike" title="Dislike" data-js-comments-btn-dislike>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 0.249994C13.9142 0.249994 14.25 0.58578 14.25 0.999994V7.74999C14.25 8.16421 13.9142 8.49999 13.5 8.49999H12.75C12.3358 8.49999 12 8.16421 12 7.74999V0.999994C12 0.58578 12.3358 0.249994 12.75 0.249994H13.5ZM1.97727 8.79061C1.30227 8.79061 0.75 8.19934 0.75 7.47669C0.759695 6.47238 0.783758 5.91845 0.822192 5.81492C0.860626 5.71139 1.49111 4.1192 2.71364 1.03836C2.89773 0.57848 4.40981 0.249994 4.90072 0.249994H9.21C9.885 0.249994 10.875 0.841267 10.875 1.56394V8.49999L6.80457 12.7121L6.80226 12.7144C6.44071 13.0859 5.84646 13.094 5.47498 12.7324C5.35227 12.5353 5.22955 12.2726 5.22955 12.0098C5.22955 11.9441 5.22955 11.8784 5.22955 11.8127L5.84318 8.79061H1.97727Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>                                                                               
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comments__item">
+                                <img class="comments__image" src="./img/person/comments/3.png" alt="" width="75" height="75" loading="lazy">
+                                <div class="comments__content">
+                                    <div class="comments__info">
+                                        <h5 class="comments__name h5">Tara Stark</h5>
+                                        <span class="comments__time">July 17, 6:53 pm</span>
+                                    </div>
+                                    <div class="comments__description">
+                                        <p>
+                                            French Indochina was divided into five subdivisions: Tonkin, Annam, Cochinchina, Cambodia and Laos. Cochinchina was the first territory under French Control. Saigon was conquired in 1859. Then, in 1887, the Indochinese Union was established.
+                                        </p>
+                                    </div>
+                                    <div class="comments__actions comments-actions">
+                                        <ul class="comments-actions__list">
+                                            <li class="comments-actions__item">
+                                                <button class="comments-actions__button" type="button" aria-label="Discuss" title="Discuss">
+                                                    <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                    </svg>
+                                                    <span>Reply</span>
+                                                </button>
+                                            </li>
+                                            <li class="comments-actions__item">
+                                                <div class="comments-actions__reactions" data-js-reactions>
+                                                    <button class="comments-actions__btn-like" type="button" aria-label="Like" title="Like" data-js-comments-btn-like>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12.75C1.08579 12.75 0.75 12.4142 0.75 12V5.25001C0.75 4.83579 1.08579 4.50001 1.5 4.50001H2.25C2.66421 4.50001 3 4.83579 3 5.25001V12C3 12.4142 2.66421 12.75 2.25 12.75H1.5ZM13.0227 4.20939C13.6977 4.20939 14.25 4.80066 14.25 5.52331C14.2403 6.52762 14.2162 7.08155 14.1778 7.18508C14.1394 7.28861 13.5089 8.8808 12.2864 11.9616C12.1023 12.4215 10.5902 12.75 10.0993 12.75H5.79C5.115 12.75 4.125 12.1587 4.125 11.4361V4.50001L8.19543 0.287946L8.19774 0.285557C8.55929 -0.0859288 9.15354 -0.0939831 9.52502 0.267568C9.64773 0.464659 9.77045 0.727447 9.77045 0.990235C9.77045 1.05593 9.77045 1.12163 9.77045 1.18733L9.15682 4.20939H13.0227Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                    <span class="comments-actions__number-reactions comments-actions__number-reactions--red" data-js-comments-number>-3</span>
+                                                    <button class="comments-actions__btn-dislike" type="button" aria-label="Dislike" title="Dislike" data-js-comments-btn-dislike>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 0.249994C13.9142 0.249994 14.25 0.58578 14.25 0.999994V7.74999C14.25 8.16421 13.9142 8.49999 13.5 8.49999H12.75C12.3358 8.49999 12 8.16421 12 7.74999V0.999994C12 0.58578 12.3358 0.249994 12.75 0.249994H13.5ZM1.97727 8.79061C1.30227 8.79061 0.75 8.19934 0.75 7.47669C0.759695 6.47238 0.783758 5.91845 0.822192 5.81492C0.860626 5.71139 1.49111 4.1192 2.71364 1.03836C2.89773 0.57848 4.40981 0.249994 4.90072 0.249994H9.21C9.885 0.249994 10.875 0.841267 10.875 1.56394V8.49999L6.80457 12.7121L6.80226 12.7144C6.44071 13.0859 5.84646 13.094 5.47498 12.7324C5.35227 12.5353 5.22955 12.2726 5.22955 12.0098C5.22955 11.9441 5.22955 11.8784 5.22955 11.8127L5.84318 8.79061H1.97727Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>                                                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="comments__item">
+                                <img class="comments__image" src="./img/person/comments/4.png" alt="" width="75" height="75" loading="lazy">
+                                <div class="comments__content">
+                                    <div class="comments__info">
+                                        <h5 class="comments__name h5">Kris Robertson</h5>
+                                        <span class="comments__time">July 17, 7:12 pm</span>
+                                    </div>
+                                    <div class="comments__description">
+                                        <p>
+                                            Indian Marxist scholar Vivek Chibber has critiqued some foundational logics of Postcolonial Theory in his book Postcolonial Theory and the Specter of Capital
+                                        </p>
+                                    </div>
+                                    <div class="comments__actions comments-actions">
+                                        <ul class="comments-actions__list">
+                                            <li class="comments-actions__item">
+                                                <button class="comments-actions__button" type="button" aria-label="Discuss" title="Discuss">
+                                                    <svg width="15" height="15" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" fill="#BCBFC2"/>
+                                                    </svg>
+                                                    <span>Reply</span>
+                                                </button>
+                                            </li>
+                                            <li class="comments-actions__item">
+                                                <div class="comments-actions__reactions" data-js-reactions>
+                                                    <button class="comments-actions__btn-like" type="button" aria-label="Like" title="Like" data-js-comments-btn-like>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12.75C1.08579 12.75 0.75 12.4142 0.75 12V5.25001C0.75 4.83579 1.08579 4.50001 1.5 4.50001H2.25C2.66421 4.50001 3 4.83579 3 5.25001V12C3 12.4142 2.66421 12.75 2.25 12.75H1.5ZM13.0227 4.20939C13.6977 4.20939 14.25 4.80066 14.25 5.52331C14.2403 6.52762 14.2162 7.08155 14.1778 7.18508C14.1394 7.28861 13.5089 8.8808 12.2864 11.9616C12.1023 12.4215 10.5902 12.75 10.0993 12.75H5.79C5.115 12.75 4.125 12.1587 4.125 11.4361V4.50001L8.19543 0.287946L8.19774 0.285557C8.55929 -0.0859288 9.15354 -0.0939831 9.52502 0.267568C9.64773 0.464659 9.77045 0.727447 9.77045 0.990235C9.77045 1.05593 9.77045 1.12163 9.77045 1.18733L9.15682 4.20939H13.0227Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                    <span class="comments-actions__number-reactions" data-js-comments-number>0</span>
+                                                    <button class="comments-actions__btn-dislike" type="button" aria-label="Dislike" title="Dislike" data-js-comments-btn-dislike>
+                                                        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 0.249994C13.9142 0.249994 14.25 0.58578 14.25 0.999994V7.74999C14.25 8.16421 13.9142 8.49999 13.5 8.49999H12.75C12.3358 8.49999 12 8.16421 12 7.74999V0.999994C12 0.58578 12.3358 0.249994 12.75 0.249994H13.5ZM1.97727 8.79061C1.30227 8.79061 0.75 8.19934 0.75 7.47669C0.759695 6.47238 0.783758 5.91845 0.822192 5.81492C0.860626 5.71139 1.49111 4.1192 2.71364 1.03836C2.89773 0.57848 4.40981 0.249994 4.90072 0.249994H9.21C9.885 0.249994 10.875 0.841267 10.875 1.56394V8.49999L6.80457 12.7121L6.80226 12.7144C6.44071 13.0859 5.84646 13.094 5.47498 12.7324C5.35227 12.5353 5.22955 12.2726 5.22955 12.0098C5.22955 11.9441 5.22955 11.8784 5.22955 11.8127L5.84318 8.79061H1.97727Z" fill="#BCBFC2"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </li>                                                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>                                                                       
+                        </ul>
+                    </div>
+                    <button class="comments__button" type="button">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.43156 10.8184C4.39429 11.9973 5.85925 12.75 7.5 12.75C10.3995 12.75 12.75 10.3995 12.75 7.5H14.25C14.25 11.2279 11.2279 14.25 7.5 14.25C5.44514 14.25 3.60473 13.3318 2.36669 11.8833L1.39017 12.8598C1.31984 12.9302 1.22446 12.9697 1.125 12.9697C0.917893 12.9697 0.75 12.8018 0.75 12.5947V9.375C0.75 9.16789 0.917893 9 1.125 9H4.34467C4.44413 9 4.53951 9.03951 4.60984 9.10983C4.75628 9.25628 4.75628 9.49372 4.60984 9.64017L3.43156 10.8184ZM11.5684 4.18156C10.6057 3.00267 9.14075 2.25 7.5 2.25C4.6005 2.25 2.25 4.6005 2.25 7.5H0.75C0.75 3.77208 3.77208 0.75 7.5 0.75C9.55486 0.75 11.3953 1.6682 12.6333 3.11669L13.6098 2.14017C13.7563 1.99372 13.9937 1.99372 14.1402 2.14017C14.2105 2.21049 14.25 2.30587 14.25 2.40533V5.625C14.25 5.83211 14.0821 6 13.875 6H10.6553C10.4482 6 10.2803 5.83211 10.2803 5.625C10.2803 5.52554 10.3198 5.43016 10.3902 5.35984L11.5684 4.18156Z" fill="#BCBFC2"/>
+                        </svg>                    
+                        <span>Load more</span>
+                    </button>
+                </div>
+                <form class="comments__form comments-form" action="/">
+                    <div class="comments-form__inner">
+                        <img class="comments-form__image" src="./img/person/comments/5.png" alt="" width="75" height="75" loading="lazy">
+                        <div class="comments-form__body">
+                            <h5 class="comments-form__title h4">What do you think?</h5>
+                            <div class="comments-form__field">
+                                <label class="comments-form__label visually-hidden" for="message">message</label>
+                                <textarea class="comments-form__textarea" id="message" type="text" required></textarea>
+                            </div>
+                            <button class="comments-form__button button-base">
+                                <span>Submit</span>
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.99951V3.99951H11V6.99951L15 3.49951L11 -0.000488281V2.99951H0Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__discount">
+                <h2 class="footer__discount-title h2">Subscribe now and get 20% off</h2>
+                <form class="footer-form" action="/">
+                    <div class="footer-form__cell field">
+                        <label class="field__label visually-hidden" for="email">Email</label>
+                        <input class="field__input" id="email" type="email" placeholder="Enter your email">
+                    </div>
+                    <button class="footer-form__button button-base button-base--form">Subscribe</button>
+                </form>
+            </div>
+            <nav class="footer__menu">
+                <div class="footer__menu-column">
+                    <a class="footer__menu-main-link" href="/">News</a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Nation
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                World
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Politics
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Solar Eclipse
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <a class="footer__menu-main-link" href="/">Arts</a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Art & Design
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Movies
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                People
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Video: Arts
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Theater
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <a class="footer__menu-main-link" href="/">Travel</a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Destinations
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Flights
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Business Travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <a class="footer__menu-main-link" href="/">Sports</a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Olympics
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Motor Sports
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Volleyball
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                MMA
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Cycling
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <a class="footer__menu-main-link" href="/">Tech</a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Tech
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Tech Columnists
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Tech Reviews
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Talking Tech
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <a class="footer__menu-main-link" href="/">Moneys</a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Markets
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Business
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Personal Finance
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Retirement
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">
+                                Careers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer__contacts">
+                <div class="footer__contacts-main">
+                    <a class="footer__contacts-logo" href="/">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#4592FF"/>
+                            <mask id="mask0_1_694" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_1_694)">
+                            <path d="M1.92576 27.1313C2.56932 27.1313 3.14276 27.0246 3.64606 26.8112C4.15761 26.5978 4.58666 26.2982 4.93319 25.9124C5.27973 25.5267 5.54375 25.0588 5.72527 24.5089C5.91504 23.959 6.00993 23.3434 6.00993 22.6621V12H9.33914V22.6621C9.33914 23.7209 9.16587 24.7018 8.81934 25.6046C8.48105 26.4993 7.99013 27.275 7.34656 27.9316C6.71125 28.58 5.93567 29.0889 5.01982 29.4583C4.10398 29.8194 3.07263 30 1.92576 30C0.770641 30 -0.26484 29.8194 -1.18068 29.4583C-2.09653 29.0889 -2.87623 28.58 -3.5198 27.9316C-4.15511 27.275 -4.64604 26.4993 -4.99257 25.6046C-5.33086 24.7018 -5.5 23.7209 -5.5 22.6621V12H-2.17078V22.6498C-2.17078 23.3311 -2.08003 23.9466 -1.89851 24.4966C-1.70874 25.0465 -1.44059 25.5185 -1.09405 25.9124C-0.739264 26.2982 -0.31022 26.5978 0.193082 26.8112C0.704634 27.0246 1.28219 27.1313 1.92576 27.1313Z" fill="white"/>
+                            <path d="M28.1805 12V29.803H26.4725C26.2085 29.803 25.9857 29.762 25.8042 29.6799C25.6309 29.5896 25.4618 29.4419 25.2968 29.2367L15.9527 17.368C16.0022 17.9097 16.027 18.4104 16.027 18.87V29.803H13.0938V12H14.8388C14.9791 12 15.0987 12.0082 15.1978 12.0246C15.305 12.0328 15.3958 12.0575 15.47 12.0985C15.5525 12.1313 15.6309 12.1847 15.7052 12.2586C15.7794 12.3242 15.8619 12.4145 15.9527 12.5294L25.3339 24.4473C25.3092 24.1601 25.2885 23.8769 25.272 23.5978C25.2555 23.3187 25.2473 23.0602 25.2473 22.8222V12H28.1805Z" fill="white"/>
+                            <path d="M47.5 12L40.2723 29.803H37.2648L30.0371 12H32.7104C32.9991 12 33.2343 12.0698 33.4158 12.2093C33.5973 12.3488 33.7335 12.5294 33.8242 12.751L38.0445 23.6101C38.1848 23.9631 38.3168 24.3529 38.4406 24.7798C38.5726 25.1984 38.6964 25.6375 38.8119 26.0971C38.9109 25.6375 39.0181 25.1984 39.1336 24.7798C39.2492 24.3529 39.377 23.9631 39.5173 23.6101L43.7129 12.751C43.7789 12.5622 43.9068 12.3899 44.0965 12.2339C44.2945 12.078 44.5338 12 44.8144 12H47.5Z" fill="white"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <ul class="footer__contacts-list">
+                        <li class="footer__contacts-itme">
+                            <a class="footer__contacts-link" href="/">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer__contacts-itme">
+                            <a class="footer__contacts-link" href="/">
+                                Work with Us
+                            </a>
+                        </li>
+                        <li class="footer__contacts-itme">
+                            <a class="footer__contacts-link" href="/">
+                                Advertise
+                            </a>
+                        </li>
+                        <li class="footer__contacts-itme">
+                            <a class="footer__contacts-link" href="/">
+                                Your Ad Choise
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts-soc1als soc1als">
+                    <ul class="soc1als__list">
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#4267B2"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6234 11.0037L22.2249 11C19.5302 11 17.7888 12.7387 17.7888 15.4298V17.4723H15.3771C15.1688 17.4723 15 17.6367 15 17.8395V20.7988C15 21.0016 15.1689 21.1658 15.3771 21.1658H17.7888V28.633C17.7888 28.8358 17.9575 29 18.1659 29H21.3124C21.5208 29 21.6896 28.8356 21.6896 28.633V21.1658H24.5093C24.7177 21.1658 24.8865 21.0016 24.8865 20.7988L24.8876 17.8395C24.8876 17.7421 24.8478 17.6489 24.7772 17.5799C24.7066 17.511 24.6103 17.4723 24.5103 17.4723H21.6896V15.7409C21.6896 14.9087 21.8933 14.4862 23.0073 14.4862L24.623 14.4857C24.8312 14.4857 25 14.3212 25 14.1186V11.3708C25 11.1683 24.8314 11.0041 24.6234 11.0037Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#1DA1F2"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.979 14.3629C28.9532 14.3322 28.9106 14.3217 28.8743 14.3385C28.3361 14.5795 27.77 14.7527 27.1869 14.8551C27.8059 14.385 28.2672 13.7341 28.5037 12.9876C28.5151 12.9519 28.5033 12.9128 28.4744 12.8896C28.4453 12.8663 28.4049 12.8633 28.373 12.8825C27.6758 13.2999 26.9206 13.5941 26.1276 13.7573C25.4248 13.0211 24.4435 12.6 23.4278 12.6C21.3623 12.6 19.6821 14.2961 19.6821 16.3809C19.6821 16.633 19.7063 16.8828 19.7542 17.1252C16.8934 16.947 14.2184 15.5606 12.3995 13.3086C12.3809 13.2856 12.3527 13.2727 12.3232 13.2757C12.2939 13.2779 12.2677 13.2947 12.2529 13.3202C11.9211 13.8948 11.7458 14.5523 11.7458 15.2211C11.7458 16.3803 12.2675 17.4641 13.1559 18.1793C12.6985 18.1238 12.2518 17.9785 11.849 17.7527C11.8219 17.7373 11.7882 17.7375 11.7611 17.7533C11.734 17.7689 11.7168 17.798 11.7161 17.8296L11.7157 17.878C11.7157 19.5428 12.8025 21.0045 14.3487 21.4899C13.9415 21.5561 13.5189 21.5517 13.1036 21.4716C13.073 21.4659 13.0409 21.4765 13.0199 21.5003C12.999 21.5241 12.992 21.5574 13.0016 21.5876C13.4653 23.0484 14.7535 24.0728 16.2531 24.2005C15.0022 25.1256 13.5237 25.613 11.9615 25.613C11.6737 25.613 11.3839 25.5956 11.1 25.562C11.0594 25.5573 11.0192 25.5817 11.0052 25.621C10.9912 25.6606 11.0061 25.7049 11.0412 25.7274C12.7317 26.8218 14.6864 27.4 16.6943 27.4C23.2619 27.4 27.1865 22.0148 27.1865 16.8087C27.1865 16.6637 27.1837 16.5195 27.178 16.3757C27.8865 15.8525 28.4947 15.2122 28.9851 14.471C29.007 14.4379 29.0046 14.3938 28.979 14.3629Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#FF0000"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 12.8C17.102 12.8 13.3406 13.5294 13.3406 13.5294L13.3311 13.5402C12.0112 13.7522 11 14.8915 11 16.277V23.7217C11.0027 25.0899 11.9937 26.2523 13.3379 26.4652L13.3406 26.4693C13.3406 26.4693 17.102 27.2 20 27.2C22.898 27.2 26.6594 26.4693 26.6594 26.4693C28.0065 26.2555 28.9986 25.0914 29 23.723V16.277C28.998 14.9096 28.0068 13.7464 26.6621 13.5334C26.6594 13.5294 22.898 12.8 20 12.8ZM18.2 16.85L23.6 20L18.2 23.15V16.85Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#262626"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 11.5C22.3085 11.5 22.5979 11.5098 23.5045 11.5512C24.4093 11.5924 25.0272 11.7361 25.5678 11.9463C26.1268 12.1634 26.6008 12.4541 27.0734 12.9266C27.5459 13.3992 27.8366 13.8732 28.0538 14.4322C28.2639 14.9728 28.4076 15.5907 28.4488 16.4955C28.4902 17.4021 28.5 17.6915 28.5 20C28.5 22.3085 28.4902 22.5979 28.4488 23.5045C28.4076 24.4093 28.2639 25.0272 28.0538 25.5678C27.8366 26.1268 27.5459 26.6008 27.0734 27.0734C26.6008 27.5459 26.1268 27.8366 25.5678 28.0538C25.0272 28.2639 24.4093 28.4076 23.5045 28.4488C22.5979 28.4902 22.3085 28.5 20 28.5C17.6915 28.5 17.4021 28.4902 16.4955 28.4488C15.5907 28.4076 14.9728 28.2639 14.4322 28.0538C13.8732 27.8366 13.3992 27.5459 12.9266 27.0734C12.4541 26.6008 12.1634 26.1268 11.9463 25.5678C11.7361 25.0272 11.5924 24.4093 11.5512 23.5045C11.5098 22.5979 11.5 22.3085 11.5 20C11.5 17.6915 11.5098 17.4021 11.5512 16.4955C11.5924 15.5907 11.7361 14.9728 11.9463 14.4322C12.1634 13.8732 12.4541 13.3992 12.9266 12.9266C13.3992 12.4541 13.8732 12.1634 14.4322 11.9463C14.9728 11.7361 15.5907 11.5924 16.4955 11.5512C17.4021 11.5098 17.6915 11.5 20 11.5ZM19.9973 22.8298C21.5616 22.8298 22.8298 21.5616 22.8298 19.9973C22.8298 18.433 21.5616 17.1649 19.9973 17.1649C18.433 17.1649 17.1649 18.433 17.1649 19.9973C17.1649 21.5616 18.433 22.8298 19.9973 22.8298ZM19.9973 15.6338C22.4072 15.6338 24.3608 17.5874 24.3608 19.9973C24.3608 22.4072 22.4072 24.3608 19.9973 24.3608C17.5874 24.3608 15.6338 22.4072 15.6338 19.9973C15.6338 17.5874 17.5874 15.6338 19.9973 15.6338ZM25.8556 15.3722C25.8556 15.946 25.3904 16.4111 24.8166 16.4111C24.2429 16.4111 23.7778 15.946 23.7778 15.3722C23.7778 14.7985 24.2429 14.3333 24.8166 14.3333C25.3904 14.3333 25.8556 14.7985 25.8556 15.3722Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright-description">
+                    Universal’s business concept is to offer fashion and quality at the best price in a sustainable way. Universal has since it was founded in 2015 grown into one of the world's leading fashion companies.
+                </p>
+                <p class="footer__copyright-time">
+                    © <time datetime="2019">2019</time> Universal UI Kit
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

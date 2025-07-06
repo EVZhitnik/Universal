@@ -1,0 +1,50 @@
+@use 'helpers' as *;
+
+.support-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: rem(11);
+    width: rem(135);
+    height: rem(40);
+    font-family: var(--font-family-alternate);
+    font-weight: 900;
+    color: var(--color-white);
+    border-radius: var(--border-radius-button);
+
+    @include hover {
+        svg {
+            path {
+                fill: var(--color-accent);
+            }
+        }
+    }
+
+    &--red {
+        background-color: var(--color-red-75);
+    }
+
+    &--blue {
+        background-color: var(--color-supprot-link-blue);
+    }
+
+    &--bluish {
+        background-color: var(--color-supprot-link-bluish);
+    }
+
+    &--circle {
+        @include square(rem(40));
+
+        border: var(--border);
+        border-radius: 50%;
+
+        @include hover {
+            border-color: var(--color-accent);
+        }
+    }
+
+    &__info {
+        display: flex;
+        column-gap: rem(5);
+    }
+}

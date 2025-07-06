@@ -1,0 +1,82 @@
+@use 'helpers' as *;
+
+.author-card {
+    position: relative;
+    z-index: 70;
+    top: rem(-160);
+    width: 100%;
+    height: fit-content;
+    background-color: var(--color-white);
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    @include mobile {
+        position: static;
+    }
+
+    &__content {
+        @include flex-center;
+
+        flex-direction: column;
+        text-align: center;
+        padding: rem(35) rem(25);
+    }
+
+    &__image,
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: rem(15);
+        }
+    }
+
+    &__name {
+        color: var(--color-gray-100);
+        
+        &:not(:last-child) {
+            margin-bottom: rem(5);
+        }
+    }
+
+    &__art {
+        font-family: var(--font-family-alternate);
+        font-weight: 900;
+        color: var(--color-gray-100);
+        
+        &:not(:last-child) {
+            margin-bottom: rem(25);
+        }
+    }
+
+    &__soc1als {
+        display: flex;
+        column-gap: rem(10);
+        cursor: pointer;
+
+        svg {
+            path:not(:last-child) {
+                stroke: var(--color-gray-15);
+            }
+            
+            @include hover {
+                path {
+                    stroke: var(--color-accent);
+                }
+                
+                path:not(:first-child) {
+                    fill: var(--color-accent);
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        font-family: var(--font-family-alternate);
+        font-weight: 900;
+        color: var(--color-gray-100);
+        padding-block: rem(12);
+        border-top: var(--border);
+    }
+}

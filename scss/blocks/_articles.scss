@@ -1,0 +1,10 @@
+@use 'helpers' as *;
+
+.articles {
+    background-color: var(--color-white);
+    padding-block: rem(60);
+
+    @include mobile {
+        padding-block: rem(30);
+    }
+}

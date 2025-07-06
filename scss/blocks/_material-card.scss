@@ -1,0 +1,38 @@
+@use 'helpers' as *;
+
+.material-card {
+    align-self: end;
+    padding-bottom: rem(35);
+
+    &__body {
+
+    }
+
+    &__title {
+        color: var(--color-gray-100);
+
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__image {
+        border-radius: var(--border-radius);
+
+        &:not(:last-child) {
+            margin-bottom: rem(15);
+        }
+    }
+
+    &__subtitle {
+        &:not(:last-child) {
+            margin-bottom: rem(5);
+        }
+    }
+
+    &__description {
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+}

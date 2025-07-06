@@ -42,6 +42,24 @@
 @use 'blocks/field.scss';
 @use 'blocks/soc1als.scss';
 
+@use 'blocks/top.scss';
+@use 'blocks/button-slider.scss';
+
+@use 'blocks/articles.scss';
+@use 'blocks/articles-geograph.scss';
+@use 'blocks/author-card.scss';
+@use 'blocks/material-card.scss';
+@use 'blocks/articles-quote.scss';
+@use 'blocks/articles-tags.scss';
+@use 'blocks/articles-support.scss';
+@use 'blocks/support-link.scss';
+
+@use 'blocks/note.scss';
+
+@use 'blocks/comments.scss';
+@use 'blocks/comments-form.scss';
+@use 'blocks/comments-actions.scss';
+
 // .header,
 // main > *:not(:last-child),
 // .footer {

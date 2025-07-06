@@ -27,12 +27,15 @@
     --color-bg: #EDEFF0;
     --color-gray-blog: #86888F;
     --color-accent: #FCC490;
+    --color-supprot-link-blue: #4267B2;
+    --color-supprot-link-bluish: #1DA1F2;
 
 
     --border: #{rem(1)} solid var(--color-gray-15);
     --border-columns: #{rem(1)} solid var(--color-gray-blue-50);
     --border-articles: #{rem(1)} solid var(--color-gray-85);
     --border-button-play-video: #{rem(3)} solid rgba(255, 255, 255, 0.4);
+    --border-button-slider: #{rem(1)} solid rgba(255, 255, 255, 0.4);
 
     --border-radius: #{rem(10)};
     --border-radius-button: #{rem(20)};

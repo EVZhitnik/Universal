@@ -22,7 +22,51 @@ function initSwiper() {
         },
     });
 
-    return swiperHot;
+    const swiperTop = new Swiper('.swiper-top', {
+        direction: 'horizontal',
+        speed: 300,
+        loop: true,
+
+        autoplay: {
+        delay: 3000, 
+        disableOnInteraction: true, 
+        },
+
+        navigation: {
+            nextEl: '.swiper-top-button-next',
+            prevEl: '.swiper-top-button-prev',
+        },
+
+        keyboard: {
+        enabled: true,
+        },
+    });
+
+    const swiperArticles = new Swiper('.swiper-articles', {
+        direction: 'horizontal',
+        speed: 300,
+        loop: true,
+
+        autoplay: {
+        delay: 3000, 
+        disableOnInteraction: true, 
+        },
+
+        navigation: {
+            nextEl: '.swiper-articles-button-next',
+            prevEl: '.swiper-articles-button-prev',
+        },
+
+        keyboard: {
+        enabled: true,
+        },
+    });
+
+    return {
+        hot: swiperHot,
+        top: swiperTop,
+        articles: swiperArticles,
+    };
 }
 
 export default initSwiper;

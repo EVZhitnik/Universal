@@ -1,0 +1,79 @@
+@use 'helpers' as *;
+
+.comments-form {
+    max-width: rem(750);
+    padding-left: rem(97);
+    background-color: var(--color-gray-05);
+
+    @include mobile {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    &__inner {
+        display: flex;
+        gap: rem(20);
+        padding: rem(30);
+
+        @include mobile {
+            padding: 0;
+        }
+    }
+
+    &__image {
+        align-self: start;
+        margin-top: rem(40);
+
+        @include mobile {
+            @include square(rem(45));
+        }
+    }
+
+    &__title {
+        color: var(--color-gray-100);
+    }
+
+    &__body {
+        display: grid;
+        gap: rem(15);
+        width: 100%;
+    }
+
+    &__field {
+        position: relative;
+        filter: drop-shadow(0 0 1px var(--color-gray-50));
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 100;
+            top: rem(28);
+            left: rem(-11);
+            width: rem(12);
+            height: rem(18);
+            background-color: var(--color-white);
+            clip-path: polygon(0 50%, 100% 100%, 100% 0);
+
+            @include mobile {
+                top: rem(20);
+            }
+        }
+    }
+
+    &__textarea {
+        font-family: var(--font-family-base);
+        font-weight: 900;
+        font-size: 16px;
+        color: var(--color-gray-100);
+        width: 100%;
+        min-height: rem(130);
+        border: none;
+        border-radius: rem(5);
+        padding: rem(5) rem(10);
+        resize: none;
+    }
+
+    &__button {
+        justify-self: start;
+    }
+}
