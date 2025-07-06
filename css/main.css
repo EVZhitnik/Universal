@@ -1637,25 +1637,25 @@ a[class] {
   height: 3.125rem;
 }
 .notes-aside__item:nth-child(1)::after {
-  background: url("/icon/numbers/1.svg") center/contain no-repeat;
+  background: url("../icon/numbers/1.svg") center/contain no-repeat;
 }
 .notes-aside__item:nth-child(2)::after {
-  background: url("/icon/numbers/2.svg") center/contain no-repeat;
+  background: url("../icon/numbers/2.svg") center/contain no-repeat;
 }
 .notes-aside__item:nth-child(3)::after {
-  background: url("/icon/numbers/3.svg") center/contain no-repeat;
+  background: url("../icon/numbers/3.svg") center/contain no-repeat;
 }
 .notes-aside__item:nth-child(4)::after {
-  background: url("/icon/numbers/4.svg") center/contain no-repeat;
+  background: url("../icon/numbers/4.svg") center/contain no-repeat;
 }
 .notes-aside__item:nth-child(5)::after {
-  background: url("/icon/numbers/5.svg") center/contain no-repeat;
+  background: url("../icon/numbers/5.svg") center/contain no-repeat;
 }
 .notes-aside__item:nth-child(6)::after {
-  background: url("/icon/numbers/6.svg") center/contain no-repeat;
+  background: url("../icon/numbers/6.svg") center/contain no-repeat;
 }
 .notes-aside__item:nth-child(7)::after {
-  background: url("/icon/numbers/7.svg") center/contain no-repeat;
+  background: url("../icon/numbers/7.svg") center/contain no-repeat;
 }
 .notes-aside__item:not(:last-child) {
   border-bottom: var(--border);
