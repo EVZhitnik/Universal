@@ -1175,6 +1175,7 @@ a[class] {
   font-weight: 900;
   color: var(--color-white);
   background-color: var(--color-blue-60);
+  border: none;
   border-radius: var(--border-radius-button);
   text-wrap: nowrap;
 }
@@ -2281,6 +2282,11 @@ a[class] {
   background-color: var(--color-white);
   padding-block: 3.75rem;
 }
+@media (width <= 47.99875rem) {
+  .articles {
+    padding-block: 1.875rem;
+  }
+}
 
 .articles-geograph {
   display: grid;
@@ -2610,6 +2616,271 @@ a[class] {
     width: 100%;
     height: 100%;
   }
+}
+
+.comments {
+  background-color: var(--color-white);
+  padding-top: 5.625rem;
+  padding-bottom: 1.875rem;
+}
+@media (width <= 47.99875rem) {
+  .comments {
+    padding-top: 1.875rem;
+  }
+}
+.comments__inner {
+  display: grid;
+  row-gap: 3.75rem;
+}
+.comments__wrapper {
+  display: grid;
+  row-gap: 1.875rem;
+  max-width: 46.875rem;
+  padding-left: 6.0625rem;
+}
+@media (width <= 47.99875rem) {
+  .comments__wrapper {
+    padding-left: 0;
+  }
+}
+.comments__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.625rem;
+}
+.comments__title {
+  color: var(--color-gray-100);
+}
+.comments__title-wrapper {
+  display: flex;
+  column-gap: 0.6875rem;
+}
+.comments__title-wrapper span {
+  font-size: clamp(1.375rem, 1.0123966942rem + 1.4876033058vw, 2.5rem);
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--color-gray-50);
+}
+.comments__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.625rem;
+  font-family: var(--font-family-alternate);
+  font-weight: 900;
+  color: var(--color-gray-100);
+  background-color: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius-button);
+  padding: 0.625rem 1.375rem;
+}
+@media (any-hover: hover) {
+  .comments__button:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .comments__button:hover svg path {
+    fill: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .comments__button:active {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .comments__button:active svg path {
+    fill: var(--color-accent);
+  }
+}
+.comments__item {
+  display: flex;
+  column-gap: 0.9375rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.875rem;
+  border-top: var(--border);
+}
+.comments__item.is-active {
+  padding-left: 5.625rem;
+}
+@media (width <= 47.99875rem) {
+  .comments__item.is-active {
+    padding-left: 2.8125rem;
+  }
+}
+.comments__image {
+  align-self: start;
+}
+@media (width <= 47.99875rem) {
+  .comments__image {
+    width: 2.8125rem;
+    height: 2.8125rem;
+  }
+}
+.comments__content {
+  display: grid;
+  row-gap: 0.625rem;
+}
+.comments__info {
+  display: flex;
+  align-items: center;
+  gap: 0.5625rem;
+}
+.comments__time {
+  display: inline-flex;
+}
+.comments__description {
+  font-size: clamp(0.875rem, 0.7944214876rem + 0.3305785124vw, 1.125rem);
+  line-height: 1.67;
+  max-width: 35.625rem;
+}
+@media (width <= 47.99875rem) {
+  .comments__description {
+    max-width: 100%;
+  }
+}
+
+.comments-form {
+  max-width: 46.875rem;
+  padding-left: 6.0625rem;
+  background-color: var(--color-gray-05);
+}
+@media (width <= 47.99875rem) {
+  .comments-form {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+.comments-form__inner {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.875rem;
+}
+@media (width <= 47.99875rem) {
+  .comments-form__inner {
+    padding: 0;
+  }
+}
+.comments-form__image {
+  align-self: start;
+  margin-top: 2.5rem;
+}
+@media (width <= 47.99875rem) {
+  .comments-form__image {
+    width: 2.8125rem;
+    height: 2.8125rem;
+  }
+}
+.comments-form__title {
+  color: var(--color-gray-100);
+}
+.comments-form__body {
+  display: grid;
+  gap: 0.9375rem;
+  width: 100%;
+}
+.comments-form__field {
+  position: relative;
+  filter: drop-shadow(0 0 1px var(--color-gray-50));
+}
+.comments-form__field::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 1.75rem;
+  left: -0.6875rem;
+  width: 0.75rem;
+  height: 1.125rem;
+  background-color: var(--color-white);
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+@media (width <= 47.99875rem) {
+  .comments-form__field::before {
+    top: 1.25rem;
+  }
+}
+.comments-form__textarea {
+  font-family: var(--font-family-base);
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--color-gray-100);
+  width: 100%;
+  min-height: 8.125rem;
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem 0.625rem;
+  resize: none;
+}
+.comments-form__button {
+  justify-self: start;
+}
+
+.comments-actions__list {
+  display: flex;
+  align-items: center;
+  column-gap: 0.9375rem;
+}
+.comments-actions__button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.375rem;
+  border: none;
+  background-color: transparent;
+}
+@media (any-hover: hover) {
+  .comments-actions__button svg:hover path {
+    fill: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .comments-actions__button svg:active path {
+    fill: var(--color-accent);
+  }
+}
+.comments-actions__button span {
+  font-family: var(--font-family-alternate);
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--color-gray-100);
+}
+.comments-actions__reactions {
+  display: flex;
+  align-items: center;
+  column-gap: 0.6875rem;
+}
+.comments-actions__btn-like, .comments-actions__btn-dislike {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.comments-actions__btn-like:active svg path {
+  fill: var(--color-green-75);
+}
+.comments-actions__btn-like:focus svg path {
+  fill: var(--color-green-75);
+}
+.comments-actions__btn-dislike:active svg path {
+  fill: var(--color-red-75);
+}
+.comments-actions__btn-dislike:focus svg path {
+  fill: var(--color-red-75);
+}
+.comments-actions__number-reactions {
+  font-family: var(--font-family-alternate);
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+.comments-actions__number-reactions.is-base {
+  color: var(--color-gray-50);
+}
+.comments-actions__number-reactions.is-green {
+  color: var(--color-green-75);
+}
+.comments-actions__number-reactions.is-red {
+  color: var(--color-red-75);
 }
 
 /*# sourceMappingURL=main.css.map */
