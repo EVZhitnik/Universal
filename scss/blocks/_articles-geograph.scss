@@ -1,0 +1,85 @@
+@use 'helpers' as *;
+
+.articles-geograph {
+    display: grid;
+    grid-template-columns: 54.65% 23.16%;
+    column-gap: rem(60);
+    justify-content: center;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        row-gap: rem(20);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: rem(65);
+
+        @include mobile {
+            margin-bottom: rem(30);
+        }
+    }
+
+    &__text {
+        font-size: rem(18);
+        line-height: 1.67;
+    }
+
+    &__drop {
+        &-cap::first-letter {
+            float: left;
+            font-family: var(--font-family-alternate);
+            font-weight: 900;
+            font-size: rem(100); 
+            line-height: 0.87; 
+            margin-right: rem(10); 
+            color: var(--color-blue-60);
+        }
+    }
+
+    &__title {
+        padding-block: rem(30);
+    }
+
+    &__quote {
+        display: flex;
+        align-items: flex-start;
+        gap: rem(25);
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(45);
+        }
+    }
+
+    &__blockquote {
+        position: relative;
+        max-width: rem(458);
+        
+        @include mobile {
+            max-width: 100%;
+        }
+
+        p {
+            position: relative;
+            z-index: 50; 
+        }
+
+        &::before {
+            @include square(rem(70));
+
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: rem(-20);
+            left: rem(-20);
+            background: url('../icon/quote-articles.svg') center/contain no-repeat;
+        
+            @include mobile {
+                left: rem(-10);
+            }
+        }
+    }
+}

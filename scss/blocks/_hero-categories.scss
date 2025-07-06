@@ -28,6 +28,7 @@
     }
 
     &--top {
+        padding-inline: rem(16);
         &:not(:last-child) {
             margin-bottom: 0;
         }

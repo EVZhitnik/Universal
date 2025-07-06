@@ -1,0 +1,27 @@
+@use 'helpers' as *;
+
+.articles-support {
+    display: grid;
+    grid-template-columns: 54.65% 23.16%;
+    column-gap: rem(60);
+    justify-content: center;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        row-gap: rem(20);
+    }
+
+    &__inner {
+        display: grid;
+        row-gap: rem(25);
+        padding-block: rem(30);
+        border-top: var(--border);
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: rem(10);
+    }
+}
