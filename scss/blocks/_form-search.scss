@@ -11,21 +11,33 @@
         width: rem(40);
         transition: width 0.3s ease-in-out;
 
-        @include hover {
+        &.is-active {
             width: rem(200);
 
             @include mobile-s {
                 width: rem(150);
             }
-
-            .form-search__input {
-                opacity: 1;
-            }
-
+            
             .form-search__button {
                 transform: translateY(-50%) rotate(360deg);
             }
         }
+
+        // @include hover {
+        //     width: rem(200);
+
+        //     @include mobile-s {
+        //         width: rem(150);
+        //     }
+
+        //     .form-search__input {
+        //         opacity: 1;
+        //     }
+
+        //     .form-search__button {
+        //         transform: translateY(-50%) rotate(360deg);
+        //     }
+        // }
     }
    
     &__button {
@@ -44,6 +56,7 @@
         border-radius: 50%;
         transition: transform 0.3s ease;
         z-index: 50;
+        background-color: var(--color-bg);
 
         @include mobile {
             left: auto;
@@ -84,6 +97,10 @@
 
         &::placeholder {
             color: currentColor;
+        }
+
+        &.is-active {
+            opacity: 1;
         }
     }
 }

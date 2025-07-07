@@ -490,6 +490,7 @@ a[class] {
   border: none;
   padding: 0;
   color: var(--color-gray-85);
+  background-color: transparent;
 }
 @media (any-hover: hover) {
   .header-top__login:hover svg path {
@@ -556,41 +557,16 @@ a[class] {
   width: 2.5rem;
   transition: width 0.3s ease-in-out;
 }
-@media (any-hover: hover) {
-  .form-search__body:hover {
-    width: 12.5rem;
-  }
+.form-search__body.is-active {
+  width: 12.5rem;
 }
-@media (any-hover: hover) and (width <= 30.06125rem) {
-  .form-search__body:hover {
+@media (width <= 30.06125rem) {
+  .form-search__body.is-active {
     width: 9.375rem;
   }
 }
-@media (any-hover: hover) {
-  .form-search__body:hover .form-search__input {
-    opacity: 1;
-  }
-  .form-search__body:hover .form-search__button {
-    transform: translateY(-50%) rotate(360deg);
-  }
-}
-@media (any-hover: none) {
-  .form-search__body:active {
-    width: 12.5rem;
-  }
-}
-@media (any-hover: none) and (width <= 30.06125rem) {
-  .form-search__body:active {
-    width: 9.375rem;
-  }
-}
-@media (any-hover: none) {
-  .form-search__body:active .form-search__input {
-    opacity: 1;
-  }
-  .form-search__body:active .form-search__button {
-    transform: translateY(-50%) rotate(360deg);
-  }
+.form-search__body.is-active .form-search__button {
+  transform: translateY(-50%) rotate(360deg);
 }
 .form-search__button {
   position: absolute;
@@ -608,6 +584,7 @@ a[class] {
   border-radius: 50%;
   transition: transform 0.3s ease;
   z-index: 50;
+  background-color: var(--color-bg);
 }
 @media (width <= 47.99875rem) {
   .form-search__button {
@@ -648,6 +625,9 @@ a[class] {
 }
 .form-search__input::placeholder {
   color: currentColor;
+}
+.form-search__input.is-active {
+  opacity: 1;
 }
 
 .stories-link {
