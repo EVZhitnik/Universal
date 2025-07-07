@@ -6,6 +6,10 @@
     background-color: var(--color-gray-05);
 
     @include mobile {
+        background-color: transparent;
+    }    
+
+    @include mobile {
         max-width: 100%;
         padding-left: 0;
     }

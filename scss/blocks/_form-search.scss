@@ -22,22 +22,6 @@
                 transform: translateY(-50%) rotate(360deg);
             }
         }
-
-        // @include hover {
-        //     width: rem(200);
-
-        //     @include mobile-s {
-        //         width: rem(150);
-        //     }
-
-        //     .form-search__input {
-        //         opacity: 1;
-        //     }
-
-        //     .form-search__button {
-        //         transform: translateY(-50%) rotate(360deg);
-        //     }
-        // }
     }
    
     &__button {
@@ -91,16 +75,16 @@
             padding-right: rem(40);
         }
 
+        &.is-active {
+            opacity: 1;
+        }
+
         &:focus {
             outline: none;
         }
 
         &::placeholder {
             color: currentColor;
-        }
-
-        &.is-active {
-            opacity: 1;
         }
     }
 }

@@ -620,14 +620,14 @@ a[class] {
     padding-right: 2.5rem;
   }
 }
+.form-search__input.is-active {
+  opacity: 1;
+}
 .form-search__input:focus {
   outline: none;
 }
 .form-search__input::placeholder {
   color: currentColor;
-}
-.form-search__input.is-active {
-  opacity: 1;
 }
 
 .stories-link {
@@ -2734,6 +2734,11 @@ a[class] {
   max-width: 46.875rem;
   padding-left: 6.0625rem;
   background-color: var(--color-gray-05);
+}
+@media (width <= 47.99875rem) {
+  .comments-form {
+    background-color: transparent;
+  }
 }
 @media (width <= 47.99875rem) {
   .comments-form {
