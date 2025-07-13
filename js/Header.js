@@ -1,33 +1,31 @@
-function initializeHeader() {
-    const selectors = {
+class Header {
+    selectors = {
         root: '[data-js-header]',
         overlay: '[data-js-header-overlay]',
         burgerButton: '[data-js-header-burger-button]',
-    };
+    }
 
-    const stateClasses = {
+    stateClasses = {
         isActive: 'is-active',
         isLock: 'is-lock',
-    };
-
-    const rootElement = document.querySelector(selectors.root);
-    if (!rootElement) return;
-
-    const overlayElement = rootElement.querySelector(selectors.overlay);
-    const burgerButtonElement = rootElement.querySelector(selectors.burgerButton);
-    if (!burgerButtonElement || !overlayElement) return;
-
-    function burgerButtonClick() {
-        burgerButtonElement.classList.toggle(stateClasses.isActive);
-        overlayElement.classList.toggle(stateClasses.isActive);
-        document.documentElement.classList.toggle(stateClasses.isLock);
     }
 
-    function bindEvents() {
-        burgerButtonElement.addEventListener('click', burgerButtonClick);
+    constructor() {
+        this.rootElement = document.querySelector(this.selectors.root);
+        this.overlayElement = this.rootElement.querySelector(this.selectors.overlay);
+        this.burgerButtonElement = this.rootElement.querySelector(this.selectors.burgerButton);
+        this.bindEvents();
     }
 
-    bindEvents();
+    burgerButtonClick = () => {
+        this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
+        this.overlayElement.classList.toggle(this.stateClasses.isActive);
+        document.documentElement.classList.toggle(this.stateClasses.isLock);
+    }
+
+    bindEvents() {
+        this.burgerButtonElement.addEventListener('click', this.burgerButtonClick);
+    }
 }
 
-export default initializeHeader;
+export default Header;

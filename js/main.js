@@ -1,15 +1,15 @@
-import formSearch from './FormSearcj.js';
-import initializeHeader from './Header.js';
+import FormSearch from './FormSearcj.js';
+import Header from './Header.js';
 import TabsCollection from './Tabs.js';
-import initVideoPlayers from './VideoPlayer.js';
-import initSwiper from './Slider.js';
-import changeColor from './ChangeColor.js';
-import updateReactions from './UpdateReactions.js';
+import VideoPlayer from './VideoPlayer.js';
+import Sliders from './Sliders.js';
+import ColorBookmark from './ColorBookmark.js';
+import UpdateReaction from './UpdateReactions.js';
 
-formSearch();
-initializeHeader();
+new FormSearch();
+new Header();
 new TabsCollection();
-initVideoPlayers();
-initSwiper();
-changeColor();
-updateReactions();
+new VideoPlayer();
+new Sliders();
+new ColorBookmark();
+new UpdateReaction();

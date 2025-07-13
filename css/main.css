@@ -1569,7 +1569,7 @@ a[class] {
   justify-content: space-between;
   align-items: start;
 }
-.notes-blog__bookmark-color path {
+.notes-blog__bookmark-color-base path {
   fill: var(--color-gray-30);
 }
 .notes-blog__bookmark-color-active path {

@@ -1,51 +1,56 @@
-// Конфигурация селекторов и классов
-const selectors = {
-  root: '[data-js-video-player]',
-  videoWrapper: '[data-js-video-wrapper]',
-  video: '[data-js-video-player-video]',
-  panel: '[data-js-video-player-content]',
-  playButton: '[data-js-video-player-play-button]',
-};
+const rootSelector = '[data-js-video-player]';
 
-const stateClasses = {
-  isActive: 'is-active',
-};
-
-// Инициализация одного видеоплеера
-function initVideoPlayer(rootElement) {
-  const videoWrapperElement = rootElement.querySelector(selectors.videoWrapper);
-  const videoElement = rootElement.querySelector(selectors.video);
-  const panelElement = rootElement.querySelector(selectors.panel);
-  const playButtonElement = rootElement.querySelector(selectors.playButton);
-
-  // Обработчики событий
-  function onPlayButtonClick() {
-    videoElement.play();
-    videoElement.controls = true;
-    videoWrapperElement.classList.add('modified');
-    panelElement.classList.remove(stateClasses.isActive);
+class VideoPlayer {
+  selectors = {
+    root: rootSelector,
+    videoWrapper: '[data-js-video-wrapper]',
+    video: '[data-js-video-player-video]',
+    panel: '[data-js-video-player-content]',
+    playButton: '[data-js-video-player-play-button]',
   }
 
-  function onVideoPause() {
-    videoElement.controls = false;
-    videoWrapperElement.classList.remove('modified');
-    panelElement.classList.add(stateClasses.isActive);
+  stateClasses = {
+    isActive: 'is-active',
   }
 
-  // Привязка событий
-  playButtonElement.addEventListener('click', onPlayButtonClick);
-  videoElement.addEventListener('pause', onVideoPause);
+  constructor(rootElement) {
+    this.rootElement = rootElement;
+    this.videoWrapperElement = this.rootElement.querySelector(this.selectors.videoWrapper);
+    this.videoElement = this.rootElement.querySelector(this.selectors.video);
+    this.panelElement = this.rootElement.querySelector(this.selectors.panel);
+    this.playButtonElement = this.rootElement.querySelector(this.selectors.playButton);
+    this.bindEvents();
+  }
+
+  onPlayButtonClick = () => {
+    this.videoElement.play();
+    this.videoElement.controls = true;
+    this.videoWrapperElement.classList.add('modified');
+    this.panelElement.classList.remove(this.stateClasses.isActive);
+  }
+
+  onVideoPause = () => {
+    this.videoElement.controls = false;
+    this.videoWrapperElement.classList.remove('modified');
+    this.panelElement.classList.add(this.stateClasses.isActive);
+  }
+
+  bindEvents() {
+    this.playButtonElement.addEventListener('click', this.onPlayButtonClick);
+    this.videoElement.addEventListener('pause', this.onVideoPause);
+  }
 }
 
-// Инициализация всех видеоплееров на странице
-function setupVideoPlayers() {
-  const players = [];
-  
-  document.querySelectorAll(selectors.root).forEach((element) => {
-    players.push(initVideoPlayer(element));
-  });
+class VideoPlayerCollection {
+  constructor() {
+    this.init();
+  }
 
-  return players;
+  init() {
+    document.querySelectorAll(rootSelector).forEach(element => {
+      new VideoPlayer(element);
+    });
+  }
 }
 
-export default setupVideoPlayers;
+export default VideoPlayerCollection;

@@ -1,36 +1,35 @@
-function formSearch() {
-    const selectors = {
+class FormSearch {
+    selectors = {
         root: '[data-js-form-search]',
         bodyForm: '[data-js-form-search-body]',
         buttonForm: '[data-js-form-search-button]',
         inputForm: '[data-js-form-search-input]'
     }
 
-    const stateClasses = {
+    stateClasses = {
         isActive: 'is-active'
     }
 
-    const rootElement = document.querySelector(selectors.root);
-    if (!rootElement) return;
+    constructor () {
+        this.rootElement = document.querySelector(this.selectors.root);
+        this.bodyFormElement = this.rootElement.querySelector(this.selectors.bodyForm);
+        this.buttonFormElement = this.rootElement.querySelector(this.selectors.buttonForm);
+        this.inputFormElement = this.rootElement.querySelector(this.selectors.inputForm);
+        this.bindEvents();
+    }
 
-    const bodyFormElement = rootElement.querySelector(selectors.bodyForm);
-    const buttonFormElement = rootElement.querySelector(selectors.buttonForm);
-    const inputFormElement = rootElement.querySelector(selectors.inputForm);
+    formButtonClick = () => {
+        this.bodyFormElement.classList.toggle(this.stateClasses.isActive);
+        this.inputFormElement.classList.toggle(this.stateClasses.isActive);
 
-    function formButtonClick() {
-        bodyFormElement.classList.toggle(stateClasses.isActive);
-        inputFormElement.classList.toggle(stateClasses.isActive);
-
-        if (bodyFormElement.classList.contains(stateClasses.isActive)) {
-            inputFormElement.focus();
+        if (this.bodyFormElement.classList.contains(this.stateClasses.isActive)) {
+            this.inputFormElement.focus();
         }
     }
 
-    function bindEvents() {
-        buttonFormElement.addEventListener('click', formButtonClick);
+    bindEvents() {
+        this.buttonFormElement.addEventListener('click', this.formButtonClick);
     }
-
-    bindEvents();
 }
 
-export default formSearch;
+export default FormSearch;

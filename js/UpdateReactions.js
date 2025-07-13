@@ -1,61 +1,83 @@
-function updateReactions() {
-    const selectors = {
-        root: '[data-js-reactions]',
+const rootSelector = '[data-js-reactions]';
+
+class UpdateReaction {
+    selectors = {
         numberReactions: '[data-js-comments-number]',
         buttonLike: '[data-js-comments-btn-like]',
         buttonDislike: '[data-js-comments-btn-dislike]',
     }
 
-    const stateClasses = {
+    stateClasses = {
         colorBase: 'is-base',
         colorGreen: 'is-green',
         colorRed: 'is-red',
     }
 
-    const rootElements = document.querySelectorAll(selectors.root);
+    constructor(rootElement) {
+        this.rootElement = rootElement;
+        this.numberReactionsElement = this.rootElement.querySelector(this.selectors.numberReactions);
+        this.buttonLikeElement = this.rootElement.querySelector(this.selectors.buttonLike);
+        this.buttonDislikeElement = this.rootElement.querySelector(this.selectors.buttonDislike);
+        this.initialValue = parseInt(this.numberReactionsElement.textContent);
+        this.updateValue(this.initialValue);
+        this.bindEvents();
+    }
 
-    rootElements.forEach(reaction => {
-        const numberReactionsElement = reaction.querySelector(selectors.numberReactions);
-        const buttonLikeElement = reaction.querySelector(selectors.buttonLike);
-        const buttonDislikeElement = reaction.querySelector(selectors.buttonDislike);
+    formatNumberReaction = (value) => {
+        if (value > 0) return `+${value}`;
+        if (value < 0) return `${value}`;
+        return 0;
+    }
 
-        const formatNumberReaction = (value) => {
-            if (value > 0) return `+${value}`;
-            if (value < 0) return `${value}`;
-            return 0;
+    updateValue = (newValue) => {
+        this.numberReactionsElement.textContent = this.formatNumberReaction(newValue);
+
+        this.numberReactionsElement.classList.remove(
+            this.stateClasses.colorBase,
+            this.stateClasses.colorGreen,
+            this.stateClasses.colorRed
+        );
+
+        if (newValue > 0) {
+            this.numberReactionsElement.classList.add(this.stateClasses.colorGreen);
+        } else if (newValue < 0) {
+            this.numberReactionsElement.classList.add(this.stateClasses.colorRed);
+        } else {
+            this.numberReactionsElement.classList.add(this.stateClasses.colorBase);
         }
+    }
 
-        const updateValue = (newValue) => {
-            numberReactionsElement.textContent = formatNumberReaction(newValue);
+    likeElement = () => {
+        const currentValue = parseInt(this.numberReactionsElement.textContent);
+        this.updateValue(currentValue + 1);
+    }
 
-            numberReactionsElement.classList.remove(
-                stateClasses.colorBase,
-                stateClasses.colorGreen,
-                stateClasses.colorRed
-            );
+    dislikeElement = () => {
+        const currentValue = parseInt(this.numberReactionsElement.textContent);
+        this.updateValue(currentValue - 1);
+    }
 
-            if (newValue > 0) {
-                numberReactionsElement.classList.add(stateClasses.colorGreen);
-            } else if (newValue < 0) {
-                numberReactionsElement.classList.add(stateClasses.colorRed);
-            } else {
-                numberReactionsElement.classList.add(stateClasses.colorBase);
-            }
-        };
+    initialValue = () => {
+        parseInt(this.numberReactionsElement.textContent);
+        this.updateValue();
+    }
 
-        buttonLikeElement.addEventListener('click', () => {
-            const currentValue = parseInt(numberReactionsElement.textContent);
-            updateValue(currentValue + 1);
-        });
-
-        buttonDislikeElement.addEventListener('click', () => {
-            const currentValue = parseInt(numberReactionsElement.textContent);
-            updateValue(currentValue - 1);
-        });
-
-        const initialValue = parseInt(numberReactionsElement.textContent);
-        updateValue(initialValue);
-    });
+    bindEvents() {
+        this.buttonLikeElement.addEventListener('click', this.likeElement);
+        this.buttonDislikeElement.addEventListener('click', this.dislikeElement);
+    }
 }
 
-export default updateReactions;
+class UpdateReactionCollection {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        document.querySelectorAll(rootSelector).forEach(element => {
+            new UpdateReaction(element);
+        });
+    }
+}
+
+export default UpdateReactionCollection;

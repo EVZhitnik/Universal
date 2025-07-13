@@ -22,8 +22,10 @@
         align-items: start;
 
         &-color {
-            path {
-                fill: var(--color-gray-30);
+            &-base {
+                path {
+                    fill: var(--color-gray-30);
+                }
             }
 
             &-active {
